@@ -116,6 +116,57 @@
   }
 }
 
+.fade-out {
+  display: inline-block;
+  max-width: 100%; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-mask-image: linear-gradient(to right, black 50%, transparent 100%);
+  mask-image: linear-gradient(to right, black 50%, transparent 100%);
+}
+
+.placeholder-text::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+    font-style: italic;
+    font-size: 16px;
+}
+
+.footer-visible {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease-out;
+}
+
+.footer-hidden {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease-out;
+}
+
+.github-btn-hidden {
+    transform: translateX(100%) scale(0);
+    opacity: 0;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease-out;
+}
+
+.github-btn-visible {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease-out;
+}
+
+.crossed-out::after {
+    content: '';
+    position: absolute;
+    left: -18px;
+    top: 40%;
+    height: 30%;
+    width: 200px;
+    background: url('/marker-stroke.svg') no-repeat;
+    background-size: contain;
+}
+
 @keyframes scaleIn {
   from {
     transform: scale(0);
@@ -140,4 +191,25 @@
 
 .scale-out {
   animation: scaleOut 0.2s forwards;
+}
+
+.icon-slide-in {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.icon-slide-out {
+    transform: translateX(20%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.backdrop-blur-fallback {
+  background-color: rgba(255, 255, 255, 0.2);
+  @supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+    background-color: rgba(255, 255, 255, 0.02);
+    -webkit-backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
+  }
 }

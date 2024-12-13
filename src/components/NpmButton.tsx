@@ -55,7 +55,7 @@ const NpmButton: React.FC<NpmButtonProps> = (props) => {
 
     useEffect(() => {
         if (selectedFramework === 'React') {
-            setVersion('1.2.3');
+            setVersion('1.2.6');
         } else if (selectedFramework === 'Vue') {
             setVersion('1.0.1');
         }
@@ -74,19 +74,19 @@ const NpmButton: React.FC<NpmButtonProps> = (props) => {
                 <DropdownMenuContent>
                     <DropdownMenuItem onClick={() => setSelectedFramework('React')}>
                         <div className="inline-flex gap-2">
-                            <Image src="/images/logo-react.svg" alt="React icon" width={20} height={20} />
+                            <Image src="/logo-react.svg" alt="React icon" width={20} height={20} />
                             <span className="font-mono text-white">React</span>
                         </div>
                     </DropdownMenuItem>
                     <DropdownMenuItem onClick={() => setSelectedFramework('Vue')}>
                         <div className="inline-flex gap-2">
-                            <Image src="/images/logo-vue.svg" alt="Vue icon" width={20} height={20} />
+                            <Image src="/logo-vue.svg" alt="Vue icon" width={20} height={20} />
                             <span className="font-mono text-white">Vue</span>
                         </div>
                     </DropdownMenuItem>
                     <DropdownMenuItem onClick={() => setSelectedFramework('Svelte')}>
                         <div className="inline-flex gap-2">
-                            <Image src="/images/logo-svelte.svg" alt="Svelte icon" width={20} height={20} />
+                            <Image src="/logo-svelte.svg" alt="Svelte icon" width={20} height={20} />
                             <span className="font-mono text-white">Svelte</span>
                         </div>
                     </DropdownMenuItem>
