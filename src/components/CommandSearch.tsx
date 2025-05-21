@@ -13,6 +13,7 @@ import {
   CommandList,
 } from '@/components/ui/command'
 import { motion, AnimatePresence } from 'framer-motion'
+import { TextShimmer } from "@/components/ui/text-shimmer";
 
 interface CommandSearchProps {
   initialValue?: string;
@@ -52,6 +53,13 @@ export function CommandSearch({ initialValue }: CommandSearchProps) {
         setInputValue("");
         setIcons([]);
     };
+
+    const handleRandomIcon = useCallback(() => {
+        const iconNames = Object.keys(Icons).filter(name => name.startsWith('Icon'));
+        if (iconNames.length === 0) return;
+        const randomIcon = iconNames[Math.floor(Math.random() * iconNames.length)];
+        router.push(`/icon/${randomIcon}`);
+    }, [router]);
 
   return (
     <div className="w-full">
@@ -127,6 +135,15 @@ export function CommandSearch({ initialValue }: CommandSearchProps) {
               </motion.div>
             )}
           </AnimatePresence>
+
+          <button
+            onClick={handleRandomIcon}
+            className="mt-4 w-full flex items-center justify-center gap-2 font-mono active:scale-[0.98] transition-all duration-150"
+          >
+            <TextShimmer className="text-xs">
+              I&apos;m Feeling Lucky
+            </TextShimmer>
+          </button>
         </Command>
       </motion.div>
     </div>

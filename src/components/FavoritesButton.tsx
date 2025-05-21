@@ -65,10 +65,10 @@ export function FavoritesButton({ iconName }: FavoritesButtonProps) {
                   transition: { duration: 0.1 },
                 }}
                 transition={{
-                  type: "spring",
-                  stiffness: 400,
-                  damping: 25,
-                  opacity: { duration: 0 },
+                    type: "spring",
+                    stiffness: 280,
+                    damping: 18,
+                    mass: 0.3,
                 }}
               >
                 <IconStarSlashFill className="h-6 w-6 fill-zinc-400" />

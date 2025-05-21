@@ -74,7 +74,7 @@ function IconDetailClient({ iconName }: IconDetailClientProps) {
   // };
 
   return (
-    <div className="flex min-h-[calc(100vh-10rem)] flex-col items-center justify-start bg-zinc-950 pt-12 motion-preset-blur-up-md motion-preset-fade-md motion-scale-in-90 motion-ease-spring-snappy motion-duration-150">
+    <div className="flex min-h-[calc(100vh-10rem)] flex-col items-center justify-start bg-zinc-950 pt-12 motion-preset-blur-left-md motion-preset-fade-md motion-scale-in-90 motion-ease-spring-snappy motion-duration-150">
       <div className="w-full max-w-lg">
         <button 
           onClick={() => router.back()}
