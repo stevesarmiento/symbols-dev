@@ -7,7 +7,7 @@ import NpmButton from './NpmButton';
 import { useFramework } from '@/context/framework-provider';
 import CommandSearch from './CommandSearch';
 import { useRouter, useSearchParams } from 'next/navigation';
-
+import { ModeToggle } from './ui/theme-toggle';
 
 const NavBar = () => {
     const { version, selectedFramework } = useFramework();
@@ -25,7 +25,13 @@ const NavBar = () => {
     };
 
     return (
-        <nav className="z-50 sticky top-0 p-0 sm:px-4 sm:py-2 px-8 text-white backdrop-blur-fallback border-b border-b-white/10">
+        <nav 
+            className="z-50 sticky top-0 p-0 sm:px-4 sm:py-2 px-8 text-white backdrop-blur-fallback border-b border-b-white/10"
+            style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 4 4' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='1' fill='rgba(0,0,0,0.2)'/%3E%3C/svg%3E")`,
+                backgroundRepeat: "repeat",
+              }}
+        >
             <div className="flex w-full items-center justify-between m-auto">
                 <div className="flex items-center">
                     <div className="inline-flex items-center">
@@ -45,8 +51,11 @@ const NavBar = () => {
 
                 </div>
                 <CommandSearch setSearchTerm={handleSearch} />
-                <div className="inline-flex gap-4 justify-center items-center">
-                    <NpmButton selectedFramework="react" />
+                <div className="flex items-center gap-2">
+                    <ModeToggle />
+                    <div className="inline-flex gap-4 justify-center items-center">
+                        <NpmButton selectedFramework="react" />
+                    </div>                    
                 </div>
             </div>
         </nav>

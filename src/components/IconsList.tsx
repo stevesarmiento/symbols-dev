@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import {
     Tooltip,
     TooltipContent,
-    TooltipProvider,
     TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { toast } from "sonner"
@@ -78,9 +77,8 @@ const IconsList: React.FC<IconsListProps> = ({ filteredIcons, loadMoreRef }) => 
                     </div>
                     <div className="inline-flex justify-between items-center border-t border-white/5 p-2">
                         <span className="text-xs text-white/50 font-mono fade-out">{name.replace('Icon', '')}</span>
-                        <TooltipProvider>
                             <Tooltip delayDuration={0}>
-                                <TooltipTrigger>
+                                <TooltipTrigger asChild>
                                     <button
                                         className="group flex items-center justify-center w-[26px] h-[26px] bg-white/10 rounded-lg p-[5px] transition-all duration-150 ease-in-out hover:bg-white/20 hover:scale-95 focus:outline-none"
                                         onClick={() => handleCopy(name, index)}
@@ -96,7 +94,6 @@ const IconsList: React.FC<IconsListProps> = ({ filteredIcons, loadMoreRef }) => 
                                     <p className="text-white text-xs">Copy to clipboard</p>
                                 </TooltipContent>
                             </Tooltip>
-                        </TooltipProvider>
                     </div>
                 </div>
             ))}
