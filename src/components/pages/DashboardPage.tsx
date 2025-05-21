@@ -1,4 +1,5 @@
 'use client'
+import { Suspense } from 'react';
 import IconsList from '@/components/IconsList';
 import { useCallback, useEffect, useState } from 'react';
 import * as Icons from 'symbols-react';
@@ -7,7 +8,7 @@ import { useSearchParams } from 'next/navigation';
 
 const ICONS_PER_PAGE = 50;
 
-export default function DashboardPage() {
+function DashboardContent() {
     const searchParams = useSearchParams();
     const searchTerm = searchParams.get('search') || '';
     const [page, setPage] = useState(1);
@@ -39,5 +40,13 @@ export default function DashboardPage() {
                 loadMoreRef={ref}
             />
         </div>
+    );
+}
+
+export default function DashboardPage() {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <DashboardContent />
+        </Suspense>
     );
 }

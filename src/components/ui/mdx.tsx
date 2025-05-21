@@ -4,6 +4,7 @@ import { useMemo } from 'react';
 import remarkGfm from 'remark-gfm';
 import remarkHtml from 'remark-html';
 import { remark } from 'remark';
+import { Suspense } from 'react';
 
 interface MdxProps {
   code: string;
@@ -35,5 +36,18 @@ export function Mdx({ code }: MdxProps) {
     ">
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </article>
+  );
+}
+
+function DashboardContent() {
+  // Your component logic here
+  return <div>Dashboard Content</div>;
+}
+
+export default function Dashboard() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <DashboardContent />
+    </Suspense>
   );
 }

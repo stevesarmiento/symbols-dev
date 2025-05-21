@@ -1,9 +1,10 @@
 'use client'
 
+import { Suspense } from 'react';
 import { CommandSearch } from '@/components/CommandSearch';
 import { useSearchParams } from 'next/navigation'; // To get URL params
 
-export default function HomePage() {
+function HomeContent() {
   const searchParams = useSearchParams();
   // Read 'search' query parameter from URL, default to empty string if not present
   const initialSearchFromUrl = searchParams.get('search') || "";
@@ -14,5 +15,13 @@ export default function HomePage() {
         <CommandSearch initialValue={initialSearchFromUrl} />
       </div>
     </main>
+  );
+}
+
+export default function HomePage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <HomeContent />
+    </Suspense>
   );
 }
