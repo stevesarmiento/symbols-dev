@@ -1,121 +1,135 @@
 "use client"
 
 import React, { useCallback, useEffect, useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { IconProps } from '@/components/IconsList'
-import { IconMagnifyingglass } from 'symbols-react'
 import * as Icons from 'symbols-react'
-import { motion } from 'framer-motion'
 import {
-  CommandDialog,
+  Command,
   CommandEmpty,
   CommandGroup,
   CommandInput,
   CommandItem,
   CommandList,
 } from '@/components/ui/command'
+import { motion, AnimatePresence } from 'framer-motion'
 
 interface CommandSearchProps {
-  setSearchTerm: (term: string) => void
+  initialValue?: string;
 }
 
-export function CommandSearch({ setSearchTerm }: CommandSearchProps) {
-    const [open, setOpen] = useState(false)
-    const [value, setValue] = useState("")
+export function CommandSearch({ initialValue }: CommandSearchProps) {
+    const [inputValue, setInputValue] = useState(initialValue || "")
     const [icons, setIcons] = useState<[string, React.ComponentType<IconProps>][]>([])
+    const router = useRouter()
 
-    const handleSearch = useCallback((search: string) => {
-        setValue(search)
-        setSearchTerm(search)
-        
+    const updateFilteredIcons = useCallback((currentVal: string) => {
+        if (!currentVal) {
+            setIcons([]);
+            return;
+        }
         const iconEntries = Object.entries(Icons)
           .filter(([name]) => 
             name.startsWith('Icon') && 
-            name.toLowerCase().includes(search.toLowerCase())
+            name.toLowerCase().includes(currentVal.toLowerCase())
           )
           .slice(0, 100)
         setIcons(iconEntries)
-      }, [setSearchTerm])
+    }, []);
+
+    useEffect(() => {
+        setInputValue(initialValue || "");
+        updateFilteredIcons(initialValue || "");
+    }, [initialValue, updateFilteredIcons]);
+
+    const handleInputChange = useCallback((input: string) => {
+        setInputValue(input);
+        updateFilteredIcons(input);
+    }, [updateFilteredIcons]);
     
-      const clearSearch = () => {
-        setValue("")
-        setSearchTerm("")
-      }
-
-
-  // Toggle the menu when ⌘K is pressed
-  useEffect(() => {
-    const down = (e: KeyboardEvent) => {
-      if (e.key === '/' && (e.metaKey || e.ctrlKey)) {
-        e.preventDefault()
-        setOpen(true)
-      }
-      if (e.key === 'Escape' && value) {
-        e.preventDefault()
-        clearSearch()
-      }
-    }
-  
-    document.addEventListener('keydown', down)
-    return () => document.removeEventListener('keydown', down)
-  }, [value])
+    const handleIconSelect = (iconName: string) => {
+        router.push(`/icon/${iconName}`);
+        setInputValue("");
+        setIcons([]);
+    };
 
   return (
-    <>
-      <motion.button
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        onClick={() => value ? clearSearch() : setOpen(true)}
-        className="relative w-full max-w-lg rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm backdrop-blur-sm transition-colors hover:border-white/20 hover:bg-white/10"
+    <div className="w-full">
+      <motion.div
+        layout
+        transition={{
+          type: "spring",
+          stiffness: 280,
+          damping: 18,
+          mass: 0.3,
+        }}
       >
-        <div className="flex items-center gap-2">
-            <IconMagnifyingglass className="h-5 w-5 fill-white/60" />
-            <p className="flex-1 text-left text-white/60">
-                {value || "Search icons..."}
-            </p>
-            <div className="flex items-center space-x-2 border border-white/10 px-2 py-1 rounded-md bg-white/5 backdrop-blur-sm">
-                {value ? (
-                <span className="text-white/60 font-mono">ESC</span>
-                ) : (
-                <>
-                    <Icons.IconCommand className="h-3 w-3 fill-white/60" />
-                    <span className="text-white/60">/</span>
-                </>
-                )}
-            </div>
-        </div>
-      </motion.button>
-
-
-      <CommandDialog open={open} onOpenChange={setOpen}>
-        <CommandInput 
-          placeholder="Search icons..." 
-          value={value}
-          onValueChange={handleSearch}
-        />
-        <CommandList>
-          <CommandEmpty>No icons found.</CommandEmpty>
-          {icons.length > 0 && (
-            <CommandGroup heading="Icons">
-                {icons.map(([name, Icon]) => (
-                <CommandItem
-                    key={name}
-                    value={name}
-                    onSelect={() => {
-                    setValue(name)
-                    setSearchTerm(name)
-                    setOpen(false)
-                    }}
-                    className="flex items-center gap-2"
-                >
-                    <Icon className="h-4 w-4 fill-current" />
-                    <span>{name.replace('Icon', '')}</span>
-                </CommandItem>
-                ))}
-                </CommandGroup>
+        <Command className="h-auto w-full transform-origin-top">
+          <CommandInput 
+            placeholder="Search over 6,000 symbols..." 
+            value={inputValue}
+            onValueChange={handleInputChange}
+          />
+          
+          <AnimatePresence>
+            {inputValue && (
+              <motion.div
+                initial={{ 
+                  opacity: 0,
+                  y: -20,
+                  filter: 'blur(4px)'
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                  filter: 'blur(0px)',
+                  transition: {
+                    type: "spring",
+                    damping: 20,
+                    stiffness: 300
+                  }
+                }}
+                exit={{ 
+                  opacity: 0,
+                  y: -20,
+                  filter: 'blur(4px)'
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 280,
+                  damping: 18,
+                  mass: 0.3,
+                }}
+                className="max-h-[300px] min-h-[300px] overflow-y-auto rounded-lg bg-zinc-950 shadow-md w-full backdrop-blur-sm mt-4"
+                style={{
+                  maskImage: 'linear-gradient(to bottom, black calc(100% - 5rem), transparent 100%)',
+                  WebkitMaskImage: 'linear-gradient(to bottom, black calc(100% - 5rem), transparent 100%)',
+                }}
+              >
+                <CommandList>
+                  <CommandEmpty className="p-2 text-center text-sm">No icons found.</CommandEmpty>
+                  {icons.length > 0 && (
+                    <CommandGroup heading="Icons" className="p-1">
+                      {icons.map(([name, IconComponent]) => (
+                        <CommandItem
+                          key={name}
+                          value={name}
+                          onSelect={() => handleIconSelect(name)}
+                          className="flex items-center gap-2 px-2 py-1.5 rounded-sm hover:bg-white/10"
+                        >
+                          <IconComponent className="h-4 w-4 fill-current" />
+                          <span>{name.replace('Icon', '')}</span>
+                        </CommandItem>
+                      ))}
+                    </CommandGroup>
+                  )}
+                </CommandList>
+              </motion.div>
             )}
-          </CommandList>
-      </CommandDialog>
-    </>
+          </AnimatePresence>
+        </Command>
+      </motion.div>
+    </div>
   )
 }
 

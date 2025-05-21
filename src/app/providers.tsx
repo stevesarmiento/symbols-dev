@@ -7,7 +7,7 @@ import { QueryProvider } from '@/providers/query-provider'
 import { FrameworkProvider } from '@/context/framework-provider'
 import { baseOptions } from '@/app/layout.config' // Assuming layout.config is at src/app/layout.config.ts
 import { TooltipProvider } from '@/components/ui/tooltip'
-
+import { SidebarProvider } from '@/components/ui/sidebar'
 interface AppProvidersProps {
   children: React.ReactNode
 }
@@ -16,13 +16,14 @@ export function AppProviders({ children }: AppProvidersProps) {
   return (
     <RootProvider {...baseOptions}>
       <QueryProvider>
-
         <FrameworkProvider>
+          <SidebarProvider>
             <TooltipProvider>
                 <ThemeProvider>
                     {children}
                 </ThemeProvider>
-            </TooltipProvider>
+            </TooltipProvider>            
+          </SidebarProvider>
         </FrameworkProvider>
       </QueryProvider>
     </RootProvider>

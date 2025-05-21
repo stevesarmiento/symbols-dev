@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { IconCheckmark, IconPaperclip, IconCheckmarkCircleFill } from 'symbols-react';
+import { IconPaperclip, IconCheckmarkCircleFill, IconSparkle } from 'symbols-react';
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -16,9 +16,9 @@ interface NpmButtonProps {
     selectedFramework: string;
 }
 
-const NpmButton: React.FC<NpmButtonProps> = (props) => {
+const NpmButton: React.FC<NpmButtonProps> = () => {
     const [isCopied, setIsCopied] = useState(false);
-    const { selectedFramework, setSelectedFramework, version, setVersion } = useFramework();
+    const { selectedFramework, setSelectedFramework } = useFramework();
 
     const getFrameworkIcon = (framework: string) => {
         switch (framework) {
@@ -53,25 +53,17 @@ const NpmButton: React.FC<NpmButtonProps> = (props) => {
         setTimeout(() => setIsCopied(false), 1000);
     };
 
-    useEffect(() => {
-        if (selectedFramework === 'React') {
-            setVersion('1.2.6');
-        } else if (selectedFramework === 'Vue') {
-            setVersion('1.0.1');
-        }
-    }, [selectedFramework, setVersion]);
-
     return (
         <div className="inline-flex gap-4">
             <DropdownMenu>
                 <DropdownMenuTrigger>
-                    <div className="group flex justify-center items-center bg-white/10 border border-white/0 hover:border-white/20 hover:bg-white/20 p-3 rounded-xl w-[45px] h-[45px] hover:scale-105 transition-all duration-150 ease-in-out">
+                    <div className="group flex justify-center items-center focus-within:border-zinc-700 bg-zinc-900/50 shadow-md w-full max-w-2xl backdrop-blur-sm focus-within:bg-zinc-900 focus-within:ring-4 focus-within:ring-zinc-400/10 transition-all duration-300">
                         <span className="group-hover:rotate-[-10deg]">
                             {getFrameworkIcon(selectedFramework)}
                         </span>
                     </div>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent>
+                <DropdownMenuContent className="bg-zinc-950 border border-zinc-800" side="bottom" align="start">
                     <DropdownMenuItem onClick={() => setSelectedFramework('React')}>
                         <div className="inline-flex gap-2">
                             <Image src="/logo-react.svg" alt="React icon" width={20} height={20} />
@@ -94,7 +86,7 @@ const NpmButton: React.FC<NpmButtonProps> = (props) => {
             </DropdownMenu>
             <div className="inline-flex gap-4 items-center">
                 <button
-                    className={`group inline-flex justify-between gap-4 bg-white/10 ${selectedFramework === 'React' || selectedFramework === 'Vue' ? 'border border-white/0 hover:border-white/20 hover:bg-white/20' : 'border border-white/20 bg-white/20'} text-white py-2 pl-4 pr-2 font-mono rounded-xl transition-all duration-150 ease-in-out ${selectedFramework === 'React' || selectedFramework === 'Vue' ? 'hover:scale-105' : 'cursor-not-allowed opacity-50'} focus:outline-none`} onClick={() => {
+                    className={`group inline-flex justify-between space-x-2 pr-[6px]  ${selectedFramework === 'React' || selectedFramework === 'Vue' ? 'border border-zinc-800 focus-within:border-zinc-700 bg-zinc-900/50 shadow-md w-full max-w-2xl backdrop-blur-sm focus-within:bg-zinc-900 focus-within:ring-4 focus-within:ring-zinc-400/10 transition-all duration-300' : 'border border-white/20 bg-white/20'} h-5 sm:h-8 text-white py-1 pl-2 pr-1 font-mono rounded-lg transition-all duration-150 ease-in-out ${selectedFramework === 'React' || selectedFramework === 'Vue' ? '' : 'cursor-not-allowed opacity-50'} focus:outline-none`} onClick={() => {
                         handleCopy();
                         toast(
                             <div className="inline-flex items-center gap-2">
@@ -104,10 +96,10 @@ const NpmButton: React.FC<NpmButtonProps> = (props) => {
                         );
                     }} disabled={selectedFramework !== 'React' && selectedFramework !== 'Vue'}
                 >
-                    {`npm i symbols-${selectedFramework.toLowerCase()}`}
-                    <span className={`group bg-white/10 rounded-lg p-[6px] flex items-center justify-center w-[26px] h-[26px]`}>
+                    <span className="font-mono text-white text-sm">{`npm i symbols-${selectedFramework.toLowerCase()}`}</span>
+                    <span className={`group flex items-center justify-center`}>
                         {isCopied ? (
-                            <IconCheckmark className="fill-white scale-in w-[12px] h-[12px]" />
+                            <IconSparkle className="fill-yellow-300 scale-in w-[14px] h-[14px]" />
                         ) : (
                             <IconPaperclip className={`group-hover:fill-white scale-in ${selectedFramework === 'React' ? 'fill-white/50 group-hover:-rotate-[10deg]' : 'fill-white'}`} width={14} height={14} />
                         )}

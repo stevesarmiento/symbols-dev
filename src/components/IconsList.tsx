@@ -7,11 +7,13 @@ import {
     TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { toast } from "sonner"
+import { useRouter } from 'next/navigation';
 
 export interface IconProps {
     className?: string;
     width?: number;
     height?: number;
+    fill?: string;
 }
 
 interface IconsListProps {
@@ -21,6 +23,7 @@ interface IconsListProps {
 
 const IconsList: React.FC<IconsListProps> = ({ filteredIcons, loadMoreRef }) => {
     const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
+    const router = useRouter();
 
     const handleCopy = (name: string, index: number) => {
         navigator.clipboard.writeText(name);
@@ -32,6 +35,10 @@ const IconsList: React.FC<IconsListProps> = ({ filteredIcons, loadMoreRef }) => 
                 <p><span className="opacity-50">You copied</span> {name.replace('Icon', '')} <span className="opacity-50">to clipboard</span></p>
             </div>
         );
+    };
+
+    const handleIconClick = (iconName: string) => {
+        router.push(`/icon/${iconName}`);
     };
 
     const containerVariants = {
@@ -72,7 +79,10 @@ const IconsList: React.FC<IconsListProps> = ({ filteredIcons, loadMoreRef }) => 
                     key={name}
                     className="flex flex-col justify-center border-r border-b border-white/5 p-0"
                 >
-                    <div className="group cursor-crosshair h-[130px] w-full flex justify-center items-center hover:bg-white/5 transition-all duration-150 ease-in-out">
+                    <div 
+                        className="group cursor-pointer h-[130px] w-full flex justify-center items-center hover:bg-white/5 transition-all duration-150 ease-in-out"
+                        onClick={() => handleIconClick(name)}
+                    >
                         <Icon className="group-hover:scale-125 transition-all duration-150 ease-in-out fill-white" width={35} height={35} />
                     </div>
                     <div className="inline-flex justify-between items-center border-t border-white/5 p-2">
@@ -81,7 +91,10 @@ const IconsList: React.FC<IconsListProps> = ({ filteredIcons, loadMoreRef }) => 
                                 <TooltipTrigger asChild>
                                     <button
                                         className="group flex items-center justify-center w-[26px] h-[26px] bg-white/10 rounded-lg p-[5px] transition-all duration-150 ease-in-out hover:bg-white/20 hover:scale-95 focus:outline-none"
-                                        onClick={() => handleCopy(name, index)}
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            handleCopy(name, index);
+                                        }}
                                     >
                                         {copiedIndex === index ? (
                                             <IconCheckmark className="fill-white scale-in w-[12px] h-[12px]" />
@@ -90,7 +103,7 @@ const IconsList: React.FC<IconsListProps> = ({ filteredIcons, loadMoreRef }) => 
                                         )}
                                     </button>
                                 </TooltipTrigger>
-                                <TooltipContent>
+                                <TooltipContent className="bg-gray-800">
                                     <p className="text-white text-xs">Copy to clipboard</p>
                                 </TooltipContent>
                             </Tooltip>
