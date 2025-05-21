@@ -9,8 +9,8 @@ import { FavoritesSidebar } from "@/components/FavoritesSidebar";
 import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: "Next Solana Starter",
-  description: "Production Ready Solana Starter",
+  title: "Symbols",
+  description: "Open source SF symbols for the web.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
