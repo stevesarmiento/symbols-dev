@@ -69,20 +69,19 @@ export function FavoritesSidebar() {
 
   return (
     <Sidebar side="right" className="bg-zinc-950 border border-zinc-800">
-      <SidebarHeader className="flex flex-col gap-3">
-        <div className="flex flex-row items-center gap-2">
+      <SidebarHeader className="flex flex-col gap-3 border-b border-zinc-800">
+        {/* <div className="flex flex-row items-center gap-2">
           <IconStarFill className="h-5 w-5 fill-yellow-400" />
           <h2 className="text-lg font-semibold text-white">Favorites</h2>
-        </div>
+        </div> */}
         
         {hasHydrated && favorites.size > 0 && (
           <div className="relative">
-            <IconMagnifyingglass className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 fill-zinc-200" />
             <SidebarInput
               placeholder="Search favorites..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="pl-9"
+              className=""
             />
           </div>
         )}
@@ -112,7 +111,7 @@ export function FavoritesSidebar() {
                 <SidebarMenuItem key={iconName}>
                   <SidebarMenuButton
                     onClick={() => handleIconClick(iconName)}
-                    className="group/item relative h-auto p-3 hover:bg-zinc-800/30 transition-all duration-200"
+                    className="group/item relative rounded-xl h-auto p-3 hover:bg-zinc-800/30 transition-all duration-200"
                   >
                     <div className="flex items-center gap-3 w-full">
                       {IconComponent && (
@@ -129,7 +128,7 @@ export function FavoritesSidebar() {
                         <p className="text-xs text-zinc-400 group-hover/item:text-white transition-colors duration-200 truncate">{iconName}</p>
                       </div>
                       
-                      <div className="flex items-center gap-1 opacity-0 group-hover/item:opacity-100 transition-opacity motion-preset-blur-left-lg">
+                      <div className="flex items-center gap-1 opacity-0 group-hover/item:opacity-100 group-hover/item:motion-preset-blur-left-sm group-hover/item:motion-preset-fade-sm group-hover/item:motion-preset-slide-left-md motion-ease-spring-snappy motion-duration-100">
                         <Tooltip delayDuration={0}>
                           <TooltipTrigger asChild>
                             <Button
@@ -167,7 +166,7 @@ export function FavoritesSidebar() {
                             </Button>
                           </TooltipTrigger>
                           <TooltipContent side="left" className="relative bg-zinc-800 border-0 p-0">
-                            <div className="absolute inset-0 bg-zinc-900/80 backdrop-blur-md rounded-md -z-10"></div>
+                            <div className="absolute inset-0 bg-zinc-800 backdrop-blur-md rounded-md -z-10"></div>
                             <div className="relative z-10 px-3 py-2">
                               <p className="text-white text-xs font-mono">Remove from favorites</p>
                             </div>
