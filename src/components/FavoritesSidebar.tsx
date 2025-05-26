@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import { Sidebar, SidebarContent, SidebarHeader, SidebarInput, SidebarMenu, SidebarMenuItem, SidebarMenuButton } from "@/components/ui/sidebar";
 import { useFavorites, useFavoritesHydration } from "@/stores/favorites";
-import { IconStarFill, IconTrash, IconPaperclip, IconCheckmark, IconMagnifyingglass } from "symbols-react";
+import { IconStarFill, IconTrash, IconPaperclip, IconCheckmark } from "symbols-react";
 import * as Icons from "symbols-react";
 import { toast } from "sonner";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
