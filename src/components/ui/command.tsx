@@ -15,7 +15,7 @@ const Command = React.forwardRef<
   <CommandPrimitive
     ref={ref}
     className={cn(
-      "flex h-full w-full flex-col rounded-md bg-popover text-popover-foreground",
+      "flex h-full w-full flex-col rounded-md bg-zinc-950 text-white",
       className
     )}
     {...props}
@@ -42,12 +42,12 @@ const CommandInput = React.forwardRef<
   React.ElementRef<typeof CommandPrimitive.Input>,
   React.ComponentPropsWithoutRef<typeof CommandPrimitive.Input>
 >(({ className, ...props }, ref) => (
-  <div className="flex items-center px-4 space-x-4 rounded-2xl border border-zinc-800 focus-within:border-zinc-700 bg-zinc-900/50 shadow-md w-full max-w-2xl backdrop-blur-sm focus-within:bg-zinc-900 focus-within:ring-4 focus-within:ring-zinc-400/10 transition-all duration-300" cmdk-input-wrapper="">
-    <IconMagnifyingglass className="h-4 w-4 shrink-0 dark:fill-white/30 fill-black/30" />
+  <div className="flex items-center px-4 space-x-4 rounded-2xl border border-zinc-800 focus-within:border-zinc-700 bg-zinc-950 shadow-md w-full max-w-2xl backdrop-blur-sm focus-within:bg-zinc-900 focus-within:ring-4 focus-within:ring-zinc-400/10 transition-all duration-300" cmdk-input-wrapper="">
+    <IconMagnifyingglass className="h-4 w-4 shrink-0 fill-zinc-400" />
     <CommandPrimitive.Input
       ref={ref}
       className={cn(
-        "flex h-12 w-full rounded-md bg-transparent py-3 text-lg outline-none placeholder:text-muted-foreground/50 focus-within:placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 transition-colors ease-in-out duration-300",
+        "flex h-12 w-full rounded-md bg-transparent py-3 text-lg outline-none text-white placeholder:text-muted-foreground/50 focus-within:placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 transition-colors ease-in-out duration-300",
         className
       )}
       {...props}
@@ -118,7 +118,7 @@ const CommandItem = React.forwardRef<
   <CommandPrimitive.Item
     ref={ref}
     className={cn(
-      "relative flex cursor-default gap-2 select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none data-[disabled=true]:pointer-events-none data-[selected=true]:bg-accent data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+      "relative flex cursor-default gap-2 select-none items-center rounded px-2 py-1.5 text-sm outline-none data-[disabled=true]:pointer-events-none data-[selected=true]:bg-accent data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
       className
     )}
     {...props}

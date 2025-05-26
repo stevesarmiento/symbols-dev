@@ -115,15 +115,34 @@ export function CommandSearch({ initialValue }: CommandSearchProps) {
                 }}
               >
                 <CommandList>
-                  <CommandEmpty className="p-2 text-center text-sm">No icons found.</CommandEmpty>
+                  <CommandEmpty className="p-6 text-center">
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="bg-zinc-800/50 w-12 h-12 rounded-full flex items-center justify-center">
+                        <Icons.IconEnvelopeFill className="h-6 w-6 fill-zinc-400" />
+                      </div>
+                      <div className="space-y-2">
+                        <h3 className="text-sm font-medium text-white">Symbol not found?</h3>
+                        <p className="text-xs text-zinc-400 max-w-xs">
+                          Don&apos;t see the symbol you&apos;re looking for? Just send me a note and I&apos;ll add it to the library for you.
+                        </p>
+                      </div>
+                      <a
+                        href="mailto:sarmiento.steven@gmail.com?subject=Symbol Request&body=Hi! I'd like to request the following symbol to be added to the library:"
+                        className="inline-flex items-center gap-2 px-3 py-1.5 text-xs bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-colors duration-150 active:scale-[0.98]"
+                      >
+                        <Icons.IconPaperplaneFill className="h-3 w-3 fill-current" />
+                        Request Symbol
+                      </a>
+                    </div>
+                  </CommandEmpty>
                   {icons.length > 0 && (
-                    <CommandGroup heading="Icons" className="p-1">
+                    <CommandGroup heading="Icons" className="p-1 text-white/80">
                       {icons.map(([name, IconComponent]) => (
                         <CommandItem
                           key={name}
                           value={name}
                           onSelect={() => handleIconSelect(name)}
-                          className="flex items-center gap-2 px-2 py-1.5 rounded-sm hover:bg-white/10"
+                          className="flex items-center gap-2 px-2 py-1.5 rounded-sm hover:bg-zinc-800 active:scale-[0.98] transition-all duration-150"
                         >
                           <IconComponent className="h-4 w-4 fill-current" />
                           <span>{name.replace('Icon', '')}</span>
@@ -135,15 +154,16 @@ export function CommandSearch({ initialValue }: CommandSearchProps) {
               </motion.div>
             )}
           </AnimatePresence>
-
+          {icons.length === 0 && (
           <button
             onClick={handleRandomIcon}
             className="mt-4 w-full flex items-center justify-center gap-2 font-mono active:scale-[0.98] transition-all duration-150"
           >
-            <TextShimmer className="text-xs">
+            <TextShimmer className="text-xs hover:scale-105">
               I&apos;m Feeling Lucky
             </TextShimmer>
           </button>
+          )}
         </Command>
       </motion.div>
     </div>

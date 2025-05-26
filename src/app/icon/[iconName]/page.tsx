@@ -8,6 +8,7 @@ import { toast } from "sonner";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { IconPaperclip, IconCheckmark } from 'symbols-react';
 import { FavoritesButton } from "@/components/FavoritesButton";
+import { motion } from 'framer-motion';
 
 interface IconDetailClientProps {
   iconName: string;
@@ -74,7 +75,7 @@ function IconDetailClient({ iconName }: IconDetailClientProps) {
   // };
 
   return (
-    <div className="flex min-h-[calc(100vh-10rem)] flex-col items-center justify-start bg-zinc-950 pt-12 motion-preset-blur-left-md motion-preset-fade-md motion-scale-in-90 motion-ease-spring-snappy motion-duration-150">
+    <div className="flex min-h-[calc(100vh-10rem)] flex-col items-center justify-start bg-zinc-950 pt-12 motion-preset-blur-up-md motion-preset-fade-md motion-scale-in-90 motion-ease-spring-snappy motion-duration-150">
       <div className="w-full max-w-lg">
         <button 
           onClick={() => router.back()}
@@ -86,7 +87,7 @@ function IconDetailClient({ iconName }: IconDetailClientProps) {
 
         <div className="flex justify-between items-start mb-4">
           <div className="flex flex-col">
-            <h1 className="text-xl md:text-2xl font-bold break-all">
+            <h1 className="text-xl md:text-2xl font-bold break-all text-white">
               {iconName.replace('Icon', '')}
             </h1>
             <p className="text-white/30 mb-8">{iconName}</p>
@@ -100,13 +101,13 @@ function IconDetailClient({ iconName }: IconDetailClientProps) {
                   onClick={handleCopy}
                 >
                   {copied ? (
-                    <IconCheckmark className="fill-green-500 scale-in w-6 h-6" width={16} height={16} />
+                    <IconCheckmark className="fill-green-500 scale-in w-4.5 h-4.5" width={16} height={16} />
                   ) : (
                     <IconPaperclip className="fill-white/50 group-hover:-rotate-[10deg] scale-in w-6 h-6" width={16} height={16} />
                   )}
                 </button>
               </TooltipTrigger> 
-              <TooltipContent className="bg-gray-800">
+              <TooltipContent className="bg-zinc-900">
                 <p className="text-white text-xs">Copy to clipboard</p>
               </TooltipContent>
             </Tooltip>
@@ -188,8 +189,31 @@ export default function IconDetailPage() {
 
   if (clientIconName === null) {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-background text-foreground p-8">
-            <h1 className="text-2xl font-semibold">Loading icon details...</h1>
+        <div className="flex flex-col items-center justify-center min-h-screen bg-zinc-950 text-foreground p-8">
+            <motion.svg
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.5 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="h-8 w-8 animate-spin text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              />
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              />
+            </motion.svg>
         </div>
     );
   }

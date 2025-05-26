@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { IconHeartFill } from 'symbols-react';
-// import Link from 'next/link';
+import Link from 'next/link';
 import NpmButton from './NpmButton';
 // import { useFramework } from '@/context/framework-provider';
 // import { ModeToggle } from './ui/theme-toggle';
@@ -24,10 +24,9 @@ const NavBar = () => {
                         <div className="bg-blue-500 w-5 h-5 sm:w-8 sm:h-8 rounded-lg p-1 flex justify-center items-center">
                             <IconHeartFill className="fill-white w-[14px] h-[14px] sm:w-[20px] sm:h-[20px]" />
                         </div>
-                        {/* <Link className="relative flex items-center" href="/">
-                            <span className="crossed-out relative font-semibold text-xl sm:text-3xl text-white ml-2 font-mono">SF</span>
-                            <span className="font-semibold text-xl sm:text-3xl text-white ml-2 font-mono">Symbols</span>
-                        </Link> */}
+                        <Link className="relative flex items-center" href="/">
+                            <span className="font-semibold text-2xl text-white ml-2 font-mono">Symbols</span>
+                        </Link>
                     </div>
                     {/* <div className="ml-2 mt-[5px]">
                         <a href={`https://www.npmjs.com/package/symbols-${selectedFramework.toLowerCase()}`} target="_blank" rel="noopener noreferrer">
@@ -41,7 +40,7 @@ const NavBar = () => {
                         <TooltipTrigger asChild>
                             <SidebarTrigger />
                         </TooltipTrigger>
-                        <TooltipContent side="left" className="bg-zinc-800 text-white text-xs">
+                        <TooltipContent side="left" className="bg-zinc-900 text-white text-xs">
                             <p>Favorites</p>
                         </TooltipContent>
                     </Tooltip>

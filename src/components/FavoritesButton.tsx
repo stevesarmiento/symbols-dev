@@ -5,6 +5,7 @@ import { IconStar, IconStarFill, IconStarSlashFill } from "symbols-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import { Button } from "./ui/button";
 
 interface FavoritesButtonProps {
   iconName: string;
@@ -35,13 +36,13 @@ export function FavoritesButton({ iconName }: FavoritesButtonProps) {
   return (
     <Tooltip delayDuration={0}>
       <TooltipTrigger asChild>
-        <button
+        <Button
           onClick={handleClick}
           onMouseDown={(e) => {
             e.preventDefault();
             e.stopPropagation();
           }}
-          className="z-10 rounded-full bg-primary-900/0 p-1.5 transition-colors dark:bg-primary-50/5"
+          className="z-10 w-10 h-10 rounded-lg bg-primary-900/0 hover:bg-white/10 transition-all duration-150 p-1.5"
         >
           <AnimatePresence mode="wait">
             {!hasHydrated ? (
@@ -93,9 +94,9 @@ export function FavoritesButton({ iconName }: FavoritesButtonProps) {
               </motion.div>
             )}
           </AnimatePresence>
-        </button>
+        </Button>
       </TooltipTrigger>
-      <TooltipContent className="bg-gray-800">
+      <TooltipContent className="bg-zinc-900">
         <p className="text-white text-xs">
           {isFavorited ? "Remove from favorites" : "Add to favorites"}
         </p>

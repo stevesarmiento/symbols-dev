@@ -247,7 +247,7 @@ const Sidebar = React.forwardRef<
         >
           <div
             data-sidebar="sidebar"
-            className="flex h-full w-full flex-col bg-sidebar group-data-[variant=floating]:rounded-lg group-data-[variant=floating]:border group-data-[variant=floating]:border-sidebar-border group-data-[variant=floating]:shadow"
+            className="flex h-full w-full flex-col bg-zinc-900 group-data-[variant=floating]:rounded-lg group-data-[variant=floating]:border border-zinc-800 group-data-[variant=floating]:shadow"
           >
             {children}
           </div>
@@ -270,7 +270,7 @@ const SidebarTrigger = React.forwardRef<
       data-sidebar="trigger"
       variant="ghost"
       size="icon"
-      className={cn("h-7 w-7", className)}
+      className={cn("h-7 w-7 bg-zinc-900/0 hover:bg-white/10 active:scale-[0.98] transition-all duration-150", className)}
       onClick={(event) => {
         onClick?.(event)
         toggleSidebar()
@@ -341,7 +341,7 @@ const SidebarInput = React.forwardRef<
       ref={ref}
       data-sidebar="input"
       className={cn(
-        "h-8 w-full bg-background shadow-none focus-visible:ring-2 focus-visible:ring-sidebar-ring",
+        "h-8 w-full bg-background shadow-none focus-visible:ring-2 focus-visible:ring-sidebar-ring border border-zinc-800 focus-within:border-zinc-700 bg-zinc-950 shadow-md w-full max-w-2xl backdrop-blur-sm focus-within:bg-zinc-900 focus-within:ring-4 focus-within:ring-zinc-400/10 transition-all duration-300",
         className
       )}
       {...props}
