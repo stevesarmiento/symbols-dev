@@ -3,6 +3,7 @@
 import { Suspense } from 'react';
 import { CommandSearch } from '@/components/CommandSearch';
 import { useSearchParams } from 'next/navigation'; // To get URL params
+import BackgroundIconGrid from '../components/BackgroundIconGrid';
 
 function HomeContent() {
   const searchParams = useSearchParams();
@@ -10,11 +11,14 @@ function HomeContent() {
   const initialSearchFromUrl = searchParams.get('search') || "";
 
   return (
-    <main className="flex w-full min-h-[calc(100vh-10rem)] flex-col items-center justify-center bg-zinc-950 motion-preset-blur-up-md motion-preset-fade-md motion-scale-in-90 motion-ease-spring-snappy motion-duration-150">
-      <div className="w-full max-w-2xl px-4">
-        <CommandSearch initialValue={initialSearchFromUrl} />
-      </div>
-    </main>
+    <>
+      <BackgroundIconGrid />
+      <main className="relative flex w-full min-h-[calc(100vh-10rem)] flex-col items-center justify-center motion-preset-blur-up-md motion-preset-fade-md motion-scale-in-90 motion-ease-spring-snappy motion-duration-150">
+        <div className="w-full max-w-2xl px-4">
+          <CommandSearch initialValue={initialSearchFromUrl} />
+        </div>
+      </main>
+    </>
   );
 }
 

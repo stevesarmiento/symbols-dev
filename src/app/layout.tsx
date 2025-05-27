@@ -31,7 +31,7 @@ export default function RootLayout({
       </head>
       <body className="bg-zinc-950 w-full h-full">
         <AppProviders>
-          <div className="max-w-lg w-full mx-auto min-h-screen flex flex-col">
+          <div className="max-w-lg w-full mx-auto min-h-screen flex flex-col bg-transparent">
             <NavBar />
             <main className="flex-1">
               {children}

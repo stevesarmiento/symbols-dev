@@ -6,8 +6,6 @@ import { useFavorites, useFavoritesHydration } from "@/stores/favorites";
 import { IconStarFill, IconTrash, IconPaperclip, IconCheckmark } from "symbols-react";
 import * as Icons from "symbols-react";
 import { toast } from "sonner";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
-import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 
 export function FavoritesSidebar() {
@@ -125,53 +123,30 @@ export function FavoritesSidebar() {
                       )}
                       
                       <div className="flex-1 min-w-0">
-                        <p className="text-xs text-zinc-400 group-hover/item:text-white transition-colors duration-200 truncate">{iconName}</p>
+                        <p className="text-xs text-zinc-400 group-hover/item:text-white transition-colors duration-200 truncate">{iconName.replace('Icon', '')} </p>
                       </div>
                       
                       <div className="flex items-center gap-1 opacity-0 group-hover/item:opacity-100 group-hover/item:motion-preset-blur-left-sm group-hover/item:motion-preset-fade-sm group-hover/item:motion-preset-slide-left-md motion-ease-spring-snappy motion-duration-100">
-                        <Tooltip delayDuration={0}>
-                          <TooltipTrigger asChild>
-                            <Button
-                              variant="ghost"
-                              size="icon"
-                              className="h-6 w-6 hover:bg-sidebar-accent-foreground/10"
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                handleCopyIconName(iconName);
-                              }}
-                            >
-                              {copiedIcon === iconName ? (
-                                <IconCheckmark className="h-3 w-3 fill-green-500" />
-                              ) : (
-                                <IconPaperclip className="h-3 w-3 fill-zinc-400 group-hover/item:fill-zinc-200 transition-colors duration-200" />
-                              )}
-                            </Button>
-                          </TooltipTrigger>
-                          <TooltipContent side="left" className="relative bg-zinc-800 border-0 p-0">
-                            <div className="relative z-10 px-3 py-2">
-                              <p className="text-white text-xs font-mono">Copy icon name</p>
-                            </div>
-                          </TooltipContent>
-                        </Tooltip>
+                        <div
+                          className="h-6 w-6 inline-flex items-center justify-center rounded-md hover:bg-sidebar-accent-foreground/10 cursor-pointer transition-colors"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleCopyIconName(iconName);
+                          }}
+                        >
+                          {copiedIcon === iconName ? (
+                            <IconCheckmark className="h-3 w-3 fill-green-500" />
+                          ) : (
+                            <IconPaperclip className="h-3 w-3 fill-zinc-400 group-hover/item:fill-zinc-200 transition-colors duration-200" />
+                          )}
+                        </div>
                         
-                        <Tooltip delayDuration={0}>
-                          <TooltipTrigger asChild>
-                            <Button
-                              variant="ghost"
-                              size="icon"
-                              className="h-6 w-6 hover:bg-red-500/10"
-                              onClick={(e) => handleRemoveFromFavorites(iconName, e)}
-                            >
-                              <IconTrash className="h-3.5 w-3.5 fill-zinc-400 group-hover/item:fill-rose-500 transition-colors duration-200" />
-                            </Button>
-                          </TooltipTrigger>
-                          <TooltipContent side="left" className="relative bg-zinc-800 border-0 p-0">
-                            <div className="absolute inset-0 bg-zinc-800 backdrop-blur-md rounded-md -z-10"></div>
-                            <div className="relative z-10 px-3 py-2">
-                              <p className="text-white text-xs font-mono">Remove from favorites</p>
-                            </div>
-                          </TooltipContent>
-                        </Tooltip>
+                        <div
+                          className="h-6 w-6 inline-flex items-center justify-center rounded-md hover:bg-red-500/10 cursor-pointer transition-colors"
+                          onClick={(e) => handleRemoveFromFavorites(iconName, e)}
+                        >
+                          <IconTrash className="h-3.5 w-3.5 fill-zinc-400 group-hover/item:fill-rose-500 transition-colors duration-200" />
+                        </div>
                       </div>
                     </div>
                   </SidebarMenuButton>
