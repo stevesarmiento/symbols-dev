@@ -12,7 +12,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip
 const NavBar = () => {
     return (
         <nav 
-            className="z-50 sticky top-0 pt-12 w-full bg-zinc-950"
+            className="z-50 sticky top-0 pt-12 w-full"
             style={{
                 backgroundImage: `url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 4 4' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='1' fill='rgba(0,0,0,0.2)'/%3E%3C/svg%3E")`,
                 backgroundRepeat: "repeat",

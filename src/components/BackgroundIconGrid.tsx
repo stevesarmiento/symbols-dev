@@ -15,12 +15,10 @@ const BackgroundIconGrid = () => {
   // Calculate grid dimensions based on viewport
   useEffect(() => {
     const calculateGrid = () => {
-      const iconSize = 40; // Size of each grid cell
-      const spacing = 20; // Space between icons
-      const cellSize = iconSize + spacing;
+      const cellSize = 32; // Smaller cell size since no gap
       
-      const cols = Math.ceil(window.innerWidth / cellSize) + 2; // Extra for overflow
-      const rows = Math.ceil(window.innerHeight / cellSize) + 2; // Extra for overflow
+      const cols = Math.ceil(window.innerWidth / cellSize) + 4; // More extra for better coverage
+      const rows = Math.ceil(window.innerHeight / cellSize) + 4; // More extra for better coverage
       
       setGridDimensions({ rows, cols });
     };
@@ -60,11 +58,11 @@ const BackgroundIconGrid = () => {
       }}
     >
       <div 
-        className="grid gap-5"
+        className="grid gap-2"
         style={{
-          gridTemplateColumns: `repeat(${gridDimensions.cols}, 40px)`,
-          gridTemplateRows: `repeat(${gridDimensions.rows}, 40px)`,
-          transform: 'translate(-20px, -20px)', // Offset to ensure full coverage
+          gridTemplateColumns: `repeat(${gridDimensions.cols}, 32px)`,
+          gridTemplateRows: `repeat(${gridDimensions.rows}, 32px)`,
+          transform: 'translate(-16px, -16px)', // Adjusted offset for smaller cells
         }}
       >
         {gridIcons.map(({ id, Component, delay }) => (
@@ -72,17 +70,19 @@ const BackgroundIconGrid = () => {
             key={id}
             className="flex items-center justify-center"
             initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 0.1, scale: 1 }}
+            animate={{ opacity: 0.3, scale: 1 }}
             transition={{
-              duration: 1,
-              delay: delay,
-              ease: "easeOut"
+                type: "spring",
+                stiffness: 280,
+                damping: 18,
+                mass: 0.3,
+                delay: delay,
             }}
           >
             <Component 
-              className="w-5 h-5 fill-white/50" 
-              width={20} 
-              height={20} 
+              className="w-4 h-4 fill-white/20" 
+              width={16} 
+              height={16} 
             />
           </motion.div>
         ))}

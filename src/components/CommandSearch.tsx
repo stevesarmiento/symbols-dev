@@ -93,8 +93,9 @@ export function CommandSearch({ initialValue }: CommandSearchProps) {
                   filter: 'blur(0px)',
                   transition: {
                     type: "spring",
-                    damping: 20,
-                    stiffness: 300
+                    stiffness: 280,
+                    damping: 18,
+                    mass: 0.3,
                   }
                 }}
                 exit={{ 
