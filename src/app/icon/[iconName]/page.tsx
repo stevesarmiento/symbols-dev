@@ -327,7 +327,9 @@ export function ${iconName}({
                   {/* Main tab content */}
                   <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-t-xl border-t border-zinc-700 relative z-20">
                     <IconTypescriptLogo className="w-4 h-4 fill-blue-400" />
-                    <span className="text-sm text-zinc-400 font-mono">{iconName}.tsx</span>
+                    <span className="text-sm text-zinc-400 font-mono">
+                      {iconName.length > 16 ? `${iconName.slice(0, 16)}...` : iconName}.tsx
+                    </span>
                   </div>
                   
                   {/* Left diagonal side */}
