@@ -318,7 +318,7 @@ export function ${iconName}({
             <h2 className="text-lg font-semibold text-white">React Component</h2>
           </div>
           
-          <div className="overflow-hidden relative">
+          <div className="relative">
             {/* Folder Tab Header */}
             <div className="relative">
               <div className="flex items-center justify-between p-3 py-0 relative">
@@ -373,7 +373,7 @@ export function ${iconName}({
                 <TooltipTrigger asChild>
                   <button
                     onClick={handleCopyComponent}
-                    className="flex items-center mt-[-10px] hover:scale-110 transition-all duration-150 ease-in-out"
+                    className="absolute top-[-5px] right-0 flex items-center justify-center h-8 w-8 hover:bg-zinc-800 rounded-lg"
                   >
                     {copiedComponent ? (
                       <IconCheckmark className="fill-green-500 scale-in w-4 h-4" width={16} height={16} />
@@ -382,8 +382,8 @@ export function ${iconName}({
                     )}
                   </button>
                   </TooltipTrigger>
-                    <TooltipContent className="bg-zinc-950" side="left">
-                      <p className="text-white text-xs font-mono">Copy Component</p>
+                  <TooltipContent className="bg-zinc-900">
+                      <p className="text-white text-xs">Copy component</p>
                     </TooltipContent>
                   </Tooltip>
                 </div>
