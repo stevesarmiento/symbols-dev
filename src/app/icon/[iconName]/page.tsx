@@ -9,7 +9,8 @@ import { motion } from 'framer-motion';
 import { createRoot } from 'react-dom/client';
 import { IconHeader } from '@/components/IconHeader';
 import { IconDisplay } from '@/components/IconDisplay';
-import { ComponentViewer } from '@/components/ComponentView';
+import { ComponentView } from '@/components/ComponentView';
+import { AnimationType, AnimationConfig } from '@/lib/icon-animations';
 
 interface IconDetailClientProps {
   iconName: string;
@@ -21,6 +22,11 @@ function IconDetailClient({ iconName }: IconDetailClientProps) {
   const [copied, setCopied] = useState(false);
   const [copiedComponent, setCopiedComponent] = useState(false);
   const [svgContent, setSvgContent] = useState<string>('<!-- Loading SVG content... -->');
+  
+  // Animation state
+  const [showAnimated, setShowAnimated] = useState(false);
+  const [selectedAnimation, setSelectedAnimation] = useState<AnimationType>('pulse');
+  const [animationConfig, setAnimationConfig] = useState<AnimationConfig>({ duration: 1 });
 
   const IconComponent = useMemo(() => {
     if (typeof iconName === 'string' && iconName.startsWith('Icon')) {
@@ -235,13 +241,24 @@ export function ${iconName}({
           IconComponent={IconComponent}
           size={size}
           fillColor={fillColor}
+          svgContent={svgContent}
+          showAnimated={showAnimated}
+          selectedAnimation={selectedAnimation}
+          animationConfig={animationConfig}
         />
 
-        <ComponentViewer 
+        <ComponentView 
           iconName={iconName}
           componentCode={componentCode}
+          svgContent={svgContent}
           copiedComponent={copiedComponent}
           onCopyComponent={handleCopyComponent}
+          showAnimated={showAnimated}
+          setShowAnimated={setShowAnimated}
+          selectedAnimation={selectedAnimation}
+          setSelectedAnimation={setSelectedAnimation}
+          animationConfig={animationConfig}
+          setAnimationConfig={setAnimationConfig}
         />
       </div>
     </div>
