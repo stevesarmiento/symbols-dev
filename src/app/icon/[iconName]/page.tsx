@@ -1,24 +1,21 @@
 'use client' 
 
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { useParams, useRouter } from 'next/navigation';
+import { useParams } from 'next/navigation';
 import * as Icons from 'symbols-react'; 
 import { IconProps } from '@/components/IconsList';  
 import { toast } from "sonner";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
-import { IconPaperclip, IconCheckmark, IconTypescriptLogo } from 'symbols-react';
-import { FavoritesButton } from "@/components/FavoritesButton";
 import { motion } from 'framer-motion';
 import { createRoot } from 'react-dom/client';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { IconHeader } from '@/components/IconHeader';
+import { IconDisplay } from '@/components/IconDisplay';
+import { ComponentViewer } from '@/components/ComponentView';
 
 interface IconDetailClientProps {
   iconName: string;
 }
 
 function IconDetailClient({ iconName }: IconDetailClientProps) {
-  const router = useRouter();
   const [size] = useState<number>(228); 
   const [fillColor] = useState<string>("#FFFFFF"); 
   const [copied, setCopied] = useState(false);
@@ -37,14 +34,12 @@ function IconDetailClient({ iconName }: IconDetailClientProps) {
     if (!IconComponent) return '<!-- Icon not found -->';
     
     try {
-      // Create a temporary container
       const tempContainer = document.createElement('div');
       tempContainer.style.position = 'absolute';
       tempContainer.style.left = '-9999px';
       tempContainer.style.top = '-9999px';
       document.body.appendChild(tempContainer);
 
-      // Create a root and render the icon
       const root = createRoot(tempContainer);
       
       return new Promise((resolve) => {
@@ -56,7 +51,6 @@ function IconDetailClient({ iconName }: IconDetailClientProps) {
           })
         );
 
-        // Wait for render then extract
         setTimeout(() => {
           const svgElement = tempContainer.querySelector('svg');
           if (svgElement) {
@@ -77,7 +71,6 @@ function IconDetailClient({ iconName }: IconDetailClientProps) {
     }
   }, [IconComponent]);
 
-  // Extract SVG content when component mounts or icon changes
   useEffect(() => {
     if (IconComponent) {
       extractSVGContent().then(setSvgContent);
@@ -85,7 +78,6 @@ function IconDetailClient({ iconName }: IconDetailClientProps) {
   }, [IconComponent, extractSVGContent]);
 
   const transformSVGAttributes = (svgContent: string): string => {
-    // Map of kebab-case to camelCase conversions for SVG attributes
     const attributeMap: Record<string, string> = {
       'fill-opacity': 'fillOpacity',
       'stroke-opacity': 'strokeOpacity',
@@ -154,8 +146,6 @@ function IconDetailClient({ iconName }: IconDetailClientProps) {
     };
 
     let transformedContent = svgContent;
-
-    // Replace each kebab-case attribute with its camelCase equivalent
     Object.entries(attributeMap).forEach(([kebabCase, camelCase]) => {
       const regex = new RegExp(`\\b${kebabCase}=`, 'g');
       transformedContent = transformedContent.replace(regex, `${camelCase}=`);
@@ -223,32 +213,11 @@ export function ${iconName}({
     );
   };
 
-  if (!iconName) {
-    return (
-      <div className="flex flex-col items-center justify-center min-h-screen bg-zinc-950 text-foreground p-8">
-        <h1 className="text-2xl font-semibold mb-4">Loading Icon...</h1>
-        <p>If this persists, the icon name might be missing from the URL.</p>
-         <button 
-          onClick={() => router.back()}
-          className="mt-4 px-4 py-2 bg-primary text-primary-foreground rounded hover:bg-primary/90"
-        >
-          Go Back
-        </button>
-      </div>
-    );
-  }
-
   if (!IconComponent) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-zinc-900/50 text-foreground p-8">
         <h1 className="text-2xl font-semibold mb-4">Icon Not Found</h1>
         <p>The icon &quot;{iconName}&quot; could not be loaded from the library.</p>
-        <button 
-          onClick={() => router.back()}
-          className="mt-4 px-4 py-2 bg-primary text-primary-foreground rounded hover:bg-primary/90"
-        >
-          Go Back
-        </button>
       </div>
     );
   }
@@ -256,165 +225,24 @@ export function ${iconName}({
   return (
     <div className="flex min-h-[calc(100vh-10rem)] flex-col items-center justify-start bg-zinc-950 pt-12 motion-preset-blur-up-md motion-preset-fade-md motion-scale-in-90 motion-ease-spring-snappy motion-duration-150">
       <div className="w-full max-w-lg">
-        <button 
-          onClick={() => router.back()}
-          className="mb-8 flex items-center gap-2 text-sm text-white/50 hover:text-white transition-colors"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
-          Keep Searching
-        </button>
+        <IconHeader 
+          iconName={iconName}
+          copied={copied}
+          onCopy={handleCopy}
+        />
 
-        <div className="flex justify-between items-start mb-4">
-          <div className="flex flex-col">
-            <h1 className="text-xl md:text-2xl font-bold break-all text-white">
-              {iconName.replace('Icon', '')}
-            </h1>
-            <p className="text-white/30 mb-8">{iconName}</p>
-          </div>
-          <div className="flex gap-2">
-            <FavoritesButton iconName={iconName} />
-            <Tooltip delayDuration={0}>
-              <TooltipTrigger asChild>
-                <button
-                  className="group flex items-center justify-center w-10 h-10 rounded-lg p-0 transition-all duration-150 ease-in-out hover:bg-white/10 hover:scale-95"
-                  onClick={handleCopy}
-                >
-                  {copied ? (
-                    <IconCheckmark className="fill-green-500 scale-in w-4.5 h-4.5" width={16} height={16} />
-                  ) : (
-                    <IconPaperclip className="fill-white/50 group-hover:-rotate-[10deg] scale-in w-6 h-6" width={16} height={16} />
-                  )}
-                </button>
-              </TooltipTrigger> 
-              <TooltipContent className="bg-zinc-900">
-                <p className="text-white text-xs">Copy to clipboard</p>
-              </TooltipContent>
-            </Tooltip>
-          </div>
-        </div>
+        <IconDisplay 
+          IconComponent={IconComponent}
+          size={size}
+          fillColor={fillColor}
+        />
 
-        <div className="grid md:grid-cols-1 gap-8">
-          <div 
-            className="flex items-center justify-center p-4 bg-neutral-800/30 rounded-xl shadow-lg aspect-square overflow-hidden group cursor-pointer"
-            style={{
-              backgroundImage: 'radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1.5px)',
-              backgroundSize: '32px 32px',
-            }}
-          >
-            {IconComponent && (
-              <IconComponent 
-                width={size} 
-                height={size} 
-                fill={fillColor} 
-                className="transition-all group-hover:scale-110 duration-300" 
-              />
-            )}
-          </div>
-        </div>
-
-        {/* React Component Section */}
-        <div className="mt-8 space-y-4">
-          <div className="flex items-center justify-between">
-            <h2 className="text-lg font-semibold text-white">React Component</h2>
-          </div>
-          
-          <div className="relative">
-            {/* Folder Tab Header */}
-            <div className="relative">
-              <div className="flex items-center justify-between p-3 py-0 relative">
-                {/* Folder tab effect */}
-                <div className="bottom-0 left-[-12px] relative">
-                  {/* Main tab content */}
-                  <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-t-xl border-t border-zinc-700 relative z-20">
-                    <IconTypescriptLogo className="w-4 h-4 fill-blue-400" />
-                    <span className="text-sm text-zinc-400 font-mono">
-                      {iconName.length > 16 ? `${iconName.slice(0, 16)}...` : iconName}.tsx
-                    </span>
-                  </div>
-                  
-                  {/* Left diagonal side */}
-                  {/* <div 
-                    className="absolute top-0 -left-[8px] w-8 h-full bg-zinc-800 border-t border-zinc-700 z-10"
-                    style={{
-                      transform: 'skew(-25deg)',
-                      borderRadius: '10px 0 0 0'
-                    }}
-                  /> */}
-                  
-                  {/* Right diagonal side */}
-                  <div 
-                    className="absolute top-0 -right-[8px] w-8 h-full bg-zinc-800 border-t border-zinc-700 z-10"
-                    style={{
-                      transform: 'skew(25deg)',
-                      borderRadius: '0 10px 0 0'
-                    }}
-                  />
-                  
-                  {/* Left curved corner */}
-                  {/* <div 
-                    className="absolute bottom-0 -left-[30px] h-[9px] w-[16px] rounded-br-[30px] z-0"
-                    style={{
-                      boxShadow: '7px 7px 0 7px rgb(39 39 42)' // zinc-800 color
-                    }}
-                  /> */}
-                  
-                  {/* Right curved corner */}
-                  <div 
-                    className="absolute bottom-0 -right-[30px] h-[9px] w-[16px] rounded-bl-[30px] z-0"
-                    style={{
-                      boxShadow: '-7px 7px 0 7px rgb(39 39 42)' // zinc-800 color
-                    }}
-                  />
-                </div>
-                
-                {/* Copy button positioned in the tab area */}
-                <div className="ml-auto">
-                <Tooltip delayDuration={0}>
-                <TooltipTrigger asChild>
-                  <button
-                    onClick={handleCopyComponent}
-                    className="absolute top-[-5px] right-0 flex items-center justify-center h-8 w-8 hover:bg-zinc-800 rounded-lg"
-                  >
-                    {copiedComponent ? (
-                      <IconCheckmark className="fill-green-500 scale-in w-4 h-4" width={16} height={16} />
-                    ) : (
-                      <IconPaperclip className="fill-white/50 group-hover:-rotate-[10deg] scale-in w-5 h-5" width={16} height={16} />
-                    )}
-                  </button>
-                  </TooltipTrigger>
-                  <TooltipContent className="bg-zinc-900">
-                      <p className="text-white text-xs">Copy component</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </div>
-              </div>
-            </div>
-            
-            <div className="overflow-x-auto bg-zinc-800 rounded-xl rounded-tl-none border border-zinc-800">
-              <SyntaxHighlighter
-                language="tsx"
-                style={oneDark}
-                customStyle={{
-                  margin: 0,
-                  padding: '1rem',
-                  background: 'transparent',
-                  fontSize: '0.875rem',
-                }}
-                codeTagProps={{
-                  style: {
-                    fontFamily: 'ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace',
-                  }
-                }}
-              >
-                {componentCode}
-              </SyntaxHighlighter>
-            </div>
-          </div>
-          
-          {/* <p className="text-xs text-zinc-500">
-            Don&apos;t want to install the package? Copy the React component above and use it directly in your project.
-          </p> */}
-        </div>
+        <ComponentViewer 
+          iconName={iconName}
+          componentCode={componentCode}
+          copiedComponent={copiedComponent}
+          onCopyComponent={handleCopyComponent}
+        />
       </div>
     </div>
   );
