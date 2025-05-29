@@ -6,10 +6,12 @@ import * as Icons from 'symbols-react';
 import { IconProps } from '@/components/IconsList';  
 import { toast } from "sonner";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
-import { IconPaperclip, IconCheckmark, IconAppleTerminal } from 'symbols-react';
+import { IconPaperclip, IconCheckmark, IconTypescriptLogo } from 'symbols-react';
 import { FavoritesButton } from "@/components/FavoritesButton";
 import { motion } from 'framer-motion';
 import { createRoot } from 'react-dom/client';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 interface IconDetailClientProps {
   iconName: string;
@@ -21,7 +23,6 @@ function IconDetailClient({ iconName }: IconDetailClientProps) {
   const [fillColor] = useState<string>("#FFFFFF"); 
   const [copied, setCopied] = useState(false);
   const [copiedComponent, setCopiedComponent] = useState(false);
-  const [showComponent, setShowComponent] = useState(false);
   const [svgContent, setSvgContent] = useState<string>('<!-- Loading SVG content... -->');
 
   const IconComponent = useMemo(() => {
@@ -315,53 +316,102 @@ export function ${iconName}({
         <div className="mt-8 space-y-4">
           <div className="flex items-center justify-between">
             <h2 className="text-lg font-semibold text-white">React Component</h2>
-            <button
-              onClick={() => setShowComponent(!showComponent)}
-              className="flex items-center gap-2 px-3 py-1.5 text-sm bg-zinc-800 hover:bg-zinc-700 text-white rounded-md transition-colors duration-150"
-            >
-              <IconAppleTerminal className="h-4 w-4 fill-current" />
-              {showComponent ? 'Hide' : 'Show'} Code
-            </button>
           </div>
           
-          {showComponent && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.2 }}
-              className="bg-zinc-900/50 rounded-lg border border-zinc-800 overflow-hidden"
-            >
-              <div className="flex items-center justify-between p-3 border-b border-zinc-800">
-                <span className="text-sm text-zinc-400 font-mono">{iconName}.tsx</span>
-                <button
-                  onClick={handleCopyComponent}
-                  className="flex items-center gap-2 px-2 py-1 text-xs bg-zinc-700 hover:bg-zinc-600 text-white rounded transition-colors duration-150"
-                >
-                  {copiedComponent ? (
-                    <>
-                      <IconCheckmark className="h-3 w-3 fill-green-500" />
-                      Copied!
-                    </>
-                  ) : (
-                    <>
-                      <IconPaperclip className="h-3 w-3 fill-current" />
-                      Copy
-                    </>
-                  )}
-                </button>
+          <div className="overflow-hidden relative">
+            {/* Folder Tab Header */}
+            <div className="relative">
+              <div className="flex items-center justify-between p-3 py-0 relative">
+                {/* Folder tab effect */}
+                <div className="bottom-0 left-[-12px] relative">
+                  {/* Main tab content */}
+                  <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-t-xl border-t border-zinc-700 relative z-20">
+                    <IconTypescriptLogo className="w-4 h-4 fill-blue-400" />
+                    <span className="text-sm text-zinc-400 font-mono">{iconName}.tsx</span>
+                  </div>
+                  
+                  {/* Left diagonal side */}
+                  {/* <div 
+                    className="absolute top-0 -left-[8px] w-8 h-full bg-zinc-800 border-t border-zinc-700 z-10"
+                    style={{
+                      transform: 'skew(-25deg)',
+                      borderRadius: '10px 0 0 0'
+                    }}
+                  /> */}
+                  
+                  {/* Right diagonal side */}
+                  <div 
+                    className="absolute top-0 -right-[8px] w-8 h-full bg-zinc-800 border-t border-zinc-700 z-10"
+                    style={{
+                      transform: 'skew(25deg)',
+                      borderRadius: '0 10px 0 0'
+                    }}
+                  />
+                  
+                  {/* Left curved corner */}
+                  {/* <div 
+                    className="absolute bottom-0 -left-[30px] h-[9px] w-[16px] rounded-br-[30px] z-0"
+                    style={{
+                      boxShadow: '7px 7px 0 7px rgb(39 39 42)' // zinc-800 color
+                    }}
+                  /> */}
+                  
+                  {/* Right curved corner */}
+                  <div 
+                    className="absolute bottom-0 -right-[30px] h-[9px] w-[16px] rounded-bl-[30px] z-0"
+                    style={{
+                      boxShadow: '-7px 7px 0 7px rgb(39 39 42)' // zinc-800 color
+                    }}
+                  />
+                </div>
+                
+                {/* Copy button positioned in the tab area */}
+                <div className="ml-auto">
+                <Tooltip delayDuration={0}>
+                <TooltipTrigger asChild>
+                  <button
+                    onClick={handleCopyComponent}
+                    className="flex items-center mt-[-10px] hover:scale-110 transition-all duration-150 ease-in-out"
+                  >
+                    {copiedComponent ? (
+                      <IconCheckmark className="fill-green-500 scale-in w-4 h-4" width={16} height={16} />
+                    ) : (
+                      <IconPaperclip className="fill-white/50 group-hover:-rotate-[10deg] scale-in w-5 h-5" width={16} height={16} />
+                    )}
+                  </button>
+                  </TooltipTrigger>
+                    <TooltipContent className="bg-zinc-950" side="left">
+                      <p className="text-white text-xs font-mono">Copy Component</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </div>
               </div>
-              <div className="p-4 overflow-x-auto">
-                <pre className="text-sm text-zinc-300 whitespace-pre-wrap">
-                  <code>{componentCode}</code>
-                </pre>
-              </div>
-            </motion.div>
-          )}
+            </div>
+            
+            <div className="overflow-x-auto bg-zinc-800 rounded-xl rounded-tl-none border border-zinc-800">
+              <SyntaxHighlighter
+                language="tsx"
+                style={oneDark}
+                customStyle={{
+                  margin: 0,
+                  padding: '1rem',
+                  background: 'transparent',
+                  fontSize: '0.875rem',
+                }}
+                codeTagProps={{
+                  style: {
+                    fontFamily: 'ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace',
+                  }
+                }}
+              >
+                {componentCode}
+              </SyntaxHighlighter>
+            </div>
+          </div>
           
-          <p className="text-xs text-zinc-500">
+          {/* <p className="text-xs text-zinc-500">
             Don&apos;t want to install the package? Copy the React component above and use it directly in your project.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

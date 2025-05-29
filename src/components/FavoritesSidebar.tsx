@@ -18,7 +18,7 @@ export function FavoritesSidebar() {
   const filteredFavorites = useMemo(() => {
     if (!hasHydrated) return [];
     
-    const favoritesArray = Array.from(favorites);
+    const favoritesArray = Array.from(favorites).filter((item): item is string => typeof item === 'string');
     if (!searchTerm) return favoritesArray;
     
     return favoritesArray.filter(iconName =>
@@ -103,6 +103,8 @@ export function FavoritesSidebar() {
         ) : (
           <SidebarMenu>
             {filteredFavorites.map((iconName: string) => {
+              if (typeof iconName !== 'string') return null;
+              
               const IconComponent = getIconComponent(iconName);
               
               return (
@@ -123,7 +125,9 @@ export function FavoritesSidebar() {
                       )}
                       
                       <div className="flex-1 min-w-0">
-                        <p className="text-xs text-zinc-400 group-hover/item:text-white transition-colors duration-200 truncate">{iconName.replace('Icon', '')} </p>
+                        <p className="text-xs text-zinc-400 group-hover/item:text-white transition-colors duration-200 truncate">
+                          {iconName.replace('Icon', '')}
+                        </p>
                       </div>
                       
                       <div className="flex items-center gap-1 opacity-0 group-hover/item:opacity-100 group-hover/item:motion-preset-blur-left-sm group-hover/item:motion-preset-fade-sm group-hover/item:motion-preset-slide-left-md motion-ease-spring-snappy motion-duration-100">
