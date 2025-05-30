@@ -12,12 +12,15 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip
 const NavBar = () => {
     return (
         <nav 
-            className="z-50 sticky top-0 pt-12 w-full"
-            style={{
-                backgroundImage: `url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 4 4' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='1' fill='rgba(0,0,0,0.2)'/%3E%3C/svg%3E")`,
-                backgroundRepeat: "repeat",
-              }}
+            className="z-50 sticky top-0 pt-12 pb-2 w-full"
         >
+        <div
+          className="absolute inset-x-0 top-0 z-[-1] h-[100%] opacity-70 [-webkit-mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)] [mask-image:linear-gradient(to_bottom,black_30%,transparent_100%)]"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 4 4' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='1' fill='rgba(0,0,0,0.1)'/%3E%3C/svg%3E")`,
+            backgroundRepeat: "repeat",
+          }}
+        />
             <div className="flex w-full items-center justify-between">
                 <div className="flex items-center">
                     <div className="inline-flex items-center">

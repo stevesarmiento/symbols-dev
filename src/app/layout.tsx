@@ -8,6 +8,7 @@ import NavBar from '@/components/NavBar';
 import { FavoritesSidebar } from "@/components/FavoritesSidebar";
 import { Footer } from '@/components/Footer'
 import Script from 'next/script';
+import { ProgressiveBlur } from '@/components/ui/progressive-blur';
 
 export const metadata: Metadata = {
   title: "Symbols",
@@ -29,9 +30,13 @@ export default function RootLayout({
           src="//unpkg.com/react-scan/dist/auto.global.js"
         />
       </head>
-      <body className="bg-zinc-950 w-full h-full">
+      <body className="bg-zinc-950 w-full h-full relative">
         <AppProviders>
-          <div className="max-w-lg w-full mx-auto min-h-screen flex flex-col bg-transparent">
+          <ProgressiveBlur
+            className="pointer-events-none fixed left-[25%] top-0 rotate-180 z-[1] h-[12%] w-[50%] rounded-t-full"
+            blurIntensity={4}
+          />
+          <div className="max-w-lg w-full mx-auto min-h-screen flex flex-col bg-transparent relative">
             <NavBar />
             <main className="flex-1">
               {children}

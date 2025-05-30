@@ -57,7 +57,7 @@ const NpmButton: React.FC<NpmButtonProps> = () => {
         <div className="inline-flex gap-4">
             <DropdownMenu>
                 <DropdownMenuTrigger>
-                    <div className="group flex justify-center items-center focus-within:border-zinc-700 bg-zinc-900/50 shadow-md w-full max-w-2xl backdrop-blur-sm focus-within:bg-zinc-900 focus-within:ring-4 focus-within:ring-zinc-400/10 transition-all duration-300">
+                    <div className="group flex justify-center items-center focus-within:border-zinc-700 w-full max-w-2xl transition-all duration-300">
                         <span className="group-hover:rotate-[-10deg]">
                             {getFrameworkIcon(selectedFramework)}
                         </span>
