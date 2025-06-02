@@ -98,7 +98,7 @@ const BackgroundIconGrid = () => {
       }}
     >
       <div 
-        className="grid"
+        className="grid gap-2"
         style={{
           gridTemplateColumns: `repeat(${gridDimensions.cols}, 32px)`,
           gridTemplateRows: `repeat(${gridDimensions.rows}, 32px)`,
