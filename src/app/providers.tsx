@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import { RootProvider } from 'fumadocs-ui/provider'
+import { RootProvider } from 'fumadocs-ui/provider/next'
 import { ThemeProvider } from '@/components/ui/theme-provicer'
 import { QueryProvider } from '@/providers/query-provider'
 import { FrameworkProvider } from '@/context/framework-provider'
