@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "verify:icon-categories": "bun src/lib/verify-icon-categories.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

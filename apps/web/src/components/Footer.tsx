@@ -2,8 +2,17 @@
 
 import React from 'react'
 import Link from 'next/link'
+import { usePathname } from "next/navigation"
 
 export function Footer() {
+  const pathname = usePathname();
+  const isDashboardChrome =
+    pathname === "/dashboard" ||
+    pathname.startsWith("/dashboard/") ||
+    pathname.startsWith("/icon/");
+
+  if (isDashboardChrome) return null;
+
   return (
     <footer className="w-full max-w-lg mx-auto py-6">
       <div className="flex justify-between items-center text-sm font-mono text-white/50">

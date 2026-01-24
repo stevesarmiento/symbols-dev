@@ -19,7 +19,7 @@ export function ComponentViewer({
   onCopyComponent 
 }: ComponentViewerProps) {
   return (
-    <div className="mt-8 space-y-4">
+    <div className="space-y-4">
       <div className="flex items-center justify-between">
         <h2 className="text-lg font-semibold text-white">React Component</h2>
       </div>

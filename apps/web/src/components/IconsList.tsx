@@ -55,13 +55,13 @@ const IconsList: React.FC<IconsListProps> = ({ filteredIcons, loadMoreRef }) => 
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.1 }}
-                className="col-span-10 text-center text-white justify-center items-center w-full">
-                <div className="bg-gray-800 bg-opacity-10 p-10 rounded-lg max-w-xl mx-auto">
-                    <div className="bg-yellow-500/10 w-24 h-24 mx-auto mb-4 rounded-full flex items-center justify-center">
+                className="flex items-center justify-center min-h-[60vh] w-full">
+                <div className="p-10 max-w-xl text-center">
+                    <div className="bg-yellow-500/5 w-24 h-24 mx-auto mb-4 rounded-full flex items-center justify-center">
                         <IconExclamationmarkTriangleFill className="fill-yellow-500" width={44} height={44} />
                     </div>
-                    <h2 className="text-2xl font-semibold mb-2">Oops! Sorry about that.</h2>
-                    <p className="text-white/50">We don&apos;t have that one right now, but if you need a certain icon added to symbols, <a href="mailto:sarmiento.steven@gmail.com" className="text-blue-300 hover:text-blue-400">do let me know</a>, I&apos;ll add it for you ASAP.</p>
+                    <h2 className="text-2xl mb-2 text-white font-diatype-medium">Oops! Sorry about that.</h2>
+                    <p className="text-white/50 font-berkeley-mono text-md">We don&apos;t have that one right now, but if you need a certain icon added to symbols, <a href="mailto:sarmiento.steven@gmail.com" className="text-blue-300 hover:text-blue-400">do let me know</a>.</p>
                 </div>
             </motion.div>
         );
@@ -73,6 +73,7 @@ const IconsList: React.FC<IconsListProps> = ({ filteredIcons, loadMoreRef }) => 
             variants={containerVariants}
             initial="hidden"
             animate="visible"
+            
         >
             {filteredIcons.map(([name, Icon], index) => (
                 <div
@@ -84,6 +85,10 @@ const IconsList: React.FC<IconsListProps> = ({ filteredIcons, loadMoreRef }) => 
                         aria-label={`View ${name.replace('Icon', '')} icon`}
                         className="group cursor-pointer h-[130px] w-full flex justify-center items-center hover:bg-white/5 transition-all duration-150 ease-in-out"
                         onClick={() => handleIconClick(name)}
+                        style={{
+                            backgroundImage: 'radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1.5px)',
+                            backgroundSize: '32px 32px',
+                          }}
                     >
                         <Icon className="group-hover:scale-125 transition-all duration-150 ease-in-out fill-white" width={35} height={35} />
                     </button>

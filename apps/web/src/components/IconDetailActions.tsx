@@ -55,20 +55,25 @@ export function IconDetailActions({
   }, [componentCode]);
 
   return (
-    <>
-      <IconHeader
-        iconName={iconName}
-        copied={hasCopiedIconName}
-        onCopy={handleCopyIconName}
-      />
-      {children}
-      <ComponentViewer
-        iconName={iconName}
-        componentCode={componentCode}
-        copiedComponent={hasCopiedComponent}
-        onCopyComponent={handleCopyComponent}
-      />
-    </>
+    <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+      <div className="min-w-0">
+        <IconHeader
+          iconName={iconName}
+          copied={hasCopiedIconName}
+          onCopy={handleCopyIconName}
+        />
+        {children}
+      </div>
+
+      <div className="min-w-0 lg:border-l lg:border-white/5 lg:pl-6">
+        <ComponentViewer
+          iconName={iconName}
+          componentCode={componentCode}
+          copiedComponent={hasCopiedComponent}
+          onCopyComponent={handleCopyComponent}
+        />
+      </div>
+    </div>
   );
 }
 

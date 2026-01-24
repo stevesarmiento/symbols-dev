@@ -70,7 +70,7 @@ const BackgroundIconGrid = () => {
             key={id}
             className="flex items-center justify-center"
             initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 0.3, scale: 1 }}
+            animate={{ opacity: 0.5, scale: 1 }}
             transition={{
                 type: "spring",
                 stiffness: 280,

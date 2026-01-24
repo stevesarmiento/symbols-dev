@@ -14,6 +14,7 @@ import {
 } from '@/components/ui/command'
 import { motion, AnimatePresence } from "motion/react";
 import { TextShimmer } from "@/components/ui/text-shimmer";
+import { IconCursorarrowRays } from 'symbols-react'
 
 interface CommandSearchProps {
   initialValue?: string;
@@ -62,7 +63,7 @@ export function CommandSearch({ initialValue }: CommandSearchProps) {
     }, [router]);
 
   return (
-    <div className="w-full">
+    <div className="max-w-lg mx-auto">
       <motion.div
         layout
         transition={{
@@ -74,6 +75,7 @@ export function CommandSearch({ initialValue }: CommandSearchProps) {
       >
         <Command className="h-auto w-full transform-origin-top">
           <CommandInput 
+            className="text-sm font-berkeley-mono"
             placeholder="Search over 6,000 symbols..." 
             value={inputValue}
             onValueChange={handleInputChange}
@@ -158,9 +160,10 @@ export function CommandSearch({ initialValue }: CommandSearchProps) {
           {icons.length === 0 && (
           <button
             onClick={handleRandomIcon}
-            className="mt-4 w-full flex items-center justify-center gap-2 font-mono active:scale-[0.98] transition-all duration-150"
+            className="mt-4 w-full flex items-center justify-center gap-2 font-mono active:scale-[0.98] hover:scale-105 transition-all duration-150 cursor-pointer"
           >
-            <TextShimmer className="text-xs hover:scale-105">
+            <IconCursorarrowRays className="size-3.5 fill-white/50" />
+            <TextShimmer className="text-xs">
               I&apos;m Feeling Lucky
             </TextShimmer>
           </button>
