@@ -1,0 +1,26 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconTrayAndArrowDownFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "23.3887",
+  height: props.height || "25.5957",
+  viewBox: "0 0 23.3887 25.5957",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "25.5957",
+  opacity: "0",
+  width: "23.3887",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M19.1016 8.25195L22.4707 12.4316C22.9102 12.959 23.0273 13.3984 23.0273 14.2871L23.0273 20.0684C23.0273 22.0801 22.0117 23.0957 19.9609 23.0957L3.06641 23.0957C1.02539 23.0957 0 22.0801 0 20.0684L0 14.2871C0 13.3984 0.126953 12.959 0.556641 12.4316L3.93555 8.25195C5.07812 6.8457 5.77148 6.02539 7.50977 6.02539L9.23828 6.02539L9.23828 7.40234L7.39258 7.40234C6.67969 7.40234 5.9375 8.02734 5.45898 8.63281L2.00195 12.998C1.62109 13.4668 1.72852 13.6914 2.29492 13.6914L8.30078 13.6914C8.84766 13.6914 9.11133 14.1113 9.11133 14.541L9.11133 14.5801C9.11133 15.7812 10.0488 17.041 11.5137 17.041C12.9883 17.041 13.9258 15.7812 13.9258 14.5801L13.9258 14.541C13.9258 14.1113 14.1797 13.6914 14.7266 13.6914L20.752 13.6914C21.2891 13.6914 21.4258 13.4961 21.0352 12.998L17.5684 8.63281C17.0898 8.02734 16.3477 7.40234 15.6348 7.40234L13.7891 7.40234L13.7891 6.02539L15.5273 6.02539C17.2559 6.02539 17.959 6.8457 19.1016 8.25195Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M11.5137 13.5742C11.7188 13.5742 11.8848 13.5156 12.0801 13.3203L15.3809 10.1367C15.5273 9.99023 15.6055 9.82422 15.6055 9.61914C15.6055 9.21875 15.3027 8.93555 14.9023 8.93555C14.707 8.93555 14.502 9.01367 14.3652 9.16992L12.8906 10.7422L12.2266 11.4355L12.2949 9.9707L12.2949 2.24609C12.2949 1.83594 11.9336 1.49414 11.5137 1.49414C11.0938 1.49414 10.7422 1.83594 10.7422 2.24609L10.7422 9.9707L10.8008 11.4355L10.1367 10.7422L8.66211 9.16992C8.51562 9.01367 8.31055 8.93555 8.11523 8.93555C7.71484 8.93555 7.42188 9.21875 7.42188 9.61914C7.42188 9.82422 7.5 9.99023 7.64648 10.1367L10.9473 13.3203C11.1426 13.5156 11.3184 13.5742 11.5137 13.5742Z",
+  fillOpacity: "0.85"
+}))));
+IconTrayAndArrowDownFill.displayName = 'IconTrayAndArrowDownFill';

@@ -1,0 +1,1 @@
+export const IconKipsignGaugeChartLeftthirdTopthirdRightthird: any;

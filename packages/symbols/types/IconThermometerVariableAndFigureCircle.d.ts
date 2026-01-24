@@ -1,0 +1,1 @@
+export const IconThermometerVariableAndFigureCircle: any;

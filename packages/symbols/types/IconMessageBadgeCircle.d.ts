@@ -1,0 +1,1 @@
+export const IconMessageBadgeCircle: any;

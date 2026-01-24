@@ -1,0 +1,1 @@
+export const IconAirportExtreme: any;

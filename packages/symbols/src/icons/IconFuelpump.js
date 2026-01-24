@@ -1,0 +1,23 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconFuelpump = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "20.9668",
+  height: props.height || "21.7871",
+  viewBox: "0 0 20.9668 21.7871",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "21.7871",
+  opacity: "0",
+  width: "20.9668",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M15.3418 21.0547L15.3418 2.48047C15.3418 0.878906 14.4629 0 12.8613 0L4.00391 0C2.39258 0 1.54297 0.878906 1.54297 2.48047L1.54297 21.0547L3.10547 21.0547L3.11523 2.5C3.11523 1.89453 3.4082 1.57227 4.0332 1.57227L12.832 1.57227C13.4375 1.57227 13.7598 1.88477 13.7598 2.5L13.7598 21.0547ZM0 20.9863C0 21.4258 0.341797 21.7871 0.771484 21.7871L16.0938 21.7871C16.5234 21.7871 16.875 21.4258 16.875 20.9863C16.875 20.5664 16.5234 20.2148 16.0938 20.2148L0.771484 20.2148C0.351562 20.2148 0 20.5566 0 20.9863ZM5.3125 10.752L11.5527 10.752C12.207 10.752 12.6562 10.3613 12.6562 9.76562L12.6562 3.84766C12.6562 3.25195 12.1973 2.8418 11.5527 2.8418L5.3125 2.8418C4.66797 2.8418 4.22852 3.25195 4.22852 3.84766L4.22852 9.76562C4.22852 10.3613 4.66797 10.752 5.3125 10.752ZM14.5898 12.8613L15.4395 12.8613C15.8887 12.8613 16.1621 13.1152 16.1621 13.6035L16.1621 16.8359C16.1621 18.2227 17.002 19.0625 18.3887 19.0625C19.7754 19.0625 20.6055 18.2227 20.6055 16.8359L20.6055 4.87305C20.6055 4.28711 20.4492 3.83789 20.166 3.38867L18.8281 1.2207C18.3301 0.429688 17.168 1.14258 17.6562 1.94336L18.8086 3.79883C18.916 3.97461 18.9062 4.17969 18.7891 4.35547L17.5098 6.14258C17.0898 6.71875 17.1484 7.26562 17.5879 7.7832L19.2285 9.6875L19.2285 16.8359C19.2285 17.3633 18.9062 17.6855 18.3887 17.6855C17.8613 17.6855 17.5488 17.3633 17.5488 16.8359L17.5488 13.6035C17.5488 12.2559 16.748 11.4844 15.4395 11.4844L14.5898 11.4844Z",
+  fillOpacity: "0.85"
+}))));
+IconFuelpump.displayName = 'IconFuelpump';

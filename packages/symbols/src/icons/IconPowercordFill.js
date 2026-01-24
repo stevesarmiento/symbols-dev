@@ -1,0 +1,23 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconPowercordFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "24.1309",
+  height: props.height || "16.709",
+  viewBox: "0 0 24.1309 16.709",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "16.709",
+  opacity: "0",
+  width: "24.1309",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M16.8262 10.8301L19.1211 10.8301C19.5898 10.8301 19.8926 10.5273 19.8926 10.0684L19.8926 0.751953C19.8926 0.302734 19.5898 0 19.1211 0L16.8262 0C15.2832 0 13.8672 0.634766 12.8223 1.93359C12.4121 2.42188 12.3047 2.5 11.748 2.5L9.54102 2.5C8.60352 2.5 7.93945 3.10547 7.93945 3.98438L7.93945 6.8457C7.93945 7.71484 8.60352 8.33008 9.54102 8.33008L11.748 8.33008C12.3047 8.33008 12.4121 8.4082 12.8223 8.87695C13.877 10.1855 15.293 10.8301 16.8262 10.8301ZM19.5996 4.28711L22.8418 4.28711C23.3594 4.28711 23.7695 3.88672 23.7695 3.35938C23.7695 2.8418 23.3594 2.43164 22.8418 2.43164L19.5996 2.43164ZM19.5996 8.39844L22.8418 8.39844C23.3594 8.39844 23.7695 7.97852 23.7695 7.4707C23.7695 6.94336 23.3594 6.5332 22.8418 6.5332L19.5996 6.5332ZM0 16.6992L8.06641 16.6992C10.3516 16.6992 11.8262 15.2832 11.8262 13.3008C11.8262 11.3086 10.3516 9.87305 8.06641 9.87305L3.65234 9.87305C2.34375 9.87305 1.57227 9.10156 1.57227 8.01758C1.57227 6.94336 2.36328 6.19141 3.65234 6.19141L8.67188 6.19141L8.67188 4.61914L3.75977 4.61914C1.46484 4.61914 0 6.03516 0 8.01758C0 10.0098 1.46484 11.4453 3.75977 11.4453L8.17383 11.4453C9.48242 11.4453 10.2539 12.2168 10.2539 13.3008C10.2539 14.375 9.46289 15.127 8.17383 15.127L0 15.127Z",
+  fillOpacity: "0.85"
+}))));
+IconPowercordFill.displayName = 'IconPowercordFill';

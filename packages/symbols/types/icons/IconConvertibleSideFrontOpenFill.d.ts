@@ -1,0 +1,1 @@
+export const IconConvertibleSideFrontOpenFill: any;

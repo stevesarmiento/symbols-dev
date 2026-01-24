@@ -1,0 +1,1 @@
+export const IconIndianrupeesignArrowTriangleheadCounterclockwiseRotate90: any;

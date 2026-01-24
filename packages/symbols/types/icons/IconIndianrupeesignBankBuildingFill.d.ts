@@ -1,0 +1,1 @@
+export const IconIndianrupeesignBankBuildingFill: any;

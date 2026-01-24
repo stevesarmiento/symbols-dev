@@ -1,0 +1,1 @@
+export const IconWindSnowCircle: any;

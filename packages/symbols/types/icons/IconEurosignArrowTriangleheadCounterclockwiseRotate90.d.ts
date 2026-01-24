@@ -1,0 +1,1 @@
+export const IconEurosignArrowTriangleheadCounterclockwiseRotate90: any;

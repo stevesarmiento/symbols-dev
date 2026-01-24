@@ -1,0 +1,1 @@
+export const IconR3ButtonAngledbottomHorizontalRight: any;

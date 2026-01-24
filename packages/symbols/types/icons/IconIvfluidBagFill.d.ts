@@ -1,0 +1,1 @@
+export const IconIvfluidBagFill: any;

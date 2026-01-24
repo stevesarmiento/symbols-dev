@@ -1,0 +1,1 @@
+export const IconRectangleDashed: any;

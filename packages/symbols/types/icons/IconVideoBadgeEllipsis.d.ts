@@ -1,0 +1,1 @@
+export const IconVideoBadgeEllipsis: any;

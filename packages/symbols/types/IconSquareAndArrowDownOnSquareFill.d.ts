@@ -1,0 +1,1 @@
+export const IconSquareAndArrowDownOnSquareFill: any;

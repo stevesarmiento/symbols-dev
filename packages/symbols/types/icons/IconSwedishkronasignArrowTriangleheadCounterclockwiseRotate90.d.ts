@@ -1,0 +1,1 @@
+export const IconSwedishkronasignArrowTriangleheadCounterclockwiseRotate90: any;

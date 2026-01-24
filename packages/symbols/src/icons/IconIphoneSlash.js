@@ -1,0 +1,26 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconIphoneSlash = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "20.3369",
+  height: props.height || "20.6934",
+  viewBox: "0 0 20.3369 20.6934",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "20.6934",
+  opacity: "0",
+  width: "20.3369",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M5.28564 8.36628L5.28564 17.8809C5.28564 18.6621 5.75439 19.1016 6.57471 19.1016L13.4106 19.1016C14.231 19.1016 14.6997 18.6621 14.6997 17.8809L14.6997 17.7747L16.0857 19.1598C15.7157 20.0968 14.8155 20.6738 13.6157 20.6738L6.36963 20.6738C4.77783 20.6738 3.71338 19.6582 3.71338 18.1348L3.71338 6.79497ZM12.522 17.9297C12.522 18.2031 12.3364 18.3887 12.0728 18.3887L7.92236 18.3887C7.65869 18.3887 7.47314 18.2031 7.47314 17.9297C7.47314 17.6562 7.65869 17.4805 7.92236 17.4805L12.0728 17.4805C12.3364 17.4805 12.522 17.6562 12.522 17.9297ZM16.272 2.53906L16.272 13.9863L14.6997 12.415L14.6997 2.79297C14.6997 2.01172 14.231 1.57227 13.4106 1.57227L6.57471 1.57227C5.75439 1.57227 5.28564 2.01172 5.28564 2.79297L5.28564 3.00658L3.8721 1.59389C4.22001 0.609391 5.13661 0 6.36963 0L13.6157 0C15.2075 0 16.272 1.01562 16.272 2.53906ZM11.8677 2.94922C11.8677 3.33984 11.5552 3.64258 11.1841 3.64258L8.8208 3.64258C8.43018 3.64258 8.11768 3.33984 8.11768 2.94922C8.11768 2.56836 8.43018 2.26562 8.8208 2.26562L11.1841 2.26562C11.5552 2.26562 11.8677 2.56836 11.8677 2.94922Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M17.5513 19.0039C17.8442 19.3066 18.3325 19.2969 18.6157 19.0039C18.9087 18.7207 18.9087 18.2422 18.6157 17.9395L2.43408 1.76758C2.14111 1.47461 1.65283 1.46484 1.35986 1.76758C1.07666 2.05078 1.07666 2.54883 1.35986 2.83203Z",
+  fillOpacity: "0.85"
+}))));
+IconIphoneSlash.displayName = 'IconIphoneSlash';

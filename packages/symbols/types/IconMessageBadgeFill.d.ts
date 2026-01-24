@@ -1,0 +1,1 @@
+export const IconMessageBadgeFill: any;

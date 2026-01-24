@@ -1,0 +1,1 @@
+export const IconListBulletRectangle: any;

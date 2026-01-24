@@ -1,0 +1,1 @@
+export const IconSterlingsignGaugeChartLefthalfRighthalf: any;

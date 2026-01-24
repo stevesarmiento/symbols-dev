@@ -1,0 +1,23 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconSprinkler = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "20.9082",
+  height: props.height || "15.9473",
+  viewBox: "0 0 20.9082 15.9473",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "15.9473",
+  opacity: "0",
+  width: "20.9082",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M8.01758 4.14062L12.5195 4.14062C13.2422 4.14062 13.7402 3.63281 13.7402 2.91016L13.7402 2.08008C13.7402 0.859375 12.8613 0.00976562 11.5723 0.00976562L8.96484 0.00976562C7.67578 0.00976562 6.79688 0.859375 6.79688 2.08008L6.79688 2.91016C6.79688 3.63281 7.29492 4.14062 8.01758 4.14062ZM8.34961 2.75391C8.24219 2.75391 8.17383 2.69531 8.17383 2.58789L8.17383 2.08008C8.17383 1.62109 8.45703 1.38672 8.96484 1.38672L11.5723 1.38672C12.0801 1.38672 12.3633 1.62109 12.3633 2.08008L12.3633 2.58789C12.3633 2.69531 12.2949 2.75391 12.1973 2.75391ZM8.02734 9.82422L12.5195 9.82422C13.2422 9.82422 13.7402 9.32617 13.7402 8.59375L13.7402 6.82617C13.7402 6.10352 13.2422 5.60547 12.5195 5.60547L8.02734 5.60547C7.30469 5.60547 6.79688 6.10352 6.79688 6.82617L6.79688 8.59375C6.79688 9.32617 7.30469 9.82422 8.02734 9.82422ZM8.34961 8.44727C8.24219 8.44727 8.17383 8.37891 8.17383 8.27148L8.17383 7.14844C8.17383 7.05078 8.24219 6.98242 8.34961 6.98242L12.1973 6.98242C12.2949 6.98242 12.3633 7.05078 12.3633 7.14844L12.3633 8.27148C12.3633 8.37891 12.2949 8.44727 12.1973 8.44727ZM8.35938 6.39648L9.73633 6.39648L9.73633 3.56445L8.35938 3.56445ZM10.8105 6.39648L12.1875 6.39648L12.1875 3.56445L10.8105 3.56445ZM8.35938 15.0098L9.73633 15.0098L9.73633 9.43359L8.35938 9.43359ZM10.8105 15.0098L12.1875 15.0098L12.1875 9.43359L10.8105 9.43359ZM0.78125 15.9473L19.7559 15.9473C20.1855 15.9473 20.5469 15.5957 20.5469 15.1562C20.5469 14.7266 20.1855 14.375 19.7559 14.375L0.78125 14.375C0.351562 14.375 0 14.7266 0 15.1562C0 15.5957 0.351562 15.9473 0.78125 15.9473Z",
+  fillOpacity: "0.85"
+}))));
+IconSprinkler.displayName = 'IconSprinkler';

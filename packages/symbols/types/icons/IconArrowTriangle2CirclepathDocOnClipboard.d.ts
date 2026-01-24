@@ -1,0 +1,1 @@
+export const IconArrowTriangle2CirclepathDocOnClipboard: any;

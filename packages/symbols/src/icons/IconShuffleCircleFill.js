@@ -1,0 +1,23 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconShuffleCircleFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "20.2832",
+  height: props.height || "19.9316",
+  viewBox: "0 0 20.2832 19.9316",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "19.9316",
+  opacity: "0",
+  width: "20.2832",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M19.9219 9.96094C19.9219 15.4004 15.4102 19.9219 9.96094 19.9219C4.52148 19.9219 0 15.4004 0 9.96094C0 4.51172 4.51172 0 9.95117 0C15.4004 0 19.9219 4.51172 19.9219 9.96094ZM13.0664 5.55664L13.0664 6.66992L12.1289 6.66992C11.2207 6.66992 10.6641 6.92383 9.99023 7.69531L8.84766 9.0332L7.70508 7.69531C7.04102 6.92383 6.47461 6.66992 5.57617 6.66992L4.38477 6.66992C4.00391 6.66992 3.74023 6.91406 3.74023 7.26562C3.74023 7.59766 4.02344 7.86133 4.38477 7.86133L5.5957 7.86133C6.09375 7.86133 6.41602 8.02734 6.82617 8.52539L8.05664 9.96094L6.82617 11.3965C6.40625 11.9043 6.09375 12.0605 5.5957 12.0605L4.38477 12.0605C4.02344 12.0605 3.74023 12.3242 3.74023 12.6562C3.74023 12.998 4.00391 13.252 4.38477 13.252L5.57617 13.252C6.47461 13.252 7.04102 12.998 7.70508 12.2266L8.84766 10.8887L9.99023 12.2266C10.6641 12.998 11.2207 13.252 12.1289 13.252L13.0664 13.252L13.0664 14.3945C13.0664 14.6973 13.252 14.8828 13.5547 14.8828C13.6914 14.8828 13.8281 14.834 13.9258 14.7559L15.918 13.1152C16.1621 12.9102 16.1621 12.5684 15.9277 12.373L13.9355 10.7324C13.8574 10.6348 13.7012 10.5859 13.5547 10.5859C13.2617 10.5859 13.0664 10.7812 13.0664 11.084L13.0664 12.0605L12.168 12.0605C11.6113 12.0605 11.2988 11.8945 10.8789 11.3965L9.64844 9.96094L10.8789 8.52539C11.2988 8.02734 11.6113 7.86133 12.168 7.86133L13.0664 7.86133L13.0664 8.86719C13.0664 9.16992 13.2617 9.36523 13.5547 9.36523C13.7012 9.36523 13.8574 9.31641 13.9355 9.21875L15.918 7.59766C16.1523 7.40234 16.1621 7.05078 15.9277 6.8457L13.9258 5.19531C13.8281 5.11719 13.6914 5.06836 13.5547 5.06836C13.252 5.06836 13.0664 5.25391 13.0664 5.55664Z",
+  fillOpacity: "0.85"
+}))));
+IconShuffleCircleFill.displayName = 'IconShuffleCircleFill';

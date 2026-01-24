@@ -1,0 +1,23 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconDollarsign = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "12.6562",
+  height: props.height || "22.1191",
+  viewBox: "0 0 12.6562 22.1191",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "22.1191",
+  opacity: "0",
+  width: "12.6562",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M6.20117 19.7656C9.50195 19.7656 12.2949 18.0469 12.2949 14.9121C12.2949 12.5 10.752 11.0645 7.30469 10.2344L5.44922 9.79492C3.27148 9.27734 2.26562 8.36914 2.26562 6.94336C2.26562 5.41016 3.7207 4.0918 6.19141 4.0918C8.21289 4.0918 9.59961 5.03906 10.1367 6.78711C10.293 7.29492 10.625 7.55859 11.1133 7.55859C11.6895 7.55859 12.0117 7.1875 12.0117 6.62109C12.0117 6.46484 11.9922 6.29883 11.9434 6.12305C11.3574 3.86719 9.07227 2.36328 6.19141 2.36328C2.79297 2.36328 0.361328 4.27734 0.361328 7.06055C0.361328 9.36523 1.88477 10.8105 5.15625 11.6016L7.01172 12.041C9.44336 12.627 10.3906 13.4668 10.3906 15.0488C10.3906 16.9336 8.84766 18.0371 6.2207 18.0371C3.87695 18.0371 2.34375 17.0508 1.875 15.2246C1.70898 14.707 1.38672 14.4434 0.898438 14.4434C0.332031 14.4434 0 14.8242 0 15.4004C0 15.5469 0.0195312 15.7129 0.0683594 15.8887C0.683594 18.3398 3.27148 19.7656 6.20117 19.7656ZM6.15234 22.1191C6.5625 22.1191 6.89453 21.7871 6.89453 21.377L6.89453 0.810547C6.89453 0.400391 6.5625 0.078125 6.15234 0.078125C5.74219 0.078125 5.41992 0.400391 5.41992 0.810547L5.41992 21.377C5.41992 21.7871 5.74219 22.1191 6.15234 22.1191Z",
+  fillOpacity: "0.85"
+}))));
+IconDollarsign.displayName = 'IconDollarsign';

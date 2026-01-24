@@ -1,0 +1,1 @@
+export const IconFlorinsign: any;

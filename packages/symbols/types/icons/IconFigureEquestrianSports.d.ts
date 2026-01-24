@@ -1,0 +1,1 @@
+export const IconFigureEquestrianSports: any;

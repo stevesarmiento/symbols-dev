@@ -1,0 +1,1 @@
+export const IconIpadGen1LandscapeBadgeExclamationmark: any;

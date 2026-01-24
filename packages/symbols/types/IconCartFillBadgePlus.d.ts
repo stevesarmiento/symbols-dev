@@ -1,0 +1,1 @@
+export const IconCartFillBadgePlus: any;

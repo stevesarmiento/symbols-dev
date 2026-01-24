@@ -1,0 +1,1 @@
+export const IconPolishzlotysignArrowTriangleheadCounterclockwiseRotate90: any;

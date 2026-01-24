@@ -1,0 +1,1 @@
+export const IconTextformatSubscript: any;

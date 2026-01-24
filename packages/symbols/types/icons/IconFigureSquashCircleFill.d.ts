@@ -1,0 +1,1 @@
+export const IconFigureSquashCircleFill: any;

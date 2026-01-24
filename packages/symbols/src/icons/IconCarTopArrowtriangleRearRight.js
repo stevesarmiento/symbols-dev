@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconCarTopArrowtriangleRearRight = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "33.400390625",
+  height: props.height || "36.791015625",
+  viewBox: "0 0 33.400390625 36.791015625",
+  fill: props.fill || "'none' || '#000000'",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M12.7437 36.7898C19.9737 36.7898 23.1737 34.9898 23.1737 30.7998V14.9298H23.9237C24.8437 14.9298 25.4737 14.2498 25.4737 13.2498V12.8498C25.4737 11.8498 24.8437 11.1698 23.9237 11.1698H23.1737V6.9698C23.1737 2.4698 19.4537 -0.0002 12.7437 -0.0002C6.0337 -0.0002 2.3137 2.4898 2.3137 6.9698V11.0898H1.5437C0.6337 11.0898 0.0037 11.7698 0.0037 12.7798V13.1698C0.0037 14.1598 0.6337 14.8498 1.5437 14.8498H2.3137V30.7998C2.3137 34.9898 5.5137 36.7898 12.7437 36.7898ZM12.7437 33.6198C7.7237 33.6198 5.4937 32.7398 5.4937 30.6798V7.0398C5.4937 4.5698 8.0937 3.1898 12.7437 3.1898C17.4037 3.1898 19.9837 4.5698 19.9837 7.0398V30.6798C19.9837 32.7398 17.7637 33.6198 12.7437 33.6198ZM12.7437 15.6798C14.0537 15.6798 16.0237 15.7898 16.5437 15.7898C17.5837 15.7898 18.0237 15.3898 18.1137 14.3298L18.3437 11.6898C18.5237 9.6898 17.0537 8.9098 12.7437 8.9098C8.4237 8.9098 6.9637 9.6898 7.1237 11.6898L7.3737 14.3298C7.4537 15.3898 7.8937 15.7898 8.9437 15.7898C9.4637 15.7898 11.3937 15.6798 12.7437 15.6798ZM33.4037 28.1398V21.8798C33.4037 20.9298 32.5537 20.4798 31.7337 20.9698L26.6337 24.0398C25.8637 24.5098 25.8537 25.5098 26.6337 25.9898L31.7337 29.0398C32.5437 29.5298 33.4037 29.1198 33.4037 28.1398ZM12.7437 30.2998C17.1837 30.2998 18.6037 29.6098 18.3037 27.5798L18.1137 26.2998C17.8837 24.6498 16.5037 24.0998 12.7437 24.0998C8.9737 24.0998 7.5837 24.6498 7.3537 26.2998L7.1737 27.5798C6.8737 29.6098 8.3037 30.2998 12.7437 30.2998Z"
+})));
+IconCarTopArrowtriangleRearRight.displayName = 'IconCarTopArrowtriangleRearRight';

@@ -1,0 +1,1 @@
+export const IconAustralsignArrowTriangleheadCounterclockwiseRotate90: any;

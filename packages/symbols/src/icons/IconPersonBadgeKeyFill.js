@@ -1,0 +1,26 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconPersonBadgeKeyFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "26.5625",
+  height: props.height || "25.0855",
+  viewBox: "0 0 26.5625 25.0855",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "25.0855",
+  opacity: "0",
+  width: "26.5625",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M17.6783 15.1277C17.7761 16.537 18.5147 17.7709 19.6582 18.5242L19.6582 21.3169C19.6551 21.3171 19.6518 21.3171 19.6484 21.3171L6.55273 21.3171C5.50781 21.3171 4.88281 20.8289 4.88281 20.0183C4.88281 17.4988 8.03711 14.0222 13.0957 14.0222C14.8809 14.0222 16.4286 14.4535 17.6783 15.1277ZM17.0117 7.95777C17.0117 10.3992 15.1953 12.2742 13.1055 12.2742C11.0059 12.2742 9.19922 10.3992 9.19922 7.9773C9.19922 5.58472 11.0156 3.75855 13.1055 3.75855C15.1953 3.75855 17.0117 5.54566 17.0117 7.95777Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M22.1191 11.698C20.3809 11.698 19.0039 13.0945 19.0039 14.8035C19.0039 16.1316 19.7852 17.2546 20.9863 17.7234L20.9863 22.5574C20.9863 22.6746 21.0449 22.7625 21.123 22.8601L21.9434 23.6804C22.041 23.7781 22.1777 23.7878 22.2852 23.6804L23.8379 22.1375C23.9355 22.03 23.9355 21.8933 23.8379 21.7957L22.8711 20.8289L24.209 19.5203C24.3066 19.4324 24.3066 19.2859 24.1895 19.1687L22.8809 17.8699C24.3848 17.2546 25.2246 16.1609 25.2246 14.8035C25.2246 13.0945 23.8379 11.698 22.1191 11.698ZM22.1094 13.1531C22.6367 13.1531 23.0664 13.5828 23.0664 14.1101C23.0664 14.657 22.6367 15.0867 22.1094 15.0867C21.582 15.0867 21.1426 14.657 21.1426 14.1101C21.1426 13.5828 21.5723 13.1531 22.1094 13.1531Z",
+  fillOpacity: "0.85"
+}))));
+IconPersonBadgeKeyFill.displayName = 'IconPersonBadgeKeyFill';

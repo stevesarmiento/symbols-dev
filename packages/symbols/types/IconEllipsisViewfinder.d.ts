@@ -1,0 +1,1 @@
+export const IconEllipsisViewfinder: any;

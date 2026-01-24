@@ -1,0 +1,1 @@
+export const IconHSquare: any;

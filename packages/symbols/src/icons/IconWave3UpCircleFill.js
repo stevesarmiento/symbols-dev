@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconWave3UpCircleFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "28.875",
+  height: props.height || "28.875",
+  viewBox: "0 0 28.875 28.875",
+  fill: props.fill || "'none' || '#000000'",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M14.4327 28.8749C22.4127 28.8749 28.8727 22.4049 28.8727 14.4349C28.8727 6.4649 22.4127 0.0049 14.4327 0.0049C6.4627 0.0049 0.0027 6.4649 0.0027 14.4349C0.0027 22.4049 6.4627 28.8749 14.4327 28.8749ZM14.4327 8.3649C17.4227 8.3649 20.3427 9.2149 22.7727 10.7749C23.4227 11.1849 23.6127 11.9749 23.2027 12.6049C22.8027 13.2449 22.0027 13.3949 21.2827 12.9749C19.3027 11.6749 16.9227 10.9949 14.4327 10.9949C11.9527 10.9949 9.5527 11.6749 7.5727 12.9749C6.8727 13.3949 6.0527 13.2449 5.6627 12.6049C5.2627 11.9949 5.4527 11.1849 6.0827 10.7749C8.5027 9.2149 11.4327 8.3649 14.4327 8.3649ZM14.4327 12.7249C16.6627 12.7249 18.8027 13.3549 20.5127 14.5349C21.1227 14.9449 21.3027 15.6949 20.9227 16.3249C20.5227 16.9849 19.6827 17.1349 18.9527 16.6749C17.6927 15.8349 16.0927 15.3649 14.4327 15.3649C12.7727 15.3649 11.1727 15.8349 9.9127 16.6749C9.1727 17.1349 8.3427 16.9849 7.9427 16.3249C7.5627 15.6949 7.7427 14.9449 8.3527 14.5349C10.0927 13.3549 12.2227 12.7249 14.4327 12.7249ZM14.4327 17.1049C15.8227 17.1049 17.2227 17.5449 18.2827 18.2949C18.8427 18.6849 18.9927 19.4549 18.6227 20.0549C18.1927 20.7249 17.3727 20.8449 16.6127 20.3749C16.0227 19.9749 15.2427 19.7549 14.4327 19.7549C13.6327 19.7549 12.8527 19.9749 12.2527 20.3749C11.4827 20.8449 10.6827 20.7249 10.2527 20.0549C9.8727 19.4549 10.0227 18.6749 10.5827 18.2949C11.6027 17.5449 13.0127 17.1049 14.4327 17.1049Z"
+})));
+IconWave3UpCircleFill.displayName = 'IconWave3UpCircleFill';

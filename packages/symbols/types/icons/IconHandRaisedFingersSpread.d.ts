@@ -1,0 +1,1 @@
+export const IconHandRaisedFingersSpread: any;

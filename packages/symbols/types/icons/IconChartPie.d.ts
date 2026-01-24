@@ -1,0 +1,1 @@
+export const IconChartPie: any;

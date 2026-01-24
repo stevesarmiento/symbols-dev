@@ -1,0 +1,1 @@
+export const IconArrowUpBackwardCircleDotted: any;

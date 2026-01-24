@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconPerson2ArrowTriangleheadCounterclockwise = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "28.875",
+  height: props.height || "31.23821984195274",
+  viewBox: "0 0 28.875 31.23821984195274",
+  fill: props.fill || "'none' || '#000000'",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M14.4327 31.2418C22.4127 31.2418 28.8727 24.7618 28.8727 16.8018C28.8727 9.8818 24.0127 4.1018 17.5427 2.7018V1.0818C17.5427 -0.0182 16.6127 -0.2882 15.8327 0.3118L11.3027 3.6918C10.7227 4.1118 10.7327 4.8418 11.3027 5.2718L15.8427 8.6418C16.6127 9.2218 17.5427 8.9518 17.5427 7.8718V6.4418C22.0127 7.7518 25.2827 11.8618 25.2827 16.8018C25.2827 22.7918 20.4427 27.6418 14.4327 27.6418C8.4527 27.6418 3.5927 22.7918 3.5927 16.8018C3.5927 13.5218 5.0327 10.6718 7.3727 8.6518C8.1527 7.8718 8.4127 6.8218 7.6927 5.9818C7.0527 5.2318 5.9027 5.1218 4.9927 5.9818C1.8427 8.6818 0.0027 12.6218 0.0027 16.8018C0.0027 24.7618 6.4627 31.2418 14.4327 31.2418ZM17.7227 16.1618C19.1027 16.1618 20.2327 14.9318 20.2327 13.3718C20.2327 11.8518 19.1027 10.6518 17.7227 10.6518C16.3427 10.6518 15.1927 11.8818 15.1927 13.3718C15.1927 14.9318 16.3227 16.1618 17.7227 16.1618ZM10.5027 16.2818C11.7127 16.2818 12.7127 15.2118 12.7127 13.8618C12.7127 12.5518 11.7127 11.4918 10.5027 11.4918C9.3127 11.4918 8.3027 12.5618 8.3027 13.8618C8.3027 15.2118 9.2927 16.2818 10.5027 16.2818ZM7.1327 21.9518H11.6927C11.0227 20.9818 11.6527 19.1218 13.1227 17.9318C12.4527 17.5218 11.5627 17.2218 10.5027 17.2218C7.7827 17.2218 5.9227 19.2318 5.9227 20.8518C5.9227 21.5418 6.2327 21.9518 7.1327 21.9518ZM13.8927 21.9518H21.5227C22.6127 21.9518 22.9827 21.6018 22.9827 20.9818C22.9827 19.4018 20.9327 17.2418 17.7227 17.2418C14.4927 17.2418 12.4427 19.4018 12.4427 20.9818C12.4427 21.6018 12.8127 21.9518 13.8927 21.9518Z"
+})));
+IconPerson2ArrowTriangleheadCounterclockwise.displayName = 'IconPerson2ArrowTriangleheadCounterclockwise';

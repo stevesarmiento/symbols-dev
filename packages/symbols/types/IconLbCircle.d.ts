@@ -1,0 +1,1 @@
+export const IconLbCircle: any;

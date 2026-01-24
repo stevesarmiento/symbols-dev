@@ -1,0 +1,1 @@
+export const IconSuitcaseCartFill: any;

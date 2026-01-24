@@ -1,0 +1,1 @@
+export const IconLessthanorequaltoSquareFill: any;

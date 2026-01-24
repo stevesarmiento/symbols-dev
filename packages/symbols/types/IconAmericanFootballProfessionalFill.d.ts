@@ -1,0 +1,1 @@
+export const IconAmericanFootballProfessionalFill: any;

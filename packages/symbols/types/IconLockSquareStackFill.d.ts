@@ -1,0 +1,1 @@
+export const IconLockSquareStackFill: any;

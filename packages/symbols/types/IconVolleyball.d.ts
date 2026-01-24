@@ -1,0 +1,1 @@
+export const IconVolleyball: any;

@@ -1,0 +1,1 @@
+export const IconDocBadgeGearshapeFill: any;

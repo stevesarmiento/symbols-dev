@@ -1,0 +1,1 @@
+export const IconConvertibleSideArrowtriangleUpFill: any;

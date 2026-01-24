@@ -1,0 +1,1 @@
+export const IconSingaporedollarsignGaugeChartLefthalfRighthalf: any;

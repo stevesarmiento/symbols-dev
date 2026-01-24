@@ -1,0 +1,1 @@
+export const IconCalendarDayTimelineLeading: any;

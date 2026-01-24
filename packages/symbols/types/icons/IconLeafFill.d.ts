@@ -1,0 +1,1 @@
+export const IconLeafFill: any;

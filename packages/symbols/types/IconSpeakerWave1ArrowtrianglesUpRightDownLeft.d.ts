@@ -1,0 +1,1 @@
+export const IconSpeakerWave1ArrowtrianglesUpRightDownLeft: any;

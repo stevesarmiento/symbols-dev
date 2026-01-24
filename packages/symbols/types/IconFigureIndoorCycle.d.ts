@@ -1,0 +1,1 @@
+export const IconFigureIndoorCycle: any;

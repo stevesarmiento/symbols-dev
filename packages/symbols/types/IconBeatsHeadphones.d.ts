@@ -1,0 +1,1 @@
+export const IconBeatsHeadphones: any;

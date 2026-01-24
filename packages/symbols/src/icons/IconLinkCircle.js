@@ -1,0 +1,26 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconLinkCircle = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "20.2832",
+  height: props.height || "19.9316",
+  viewBox: "0 0 20.2832 19.9316",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "19.9316",
+  opacity: "0",
+  width: "20.2832",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M9.96094 19.9219C15.4102 19.9219 19.9219 15.4004 19.9219 9.96094C19.9219 4.51172 15.4004 0 9.95117 0C4.51172 0 0 4.51172 0 9.96094C0 15.4004 4.52148 19.9219 9.96094 19.9219ZM9.96094 18.2617C5.35156 18.2617 1.66992 14.5703 1.66992 9.96094C1.66992 5.35156 5.3418 1.66016 9.95117 1.66016C14.5605 1.66016 18.2617 5.35156 18.2617 9.96094C18.2617 14.5703 14.5703 18.2617 9.96094 18.2617Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M5.18555 14.5605C6.40625 15.7715 7.92969 15.6738 9.3457 14.248L10.8105 12.793C12.2559 11.3574 12.373 9.82422 11.1328 8.59375C10.8008 8.25195 10.4199 8.01758 10.1465 7.96875C9.87305 8.16406 9.54102 8.52539 9.38477 8.86719C9.83398 8.93555 10.1758 9.0918 10.4102 9.31641C11.1719 10.0879 11.0547 11.1035 10.0586 12.0898L8.64258 13.5059C7.68555 14.4629 6.67969 14.5703 5.9082 13.8184C5.14648 13.0566 5.23438 12.041 6.2207 11.084L7.22656 10.0781C7.07031 9.70703 7.06055 9.14062 7.2168 8.66211L5.47852 10.3809C4.0625 11.8066 3.94531 13.3301 5.18555 14.5605ZM14.3848 5.33203C13.1641 4.12109 11.6406 4.21875 10.2246 5.64453L8.75977 7.08984C7.31445 8.53516 7.19727 10.0586 8.4375 11.2891C8.76953 11.6406 9.15039 11.8652 9.42383 11.9238C9.69727 11.7188 10.0293 11.3574 10.1855 11.0254C9.73633 10.957 9.39453 10.8008 9.16016 10.5664C8.39844 9.80469 8.51562 8.7793 9.51172 7.80273L10.9277 6.38672C11.8848 5.42969 12.8906 5.32227 13.6621 6.07422C14.4238 6.83594 14.3359 7.85156 13.3496 8.80859L12.3438 9.80469C12.5 10.1855 12.5098 10.7422 12.3535 11.2305L14.0918 9.50195C15.5078 8.08594 15.625 6.5625 14.3848 5.33203Z",
+  fillOpacity: "0.85"
+}))));
+IconLinkCircle.displayName = 'IconLinkCircle';

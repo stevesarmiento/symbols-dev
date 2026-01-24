@@ -1,0 +1,1 @@
+export const IconDistributeHorizontalRightFill: any;

@@ -1,0 +1,1 @@
+export const IconL3ButtonAngledbottomHorizontalLeftFill: any;

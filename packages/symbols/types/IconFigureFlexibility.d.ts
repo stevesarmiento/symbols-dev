@@ -1,0 +1,1 @@
+export const IconFigureFlexibility: any;

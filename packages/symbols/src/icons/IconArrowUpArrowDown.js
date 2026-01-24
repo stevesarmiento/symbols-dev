@@ -1,0 +1,26 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconArrowUpArrowDown = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "23.2129",
+  height: props.height || "18.3618",
+  viewBox: "0 0 23.2129 18.3618",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "18.3618",
+  opacity: "0",
+  width: "23.2129",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M17.6562 18.0725L22.5781 13.0237C22.7539 12.8577 22.8516 12.6038 22.8516 12.3792C22.8516 11.8616 22.5 11.5198 21.9922 11.5198C21.7383 11.5198 21.5527 11.5979 21.3867 11.7639L19.3555 13.8635L17.7832 15.6897L17.8711 13.4338L17.8711 0.885021C17.8711 0.377209 17.5098 0.0061151 17.002 0.0061151C16.4844 0.0061151 16.123 0.377209 16.123 0.885021L16.123 13.4338L16.2207 15.6897L14.6484 13.8635L12.6172 11.7639C12.4512 11.5979 12.2559 11.5198 12.0117 11.5198C11.5039 11.5198 11.1426 11.8616 11.1426 12.3792C11.1426 12.6038 11.25 12.8577 11.4258 13.0237L16.3477 18.0725C16.709 18.4534 17.2754 18.4631 17.6562 18.0725Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M5.20508 0.299084L0.273438 5.32838C0.107422 5.50416 0 5.75807 0 5.97291C0 6.49049 0.351562 6.84205 0.859375 6.84205C1.11328 6.84205 1.30859 6.75416 1.47461 6.58815L3.50586 4.48854L5.07812 2.67213L4.98047 4.92799L4.98047 17.4768C4.98047 17.9944 5.3418 18.3557 5.85938 18.3557C6.36719 18.3557 6.72852 17.9944 6.72852 17.4768L6.72852 4.92799L6.64062 2.67213L8.20312 4.48854L10.2441 6.58815C10.4102 6.75416 10.5957 6.84205 10.8496 6.84205C11.3574 6.84205 11.709 6.49049 11.709 5.97291C11.709 5.75807 11.6113 5.50416 11.4355 5.32838L6.51367 0.299084C6.15234-0.0817755 5.57617-0.101307 5.20508 0.299084Z",
+  fillOpacity: "0.85"
+}))));
+IconArrowUpArrowDown.displayName = 'IconArrowUpArrowDown';

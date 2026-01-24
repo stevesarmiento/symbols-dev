@@ -1,0 +1,1 @@
+export const IconCSharpLogo: any;

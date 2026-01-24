@@ -1,0 +1,1 @@
+export const IconHeartSlash: any;

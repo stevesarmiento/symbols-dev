@@ -1,0 +1,1 @@
+export const IconPoint3FilledConnectedTrianglepathDotted: any;

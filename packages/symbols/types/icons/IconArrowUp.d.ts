@@ -1,0 +1,1 @@
+export const IconArrowUp: any;

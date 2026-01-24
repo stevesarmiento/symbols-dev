@@ -1,0 +1,29 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconLightbulbLedWideFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "16.2695",
+  height: props.height || "22.1191",
+  viewBox: "0 0 16.2695 22.1191",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "22.1191",
+  opacity: "0",
+  width: "16.2695",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M5.55664 19.3359L10.3613 19.3359C10.6738 19.3359 10.9277 19.0918 10.9277 18.7695C10.9277 18.4473 10.6738 18.2031 10.3613 18.2031L5.55664 18.2031C5.23438 18.2031 4.98047 18.4473 4.98047 18.7695C4.98047 19.0918 5.23438 19.3359 5.55664 19.3359ZM7.95898 22.1191C9.27734 22.1191 10.2148 21.416 10.4199 20.3027L5.48828 20.3027C5.67383 21.416 6.61133 22.1191 7.95898 22.1191Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M5.77148 17.1777L10.1367 17.1777C10.4883 17.1777 10.6738 16.9922 10.6738 16.6504L10.6738 15.8594C10.6738 11.0742 14.0918 8.50586 15.4102 5.84961L0.517578 5.84961C1.8457 8.48633 5.23438 11.1133 5.23438 15.8594L5.23438 16.6504C5.23438 16.9922 5.41992 17.1777 5.77148 17.1777Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M0.078125 4.57031L15.8301 4.57031C15.8789 4.35547 15.9082 4.13086 15.9082 3.90625C15.9082 1.39648 12.9883 0 7.95898 0C2.91992 0 0 1.39648 0 3.90625C0 4.13086 0.0292969 4.3457 0.078125 4.57031Z",
+  fillOpacity: "0.85"
+}))));
+IconLightbulbLedWideFill.displayName = 'IconLightbulbLedWideFill';

@@ -1,0 +1,1 @@
+export const IconSliderHorizontal2RectangleAndArrowTriangle2Circlepath: any;

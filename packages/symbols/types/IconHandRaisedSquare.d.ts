@@ -1,0 +1,1 @@
+export const IconHandRaisedSquare: any;

@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconCloudRainbowCropFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "31.58203125",
+  height: props.height || "28.998046875",
+  viewBox: "0 0 31.58203125 28.998046875",
+  fill: props.fill || "'none' || '#000000'",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M5.9237 28.9996H19.8137C23.7437 28.9996 26.8137 25.9896 26.8137 22.1496C26.8137 20.7996 26.4537 19.5596 25.8137 18.5296C26.6237 16.1296 28.8937 14.4196 31.5837 14.4196V12.1696C28.3237 12.1696 25.5237 13.9996 24.1337 16.7096C23.9237 16.5396 23.6937 16.3896 23.4637 16.2596C25.0037 13.3396 28.0537 11.3896 31.5837 11.3896V9.1296C27.1137 9.1296 23.2137 11.6896 21.3437 15.4396C21.0837 15.3796 20.8037 15.3396 20.5337 15.3096C22.5037 11.1796 26.7037 8.3396 31.5837 8.3396V6.0796C26.0537 6.0796 21.2637 9.1696 18.8137 13.7296C18.6337 13.5096 18.4437 13.2996 18.2537 13.1096C20.8537 8.4496 25.8437 5.3096 31.5837 5.3096V3.0496C25.0837 3.0496 19.4437 6.5496 16.4237 11.7896C16.1737 11.6596 15.9437 11.5496 15.6937 11.4396C18.8437 5.9496 24.7737 2.2596 31.5837 2.2596V-0.0004C23.7037 -0.0004 16.8937 4.3996 13.4437 10.8796C13.0737 10.8296 12.6837 10.8096 12.2937 10.8096C7.9337 10.8096 4.3037 14.0096 3.6937 18.3496C1.4637 19.0696 0.0037 21.0396 0.0037 23.4696C0.0037 26.6896 2.4437 28.9996 5.9237 28.9996Z"
+})));
+IconCloudRainbowCropFill.displayName = 'IconCloudRainbowCropFill';

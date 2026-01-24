@@ -1,0 +1,1 @@
+export const IconPhotoBadgeCheckmarkFill: any;

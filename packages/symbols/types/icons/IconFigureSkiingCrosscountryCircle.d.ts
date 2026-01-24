@@ -1,0 +1,1 @@
+export const IconFigureSkiingCrosscountryCircle: any;

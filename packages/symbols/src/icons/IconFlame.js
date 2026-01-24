@@ -1,0 +1,23 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconFlame = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "16.6309",
+  height: props.height || "22.9004",
+  viewBox: "0 0 16.6309 22.9004",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "22.9004",
+  opacity: "0",
+  width: "16.6309",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M7.67578 21.123C12.832 21.123 16.2695 17.6367 16.2695 12.3828C16.2695 3.64258 8.82812 0 3.66211 0C2.74414 0 2.1582 0.322266 2.1582 0.947266C2.1582 1.19141 2.26562 1.44531 2.4707 1.67969C3.63281 3.06641 4.79492 4.7168 4.81445 6.64062C4.81445 7.08008 4.76562 7.4707 4.45312 8.01758L4.94141 7.91992C4.50195 6.48438 3.32031 5.46875 2.28516 5.46875C1.88477 5.46875 1.61133 5.76172 1.61133 6.20117C1.61133 6.45508 1.67969 7.05078 1.67969 7.48047C1.67969 9.66797 0 10.9473 0 14.4727C0 18.4668 3.05664 21.123 7.67578 21.123ZM7.77344 19.7559C3.94531 19.7559 1.37695 17.627 1.37695 14.4727C1.37695 11.2695 3.10547 10.1855 3.10547 7.64648C3.10547 7.26562 3.02734 6.92383 2.93945 6.63086L2.71484 7.02148C3.51562 7.5 4.0625 8.36914 4.375 9.70703C4.41406 9.91211 4.53125 10.0098 4.67773 10.0098C5.46875 10.0098 6.03516 8.04688 6.03516 6.80664C6.03516 4.56055 5.06836 2.43164 3.49609 0.976562L3.23242 1.28906C10.2539 1.43555 14.834 6.09375 14.834 12.334C14.834 16.7676 12.002 19.7559 7.77344 19.7559ZM7.90039 18.3789C10.2246 18.3789 11.3574 16.6699 11.3574 14.7363C11.3574 12.832 10.2441 10.7031 8.10547 9.69727C8.01758 9.66797 7.95898 9.7168 7.96875 9.80469C8.13477 11.4062 7.89062 12.8906 7.37305 13.5938C7.12891 13.0273 6.83594 12.5391 6.38672 12.1387C6.31836 12.0801 6.25977 12.1094 6.24023 12.1973C6.08398 13.3008 4.86328 13.916 4.86328 15.6348C4.86328 17.2754 6.07422 18.3789 7.90039 18.3789Z",
+  fillOpacity: "0.85"
+}))));
+IconFlame.displayName = 'IconFlame';

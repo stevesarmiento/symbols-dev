@@ -1,0 +1,1 @@
+export const IconCarWindowLeftBadgeXmark: any;

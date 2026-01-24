@@ -1,0 +1,1 @@
+export const IconTeletypeAnswerCircleFill: any;

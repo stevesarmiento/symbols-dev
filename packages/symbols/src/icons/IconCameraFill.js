@@ -1,0 +1,23 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconCameraFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "24.3457",
+  height: props.height || "19.248",
+  viewBox: "0 0 24.3457 19.248",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "19.248",
+  opacity: "0",
+  width: "24.3457",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M3.06641 18.623L20.918 18.623C22.9492 18.623 23.9844 17.6074 23.9844 15.5957L23.9844 5.37109C23.9844 3.35938 22.9492 2.35352 20.918 2.35352L18.125 2.35352C17.3535 2.35352 17.1191 2.19727 16.6797 1.70898L15.8984 0.830078C15.4102 0.292969 14.9121 0 13.9062 0L10.0098 0C9.00391 0 8.50586 0.292969 8.01758 0.830078L7.23633 1.70898C6.79688 2.1875 6.55273 2.35352 5.79102 2.35352L3.06641 2.35352C1.02539 2.35352 0 3.35938 0 5.37109L0 15.5957C0 17.6074 1.02539 18.623 3.06641 18.623ZM11.9922 15.7422C9.0332 15.7422 6.66016 13.3789 6.66016 10.4004C6.66016 7.43164 9.0332 5.06836 11.9922 5.06836C14.9512 5.06836 17.3145 7.43164 17.3145 10.4004C17.3145 13.3789 14.9414 15.7422 11.9922 15.7422ZM11.9922 14.2578C14.1211 14.2578 15.8398 12.5488 15.8398 10.4004C15.8398 8.26172 14.1211 6.54297 11.9922 6.54297C9.86328 6.54297 8.13477 8.26172 8.13477 10.4004C8.13477 12.5488 9.87305 14.2578 11.9922 14.2578ZM17.9688 6.80664C17.9688 6.14258 18.5547 5.55664 19.2383 5.55664C19.9121 5.55664 20.4883 6.14258 20.4883 6.80664C20.4883 7.5 19.9121 8.05664 19.2383 8.06641C18.5547 8.06641 17.9688 7.50977 17.9688 6.80664Z",
+  fillOpacity: "0.85"
+}))));
+IconCameraFill.displayName = 'IconCameraFill';

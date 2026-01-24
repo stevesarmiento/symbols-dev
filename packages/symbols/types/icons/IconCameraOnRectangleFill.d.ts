@@ -1,0 +1,1 @@
+export const IconCameraOnRectangleFill: any;

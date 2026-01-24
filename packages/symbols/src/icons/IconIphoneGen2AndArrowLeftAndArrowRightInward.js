@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconIphoneGen2AndArrowLeftAndArrowRightInward = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "51.337890625",
+  height: props.height || "31.609375",
+  viewBox: "0 0 51.337890625 31.609375",
+  fill: props.fill || "'none' || '#000000'",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M19.8429 31.6131H31.6629C34.1529 31.6131 35.8229 29.9531 35.8229 27.4631V4.1531C35.8229 1.6631 34.1529 0.0031 31.6629 0.0031H19.8429C17.2529 0.0031 15.5129 1.6631 15.5129 4.1531V27.4631C15.5129 29.9531 17.2529 31.6131 19.8429 31.6131ZM20.5929 27.8731C19.6329 27.8731 19.0429 27.3431 19.0429 26.3831V5.2331C19.0429 4.2831 19.6329 3.7431 20.5929 3.7431H22.4529C22.6729 3.7431 22.7929 3.8531 22.7929 4.0731V4.4931C22.7929 5.1431 23.2129 5.5731 23.8429 5.5731H27.4929C28.1229 5.5731 28.5429 5.1431 28.5429 4.4931V4.0731C28.5429 3.8531 28.6729 3.7431 28.8929 3.7431H30.7529C31.7029 3.7431 32.2929 4.2931 32.2929 5.2531V26.3731C32.2929 27.3331 31.7029 27.8731 30.7529 27.8731ZM0.0029 10.2231C0.0029 11.0731 0.6729 11.7531 1.5329 11.7531H6.5629V14.0931C6.5629 15.3231 7.8329 15.8431 8.7529 15.0431L13.1929 11.1431C13.7929 10.6131 13.7929 9.8331 13.1929 9.2931L8.7529 5.3831C7.8329 4.5831 6.5629 5.0731 6.5629 6.3531V8.6831H1.5329C0.6729 8.6831 0.0029 9.3631 0.0029 10.2231ZM51.3429 10.2231C51.3429 9.3631 50.6529 8.6831 49.7929 8.6831H44.7629V6.3531C44.7629 5.0731 43.4929 4.5831 42.5929 5.3831L38.1429 9.2931C37.5429 9.8331 37.5429 10.6131 38.1429 11.1431L42.5929 15.0431C43.5029 15.8431 44.7629 15.3231 44.7629 14.0931V11.7531H49.7929C50.6529 11.7531 51.3429 11.0731 51.3429 10.2231ZM22.6429 26.6831H28.6929C29.1529 26.6831 29.4729 26.3831 29.4729 25.9131C29.4729 25.4431 29.1529 25.1331 28.6929 25.1331H22.6429C22.1929 25.1331 21.8629 25.4431 21.8629 25.9131C21.8629 26.3831 22.1929 26.6831 22.6429 26.6831Z"
+})));
+IconIphoneGen2AndArrowLeftAndArrowRightInward.displayName = 'IconIphoneGen2AndArrowLeftAndArrowRightInward';

@@ -1,0 +1,1 @@
+export const IconFlorinsignCircleFill: any;

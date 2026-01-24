@@ -1,0 +1,1 @@
+export const IconFigureSoftballCircle: any;

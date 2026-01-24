@@ -1,0 +1,26 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconDiceFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "22.9688",
+  height: props.height || "23.1348",
+  viewBox: "0 0 22.9688 23.1348",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "23.1348",
+  opacity: "0",
+  width: "22.9688",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M16.9043 4.375L16.9043 4.54102L8.76953 4.54102C5.99609 4.54102 4.375 6.13281 4.375 8.89648L4.375 17.2852L4.0332 17.2852C1.99219 17.2852 0.966797 16.2695 0.966797 14.2578L0.966797 4.375C0.966797 2.36328 1.99219 1.34766 4.0332 1.34766L13.8379 1.34766C15.8691 1.34766 16.9043 2.36328 16.9043 4.375Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M21.6406 8.89648L21.6406 18.7793C21.6406 20.791 20.6055 21.8066 18.5742 21.8066L8.76953 21.8066C6.72852 21.8066 5.70312 20.791 5.70312 18.7793L5.70312 8.89648C5.70312 6.875 6.72852 5.86914 8.76953 5.86914L18.5742 5.86914C20.6055 5.86914 21.6406 6.88477 21.6406 8.89648ZM8.31055 17.793C8.31055 18.584 8.93555 19.2285 9.72656 19.2285C10.5078 19.2285 11.1426 18.584 11.1426 17.793C11.1426 17.002 10.5078 16.377 9.72656 16.377C8.93555 16.377 8.31055 17.002 8.31055 17.793ZM16.1914 17.793C16.1914 18.584 16.8262 19.2285 17.6074 19.2285C18.3887 19.2285 19.0332 18.584 19.0332 17.793C19.0332 17.002 18.3887 16.377 17.6074 16.377C16.8262 16.377 16.1914 17.002 16.1914 17.793ZM12.2461 13.8379C12.2461 14.6387 12.8809 15.2832 13.6621 15.2832C14.4434 15.2832 15.0879 14.6387 15.0879 13.8379C15.0879 13.0566 14.4434 12.4316 13.6621 12.4316C12.8809 12.4316 12.2461 13.0566 12.2461 13.8379ZM8.30078 9.89258C8.30078 10.6934 8.93555 11.3184 9.72656 11.3281C10.5078 11.3477 11.1523 10.6934 11.1523 9.89258C11.1523 9.11133 10.5078 8.47656 9.72656 8.47656C8.93555 8.47656 8.30078 9.11133 8.30078 9.89258ZM16.1816 9.89258C16.1816 10.6934 16.8262 11.3184 17.6074 11.3281C18.3887 11.3477 19.0332 10.6934 19.0332 9.89258C19.0332 9.11133 18.3887 8.47656 17.6074 8.47656C16.8262 8.47656 16.1816 9.11133 16.1816 9.89258Z",
+  fillOpacity: "0.85"
+}))));
+IconDiceFill.displayName = 'IconDiceFill';

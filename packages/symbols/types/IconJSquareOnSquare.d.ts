@@ -1,0 +1,1 @@
+export const IconJSquareOnSquare: any;

@@ -1,0 +1,1 @@
+export const Icon60ArrowTriangleheadCounterclockwise: any;

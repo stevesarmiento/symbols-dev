@@ -1,0 +1,49 @@
+{
+  "name": "symbols-react",
+  "sideEffects": false,
+  "version": "1.2.6",
+  "description": "S̶F̶ symbols for the web",
+  "keywords": [
+    "icons",
+    "react",
+    "symbols",
+    "ui",
+    "sf symbols",
+    "web design",
+    "icon library",
+    "icon",
+    "svg",
+    "apple"
+  ],
+  "license": "ISC",
+  "homepage": "https://symbols.dev",
+  "bugs": {
+    "url": "https://github.com/stevesarmiento/symbols/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevesarmiento/symbols.git"
+  },
+  "main": "src/index.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "src/icons/",
+    "src/index.js",
+    "types/"
+  ],
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "react": "^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun -e \"process.exit(0)\"",
+    "build": "bun run build:types",
+    "build:types": "tsc",
+    "lint": "bun -e \"process.exit(0)\"",
+    "start": "bun -e \"process.exit(0)\"",
+    "convert-icons": "node scripts/svg-to-jsx.js"
+  }
+}

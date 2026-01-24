@@ -1,0 +1,1 @@
+export const IconBusDoubledecker: any;

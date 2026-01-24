@@ -1,0 +1,1 @@
+export const IconKphCircle: any;

@@ -1,0 +1,26 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconPointBottomleftForwardToPointToprightFilledScurvepath = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "17.666",
+  height: props.height || "21.6309",
+  viewBox: "0 0 17.666 21.6309",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "21.6309",
+  opacity: "0",
+  width: "17.666",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M11.0059 3.14453C11.0059 3.41457 11.04 3.67684 11.1079 3.92578L5.14648 3.92578C2.94922 3.92578 1.57227 4.96094 1.57227 6.5918C1.57227 8.25195 3.04688 9.375 5.98633 9.67773L11.5527 10.2637C15.3418 10.6445 17.3047 12.3828 17.3047 15.0391C17.3047 17.6367 15.3125 19.2773 12.1582 19.2773L6.19241 19.2773C6.2631 19.0225 6.29883 18.7536 6.29883 18.4766C6.29883 18.2102 6.26542 17.9512 6.19894 17.7051L12.1582 17.7051C14.3555 17.7051 15.7324 16.6699 15.7324 15.0391C15.7324 13.3789 14.248 12.2559 11.3184 11.9531L5.73242 11.3672C1.95312 10.9863 0 9.24805 0 6.5918C0 3.99414 1.99219 2.35352 5.14648 2.35352L11.1114 2.35352C11.0413 2.60551 11.0059 2.87111 11.0059 3.14453Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M3.1543 21.6309C4.89258 21.6309 6.29883 20.2148 6.29883 18.4766C6.29883 16.748 4.89258 15.332 3.1543 15.332C1.41602 15.332 0.00976562 16.748 0.00976562 18.4766C0.00976562 20.2148 1.41602 21.6309 3.1543 21.6309ZM3.1543 20.0977C2.25586 20.0977 1.54297 19.3848 1.54297 18.4766C1.54297 17.5684 2.25586 16.8652 3.1543 16.8652C4.0625 16.8652 4.76562 17.5684 4.76562 18.4766C4.76562 19.3848 4.07227 20.0977 3.1543 20.0977ZM14.1504 6.29883C15.8984 6.29883 17.3047 4.88281 17.3047 3.14453C17.3047 1.41602 15.8984 0 14.1504 0C12.4219 0 11.0059 1.41602 11.0059 3.14453C11.0059 4.88281 12.4219 6.29883 14.1504 6.29883Z",
+  fillOpacity: "0.85"
+}))));
+IconPointBottomleftForwardToPointToprightFilledScurvepath.displayName = 'IconPointBottomleftForwardToPointToprightFilledScurvepath';

@@ -1,0 +1,1 @@
+export const IconKeyRadiowavesForwardSlash: any;

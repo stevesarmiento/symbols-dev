@@ -1,0 +1,1 @@
+export const IconSquareLeadingthirdInsetFilled: any;

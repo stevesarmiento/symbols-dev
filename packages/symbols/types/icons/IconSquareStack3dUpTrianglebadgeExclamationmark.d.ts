@@ -1,0 +1,1 @@
+export const IconSquareStack3dUpTrianglebadgeExclamationmark: any;

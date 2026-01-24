@@ -1,0 +1,26 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconRectanglePortraitArrowtriangle2Outward = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "25.0122",
+  height: props.height || "18.9746",
+  viewBox: "0 0 25.0122 18.9746",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "18.9746",
+  opacity: "0",
+  width: "25.0122",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M9.00514 18.9746L15.636 18.9746C17.6477 18.9746 18.6633 17.959 18.6633 15.9082L18.6633 3.06641C18.6633 1.01562 17.6575 0 15.636 0L9.00514 0C6.99342 0 5.97779 1.01562 5.97779 3.06641L5.97779 15.9082C5.97779 17.959 6.99342 18.9746 9.00514 18.9746ZM9.09303 17.4023C8.0774 17.4023 7.55006 16.8457 7.55006 15.8887L7.55006 3.08594C7.55006 2.10938 8.0774 1.57227 9.09303 1.57227L15.5579 1.57227C16.5735 1.57227 17.0911 2.10938 17.0911 3.08594L17.0911 15.8887C17.0911 16.8457 16.5735 17.4023 15.5579 17.4023Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M4.67897 11.6602L4.67897 7.31445C4.67897 6.79688 4.25904 6.55273 3.80006 6.83594L0.333262 8.96484C-0.106191 9.22852-0.115957 9.74609 0.333262 10.0195L3.80006 12.1289C4.25904 12.4121 4.67897 12.1875 4.67897 11.6602ZM19.9622 11.6602C19.9622 12.1875 20.3919 12.4121 20.8508 12.1289L24.3176 10.0195C24.7571 9.74609 24.7473 9.22852 24.3176 8.96484L20.8411 6.83594C20.3821 6.55273 19.9622 6.79688 19.9622 7.31445Z",
+  fillOpacity: "0.85"
+}))));
+IconRectanglePortraitArrowtriangle2Outward.displayName = 'IconRectanglePortraitArrowtriangle2Outward';

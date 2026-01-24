@@ -1,0 +1,1 @@
+export const IconChineseyuanrenminbisignArrowTriangleheadCounterclockwiseRotate90: any;

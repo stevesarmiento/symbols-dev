@@ -1,0 +1,1 @@
+export const IconDivideCircleFill: any;

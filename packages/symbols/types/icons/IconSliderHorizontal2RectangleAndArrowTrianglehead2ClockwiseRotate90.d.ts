@@ -1,0 +1,1 @@
+export const IconSliderHorizontal2RectangleAndArrowTrianglehead2ClockwiseRotate90: any;

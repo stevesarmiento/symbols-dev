@@ -1,0 +1,23 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconFigureSeatedSeatbelt = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "16.6022",
+  height: props.height || "24.0527",
+  viewBox: "0 0 16.6022 24.0527",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "24.0527",
+  opacity: "0",
+  width: "16.6022",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M8.11553 5.30273C9.59014 5.30273 10.762 4.0918 10.762 2.66602C10.762 1.20117 9.59014 0 8.11553 0C6.64092 0 5.48858 1.20117 5.48858 2.66602C5.48858 4.12109 6.64092 5.30273 8.11553 5.30273ZM3.02764 15.1855L10.6058 6.78711C9.86358 6.51367 9.04327 6.38672 8.11553 6.38672C4.70733 6.38672 2.68585 8.03711 2.68585 10.791C2.68585 11.4453 2.72491 12.334 2.82256 13.252ZM13.2132 15.1953L13.4183 13.252C13.5159 12.334 13.555 11.4453 13.555 10.791C13.555 9.43359 13.0765 8.33008 12.139 7.57812L6.14288 14.2773C6.79717 14.1602 7.46124 14.1309 8.11553 14.1309C9.80499 14.1309 11.4944 14.3457 13.2132 15.1953ZM5.19561 23.9844C5.89874 23.8867 6.35772 23.3887 6.26983 22.5195L5.79131 18.1152L10.4495 18.1152L9.971 22.5195C9.88311 23.3887 10.3421 23.8867 11.0355 23.9844C11.7581 24.0625 12.3148 23.6133 12.4026 22.7637L13.0081 16.9531C11.4651 16.0645 9.75616 15.7227 8.11553 15.7227C6.48467 15.7227 4.77569 16.0645 3.23272 16.9531L3.83819 22.7637C3.92608 23.6133 4.48272 24.0625 5.19561 23.9844ZM12.139 7.56836L14.4046 5.05859C14.7952 4.60938 14.7659 4.13086 14.3851 3.80859C14.0335 3.49609 13.5745 3.49609 13.1546 3.95508L10.6058 6.78711C11.1722 6.99219 11.68 7.27539 12.139 7.56836ZM0.224908 18.3203C0.57647 18.6816 1.05499 18.6719 1.46514 18.252C2.01202 17.7344 2.55889 17.2949 3.23272 16.9531L3.02764 15.1855C2.02178 15.6543 1.14288 16.3281 0.312798 17.1094C-0.0778266 17.4805-0.0973579 17.9688 0.224908 18.3203ZM16.0159 18.3203C16.3382 17.9785 16.3187 17.4902 15.9378 17.1191C15.098 16.3281 14.219 15.6641 13.2132 15.1953L13.0081 16.9531C13.6819 17.2949 14.2288 17.7344 14.7757 18.252C15.1858 18.6719 15.6644 18.6816 16.0159 18.3203Z",
+  fillOpacity: "0.85"
+}))));
+IconFigureSeatedSeatbelt.displayName = 'IconFigureSeatedSeatbelt';

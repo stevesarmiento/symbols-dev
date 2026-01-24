@@ -1,0 +1,1 @@
+export const IconWonsignCircle: any;

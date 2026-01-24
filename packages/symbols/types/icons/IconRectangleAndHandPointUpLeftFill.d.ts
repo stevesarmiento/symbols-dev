@@ -1,0 +1,1 @@
+export const IconRectangleAndHandPointUpLeftFill: any;

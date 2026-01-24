@@ -1,0 +1,1 @@
+export const IconDollarsignBankBuilding: any;

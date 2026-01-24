@@ -1,0 +1,1 @@
+export const IconDollarsignArrowCirclepath: any;

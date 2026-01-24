@@ -1,0 +1,1 @@
+export const IconQuoteClosing: any;

@@ -1,0 +1,1 @@
+export const IconIllustratorLogo: any;

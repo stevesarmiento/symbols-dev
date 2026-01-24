@@ -1,0 +1,1 @@
+export const IconBrazilianrealsignArrowTriangleheadCounterclockwiseRotate90: any;

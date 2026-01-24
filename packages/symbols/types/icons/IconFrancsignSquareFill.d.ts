@@ -1,0 +1,1 @@
+export const IconFrancsignSquareFill: any;

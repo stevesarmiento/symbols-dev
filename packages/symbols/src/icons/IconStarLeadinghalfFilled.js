@@ -1,0 +1,23 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconStarLeadinghalfFilled = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "22.0527",
+  height: props.height || "22.1191",
+  viewBox: "0 0 22.0527 22.1191",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "22.1191",
+  opacity: "0",
+  width: "22.0527",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M4.16109 20.5469C4.56149 20.8594 5.0693 20.752 5.67477 20.3125L10.8408 16.5137L16.0166 20.3125C16.622 20.752 17.1201 20.8594 17.5302 20.5469C17.9306 20.2441 18.0185 19.7461 17.7744 19.0332L15.7334 12.959L20.9482 9.20898C21.5537 8.7793 21.7978 8.33008 21.6416 7.8418C21.4853 7.37305 21.0263 7.13867 20.2744 7.14844L13.8779 7.1875L11.9345 1.08398C11.7002 0.361328 11.3486 0 10.8408 0C10.3427 0 9.99117 0.361328 9.7568 1.08398L7.81344 7.1875L1.41695 7.14844C0.665001 7.13867 0.206017 7.37305 0.0497668 7.8418C-0.116249 8.33008 0.137657 8.7793 0.743126 9.20898L5.95797 12.959L3.91695 19.0332C3.67281 19.7461 3.7607 20.2441 4.16109 20.5469ZM10.8408 14.834L10.8408 2.37305C10.8701 2.37305 10.8896 2.39258 10.8994 2.45117L12.5986 8.10547C12.7255 8.50586 12.9795 8.67188 13.3798 8.66211L19.288 8.55469C19.3466 8.55469 19.3662 8.55469 19.3759 8.58398C19.3857 8.61328 19.3662 8.63281 19.3271 8.66211L14.4638 12.0215C14.122 12.2559 14.0439 12.5586 14.1806 12.9395L16.124 18.5254C16.1338 18.584 16.1435 18.5938 16.124 18.6133C16.1045 18.6426 16.0752 18.623 16.0361 18.5938L11.3388 15.0098C11.1826 14.8926 11.0166 14.8242 10.8408 14.834Z",
+  fillOpacity: "0.85"
+}))));
+IconStarLeadinghalfFilled.displayName = 'IconStarLeadinghalfFilled';

@@ -1,0 +1,1 @@
+export const IconCloudRainFill: any;

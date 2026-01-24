@@ -1,0 +1,23 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconWaveformCircleFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "20.2832",
+  height: props.height || "19.9316",
+  viewBox: "0 0 20.2832 19.9316",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "19.9316",
+  opacity: "0",
+  width: "20.2832",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M19.9219 9.9707C19.9219 15.4199 15.4102 19.9316 9.96094 19.9316C4.52148 19.9316 0 15.4199 0 9.9707C0 4.53125 4.51172 0.00976562 9.95117 0.00976562C15.4004 0.00976562 19.9219 4.53125 19.9219 9.9707ZM8.33008 5L8.33008 14.9316C8.33008 15.2832 8.59375 15.5371 8.94531 15.5371C9.27734 15.5371 9.54102 15.2734 9.54102 14.9316L9.54102 5C9.54102 4.6582 9.27734 4.39453 8.94531 4.39453C8.60352 4.39453 8.33008 4.6582 8.33008 5ZM12.4121 6.39648L12.4121 13.5352C12.4121 13.8672 12.6758 14.1309 13.0273 14.1309C13.3691 14.1309 13.6328 13.8672 13.6328 13.5352L13.6328 6.39648C13.6328 6.06445 13.3691 5.79102 13.0273 5.79102C12.6758 5.79102 12.4121 6.06445 12.4121 6.39648ZM6.28906 7.36328L6.28906 12.5488C6.28906 12.9102 6.55273 13.1738 6.89453 13.1738C7.24609 13.1738 7.50977 12.9102 7.50977 12.5488L7.50977 7.36328C7.50977 7.02148 7.24609 6.75781 6.89453 6.75781C6.55273 6.75781 6.28906 7.02148 6.28906 7.36328ZM10.3711 8.27148L10.3711 11.6504C10.3711 11.9922 10.6445 12.2559 10.9766 12.2559C11.3184 12.2559 11.582 11.9922 11.582 11.6504L11.582 8.27148C11.582 7.93945 11.3184 7.67578 10.9766 7.67578C10.6445 7.67578 10.3711 7.93945 10.3711 8.27148ZM14.4629 8.68164L14.4629 11.25C14.4629 11.5918 14.7266 11.8555 15.0781 11.8555C15.4199 11.8555 15.6738 11.6016 15.6738 11.25L15.6738 8.68164C15.6738 8.33008 15.4199 8.06641 15.0781 8.06641C14.7266 8.06641 14.4629 8.33984 14.4629 8.68164ZM4.24805 9.07227L4.24805 10.8398C4.24805 11.1914 4.52148 11.4551 4.84375 11.4551C5.19531 11.4551 5.45898 11.1914 5.45898 10.8398L5.45898 9.07227C5.45898 8.74023 5.19531 8.47656 4.84375 8.47656C4.51172 8.47656 4.24805 8.74023 4.24805 9.07227Z",
+  fillOpacity: "0.85"
+}))));
+IconWaveformCircleFill.displayName = 'IconWaveformCircleFill';

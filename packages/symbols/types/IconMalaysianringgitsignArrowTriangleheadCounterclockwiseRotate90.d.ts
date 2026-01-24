@@ -1,0 +1,1 @@
+export const IconMalaysianringgitsignArrowTriangleheadCounterclockwiseRotate90: any;

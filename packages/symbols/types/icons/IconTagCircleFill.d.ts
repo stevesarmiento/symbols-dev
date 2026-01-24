@@ -1,0 +1,1 @@
+export const IconTagCircleFill: any;

@@ -1,0 +1,1 @@
+export const IconSparklesTv: any;

@@ -1,0 +1,1 @@
+export const IconFootballFill: any;

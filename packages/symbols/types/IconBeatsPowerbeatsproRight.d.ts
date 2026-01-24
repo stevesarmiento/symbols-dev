@@ -1,0 +1,1 @@
+export const IconBeatsPowerbeatsproRight: any;

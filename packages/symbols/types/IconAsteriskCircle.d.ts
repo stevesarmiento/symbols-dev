@@ -1,0 +1,1 @@
+export const IconAsteriskCircle: any;

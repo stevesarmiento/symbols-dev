@@ -1,0 +1,1 @@
+export const IconShekelsignArrowTriangleheadCounterclockwiseRotate90: any;

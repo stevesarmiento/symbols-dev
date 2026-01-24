@@ -1,0 +1,26 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconSquare2Layers3dTopFilled = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "20.3223",
+  height: props.height || "20.8301",
+  viewBox: "0 0 20.3223 20.8301",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "20.8301",
+  opacity: "0",
+  width: "20.3223",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M7.28886 11.5803L2.10938 14.541C2.07031 14.5605 2.04102 14.5898 2.04102 14.6387C2.04102 14.6875 2.07031 14.707 2.10938 14.7363L9.54102 18.9844C9.70703 19.0723 9.84375 19.1211 9.98047 19.1211C10.1172 19.1211 10.2539 19.0723 10.4102 18.9844L17.8418 14.7363C17.8906 14.707 17.9199 14.6875 17.9199 14.6387C17.9199 14.5898 17.8906 14.5605 17.8418 14.541L12.6663 11.5826L14.2989 10.6348L18.8574 13.2812C19.6484 13.75 19.9609 14.1016 19.9609 14.6387C19.9609 15.1758 19.6484 15.5273 18.8574 15.9863L11.2207 20.4297C10.752 20.7031 10.3711 20.8301 9.98047 20.8301C9.58008 20.8301 9.20898 20.7031 8.74023 20.4297L1.09375 15.9863C0.302734 15.5273 0 15.1758 0 14.6387C0 14.1016 0.302734 13.75 1.09375 13.2812L5.65806 10.6348Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M9.98047 12.8223C10.3711 12.8223 10.752 12.6953 11.2207 12.4219L18.8574 7.98828C19.6484 7.51953 19.9609 7.16797 19.9609 6.63086C19.9609 6.09375 19.6484 5.74219 18.8574 5.2832L11.2207 0.839844C10.752 0.566406 10.3711 0.439453 9.98047 0.439453C9.58008 0.439453 9.20898 0.566406 8.74023 0.839844L1.09375 5.2832C0.302734 5.74219 0 6.09375 0 6.63086C0 7.16797 0.302734 7.51953 1.09375 7.98828L8.74023 12.4219C9.20898 12.6953 9.58008 12.8223 9.98047 12.8223Z",
+  fillOpacity: "0.85"
+}))));
+IconSquare2Layers3dTopFilled.displayName = 'IconSquare2Layers3dTopFilled';

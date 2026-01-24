@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  transpilePackages: ["symbols-react"],
 };
 
 export default nextConfig;

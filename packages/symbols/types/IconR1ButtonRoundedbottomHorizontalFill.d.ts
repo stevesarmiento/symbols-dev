@@ -1,0 +1,1 @@
+export const IconR1ButtonRoundedbottomHorizontalFill: any;

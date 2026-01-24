@@ -1,0 +1,1 @@
+export const IconNorwegiankronesignBankBuildingFill: any;

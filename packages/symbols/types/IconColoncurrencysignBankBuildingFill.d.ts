@@ -1,0 +1,1 @@
+export const IconColoncurrencysignBankBuildingFill: any;

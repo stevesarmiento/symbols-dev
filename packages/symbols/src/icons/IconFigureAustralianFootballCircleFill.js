@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconFigureAustralianFootballCircleFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "28.875",
+  height: props.height || "28.875",
+  viewBox: "0 0 28.875 28.875",
+  fill: props.fill || "'none' || '#000000'",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M14.4327 28.8786C22.4127 28.8786 28.8727 22.4086 28.8727 14.4386C28.8727 6.4686 22.4127 -0.0014 14.4327 -0.0014C6.4627 -0.0014 0.0027 6.4686 0.0027 14.4386C0.0027 22.4086 6.4627 28.8786 14.4327 28.8786ZM16.5427 8.7686C15.6127 8.7686 14.8727 8.0086 14.8727 7.0686C14.8727 6.1486 15.6127 5.3986 16.5427 5.3986C17.4727 5.3986 18.2227 6.1486 18.2227 7.0686C18.2227 8.0086 17.4727 8.7686 16.5427 8.7686ZM8.5127 16.5586C8.0527 16.5586 7.6727 16.1586 7.6727 15.6986C7.6727 15.2286 8.0527 14.8486 8.5127 14.8486H16.2327V11.4986C16.2327 11.3186 16.1027 11.1986 15.9127 11.1986H10.2927C9.8327 11.1986 9.4627 10.8186 9.4627 10.3486C9.4627 9.8986 9.8427 9.4986 10.2927 9.4986H17.5927C18.4027 9.4986 19.1427 9.8286 19.7027 10.3886L21.5627 12.2386C21.7427 12.4186 21.8227 12.6186 21.8227 12.8386V15.6986C21.8227 16.1586 21.4527 16.5586 20.9827 16.5586C20.5327 16.5586 20.1427 16.1586 20.1427 15.6986V13.2086L19.4927 12.5486C19.4327 12.4686 19.3227 12.5086 19.3227 12.6186V15.1886C19.3227 16.6386 18.2227 17.3186 16.7027 17.0986L12.7827 16.5586ZM6.2527 13.2586C5.2627 12.2486 5.3427 11.1286 5.7827 10.7086C6.2227 10.2586 7.2627 10.2286 8.2727 11.2286C9.2727 12.2386 9.2327 13.2586 8.8027 13.6986C8.3627 14.1386 7.2427 14.2486 6.2527 13.2586ZM19.0827 23.0686C18.7627 23.3886 18.2427 23.3886 17.9127 23.0686L15.0427 20.2086C14.7927 19.9586 14.7427 19.6286 14.8427 19.3186L15.4627 17.6486L16.5927 17.8286C16.9227 17.8586 17.2127 17.8686 17.5027 17.8386L16.6827 19.4386L19.0827 21.8886C19.4127 22.2186 19.4127 22.7386 19.0827 23.0686Z"
+})));
+IconFigureAustralianFootballCircleFill.displayName = 'IconFigureAustralianFootballCircleFill';

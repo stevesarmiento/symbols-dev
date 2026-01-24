@@ -1,0 +1,23 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconOvalPortraitTophalfFilled = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "18.3496",
+  height: props.height || "23.3887",
+  viewBox: "0 0 18.3496 23.3887",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "23.3887",
+  opacity: "0",
+  width: "18.3496",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M9.00391 0C3.68164 0 0 4.83398 0 11.6895C0 18.5449 3.68164 23.3789 9.00391 23.3789C14.3262 23.3789 17.9883 18.5547 17.9883 11.6895C17.9883 4.82422 14.3262 0 9.00391 0ZM1.57227 11.6895L16.416 11.6895C16.416 17.627 13.3887 21.8066 9.00391 21.8066C4.60938 21.8066 1.57227 17.6172 1.57227 11.6895Z",
+  fillOpacity: "0.85"
+}))));
+IconOvalPortraitTophalfFilled.displayName = 'IconOvalPortraitTophalfFilled';

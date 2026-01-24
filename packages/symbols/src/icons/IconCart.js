@@ -1,0 +1,23 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconCart = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "23.3984",
+  height: props.height || "20.5762",
+  viewBox: "0 0 23.3984 20.5762",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "20.5762",
+  opacity: "0",
+  width: "23.3984",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M7.93945 15.8301L19.3359 15.8301C19.7168 15.8301 20.0488 15.5176 20.0488 15.0977C20.0488 14.6777 19.7168 14.3652 19.3359 14.3652L8.10547 14.3652C7.54883 14.3652 7.20703 13.9746 7.11914 13.3789L5.51758 2.50977C5.41992 1.75781 5.14648 1.37695 4.15039 1.37695L0.722656 1.37695C0.332031 1.37695 0 1.71875 0 2.10938C0 2.50977 0.332031 2.85156 0.722656 2.85156L4.02344 2.85156L5.58594 13.5742C5.79102 14.9609 6.52344 15.8301 7.93945 15.8301ZM6.14258 12.3535L19.3555 12.3535C20.7812 12.3535 21.5137 11.4746 21.7188 10.0781L22.5 4.91211C22.5195 4.78516 22.5391 4.62891 22.5391 4.54102C22.5391 4.07227 22.1875 3.75 21.6504 3.75L5.29297 3.75L5.30273 5.22461L20.8789 5.22461L20.1855 9.90234C20.1074 10.5078 19.7852 10.8887 19.209 10.8887L6.12305 10.8887ZM8.71094 20.5762C9.58984 20.5762 10.293 19.8828 10.293 18.9941C10.293 18.1152 9.58984 17.4121 8.71094 17.4121C7.82227 17.4121 7.11914 18.1152 7.11914 18.9941C7.11914 19.8828 7.82227 20.5762 8.71094 20.5762ZM17.8418 20.5762C18.7305 20.5762 19.4336 19.8828 19.4336 18.9941C19.4336 18.1152 18.7305 17.4121 17.8418 17.4121C16.9629 17.4121 16.25 18.1152 16.25 18.9941C16.25 19.8828 16.9629 20.5762 17.8418 20.5762Z",
+  fillOpacity: "0.85"
+}))));
+IconCart.displayName = 'IconCart';
