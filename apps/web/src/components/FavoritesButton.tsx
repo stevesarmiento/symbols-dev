@@ -2,7 +2,7 @@
 
 import { useFavorites, useFavoritesHydration } from "@/stores/favorites";
 import { IconStar, IconStarFill, IconStarSlashFill } from "symbols-react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from "motion/react";
 import { useState, useEffect } from "react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { Button } from "./ui/button";
@@ -16,6 +16,9 @@ export function FavoritesButton({ iconName }: FavoritesButtonProps) {
   const { toggleFavorite, isFavorite } = useFavorites();
   const isFavorited = hasHydrated && isFavorite(iconName);
   const [showSlash, setShowSlash] = useState(false);
+  const favoriteAriaLabel = isFavorited
+    ? "Remove from favorites"
+    : "Add to favorites";
 
   useEffect(() => {
     if (!isFavorited && showSlash) {
@@ -37,6 +40,8 @@ export function FavoritesButton({ iconName }: FavoritesButtonProps) {
     <Tooltip delayDuration={0}>
       <TooltipTrigger asChild>
         <Button
+          type="button"
+          aria-label={favoriteAriaLabel}
           onClick={handleClick}
           onMouseDown={(e) => {
             e.preventDefault();

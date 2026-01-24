@@ -47,6 +47,8 @@ export function FolderTab({ iconName, copiedComponent, onCopyComponent }: Folder
           <Tooltip delayDuration={0}>
             <TooltipTrigger asChild>
               <button
+                type="button"
+                aria-label="Copy React snippet"
                 onClick={onCopyComponent}
                 className="absolute top-[-5px] right-0 flex items-center justify-center h-8 w-8 hover:bg-zinc-800 rounded-lg"
               >

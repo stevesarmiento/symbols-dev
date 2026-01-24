@@ -1,7 +1,11 @@
-"use client";
+import React from "react";
 
-import React from 'react';
-import { IconProps } from '@/components/IconsList';
+interface IconProps {
+  className?: string;
+  width?: number;
+  height?: number;
+  fill?: string;
+}
 
 interface IconDisplayProps {
   IconComponent: React.ComponentType<IconProps>;

@@ -12,7 +12,7 @@ import {
   CommandItem,
   CommandList,
 } from '@/components/ui/command'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence } from "motion/react";
 import { TextShimmer } from "@/components/ui/text-shimmer";
 
 interface CommandSearchProps {

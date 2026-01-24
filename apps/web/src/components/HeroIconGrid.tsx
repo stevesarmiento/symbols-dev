@@ -50,7 +50,7 @@ import {
     IconTshirtFill,
 
 } from 'symbols-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from "motion/react";
 
 const initialIcons = [
     { key: 'IconSquareStack3dDownForwardFill', icon: <IconSquareStack3dDownForwardFill className="w-[24px] h-[24px] fill-white hover:scale-125 transition-all duration-150 ease-in-out" /> },

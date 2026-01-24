@@ -18,6 +18,7 @@ export function IconHeader({ iconName, copied, onCopy }: IconHeaderProps) {
   return (
     <>
       <button 
+        type="button"
         onClick={() => router.back()}
         className="mb-8 flex items-center gap-2 text-sm text-white/50 hover:text-white transition-colors"
       >
@@ -40,6 +41,8 @@ export function IconHeader({ iconName, copied, onCopy }: IconHeaderProps) {
           <Tooltip delayDuration={0}>
             <TooltipTrigger asChild>
               <button
+                type="button"
+                aria-label="Copy icon name"
                 className="group flex items-center justify-center w-10 h-10 rounded-lg p-0 transition-all duration-150 ease-in-out hover:bg-white/10 hover:scale-95"
                 onClick={onCopy}
               >

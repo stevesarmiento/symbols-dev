@@ -1,7 +1,15 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { Sidebar, SidebarContent, SidebarHeader, SidebarInput, SidebarMenu, SidebarMenuItem, SidebarMenuButton } from "@/components/ui/sidebar";
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarHeader,
+  SidebarInput,
+  SidebarMenu,
+  SidebarMenuItem,
+  SidebarMenuButton,
+} from "@/components/ui/sidebar";
 import { useFavorites, useFavoritesHydration } from "@/stores/favorites";
 import { IconStarFill, IconTrash, IconPaperclip, IconCheckmark } from "symbols-react";
 import * as Icons from "symbols-react";
@@ -111,13 +119,13 @@ export function FavoritesSidebar() {
                 <SidebarMenuItem key={iconName}>
                   <SidebarMenuButton
                     onClick={() => handleIconClick(iconName)}
-                    className="group/item relative rounded-xl h-auto p-3 hover:bg-zinc-800/30 transition-all duration-200"
+                    className="group rounded-xl h-auto p-3 hover:bg-zinc-800/30 transition-all duration-200 pr-16"
                   >
                     <div className="flex items-center gap-3 w-full">
                       {IconComponent && (
                         <div className="flex-shrink-0">
                           <IconComponent 
-                            className="h-5 w-5 fill-current group-hover/item:fill-zinc-200 transition-colors duration-200" 
+                            className="h-5 w-5 fill-current group-hover:fill-zinc-200 transition-colors duration-200" 
                             width={20} 
                             height={20} 
                           />
@@ -125,35 +133,39 @@ export function FavoritesSidebar() {
                       )}
                       
                       <div className="flex-1 min-w-0">
-                        <p className="text-xs text-zinc-400 group-hover/item:text-white transition-colors duration-200 truncate">
+                        <p className="text-xs text-zinc-400 group-hover:text-white transition-colors duration-200 truncate">
                           {iconName.replace('Icon', '')}
                         </p>
                       </div>
-                      
-                      <div className="flex items-center gap-1 opacity-0 group-hover/item:opacity-100 group-hover/item:motion-preset-blur-left-sm group-hover/item:motion-preset-fade-sm group-hover/item:motion-preset-slide-left-md motion-ease-spring-snappy motion-duration-100">
-                        <div
-                          className="h-6 w-6 inline-flex items-center justify-center rounded-md hover:bg-sidebar-accent-foreground/10 cursor-pointer transition-colors"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleCopyIconName(iconName);
-                          }}
-                        >
-                          {copiedIcon === iconName ? (
-                            <IconCheckmark className="h-3 w-3 fill-green-500" />
-                          ) : (
-                            <IconPaperclip className="h-3 w-3 fill-zinc-400 group-hover/item:fill-zinc-200 transition-colors duration-200" />
-                          )}
-                        </div>
-                        
-                        <div
-                          className="h-6 w-6 inline-flex items-center justify-center rounded-md hover:bg-red-500/10 cursor-pointer transition-colors"
-                          onClick={(e) => handleRemoveFromFavorites(iconName, e)}
-                        >
-                          <IconTrash className="h-3.5 w-3.5 fill-zinc-400 group-hover/item:fill-rose-500 transition-colors duration-200" />
-                        </div>
-                      </div>
                     </div>
                   </SidebarMenuButton>
+
+                  <div
+                    data-sidebar="menu-action"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-1 opacity-0 transition-opacity duration-150 group-hover/menu-item:opacity-100 group-focus-within/menu-item:opacity-100"
+                  >
+                    <button
+                      type="button"
+                      aria-label="Copy icon name"
+                      className="h-6 w-6 inline-flex items-center justify-center rounded-md hover:bg-sidebar-accent-foreground/10 transition-colors"
+                      onClick={() => handleCopyIconName(iconName)}
+                    >
+                      {copiedIcon === iconName ? (
+                        <IconCheckmark className="h-3 w-3 fill-green-500" />
+                      ) : (
+                        <IconPaperclip className="h-3 w-3 fill-zinc-400 transition-colors duration-200" />
+                      )}
+                    </button>
+
+                    <button
+                      type="button"
+                      aria-label="Remove from favorites"
+                      className="h-6 w-6 inline-flex items-center justify-center rounded-md hover:bg-red-500/10 transition-colors"
+                      onClick={(e) => handleRemoveFromFavorites(iconName, e)}
+                    >
+                      <IconTrash className="h-3.5 w-3.5 fill-zinc-400 transition-colors duration-200" />
+                    </button>
+                  </div>
                 </SidebarMenuItem>
               );
             })}

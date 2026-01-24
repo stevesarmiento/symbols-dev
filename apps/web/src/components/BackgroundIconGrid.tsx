@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
 import * as Icons from 'symbols-react';
-import { motion } from 'framer-motion';
+import { motion } from "motion/react";
 
 const BackgroundIconGrid = () => {
   const [gridDimensions, setGridDimensions] = useState({ rows: 0, cols: 0 });

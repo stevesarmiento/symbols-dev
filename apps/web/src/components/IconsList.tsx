@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { IconPaperclip, IconExclamationmarkTriangleFill, IconCheckmarkCircleFill, IconCheckmark } from 'symbols-react';
-import { motion } from 'framer-motion';
+import { motion } from "motion/react";
 import {
     Tooltip,
     TooltipContent,
@@ -79,17 +79,21 @@ const IconsList: React.FC<IconsListProps> = ({ filteredIcons, loadMoreRef }) => 
                     key={name}
                     className="flex flex-col justify-center border-r border-b border-white/5 p-0"
                 >
-                    <div 
+                    <button
+                        type="button"
+                        aria-label={`View ${name.replace('Icon', '')} icon`}
                         className="group cursor-pointer h-[130px] w-full flex justify-center items-center hover:bg-white/5 transition-all duration-150 ease-in-out"
                         onClick={() => handleIconClick(name)}
                     >
                         <Icon className="group-hover:scale-125 transition-all duration-150 ease-in-out fill-white" width={35} height={35} />
-                    </div>
+                    </button>
                     <div className="inline-flex justify-between items-center border-t border-white/5 p-2">
                         <span className="text-xs text-white/50 font-mono fade-out">{name.replace('Icon', '')}</span>
                             <Tooltip delayDuration={0}>
                                 <TooltipTrigger asChild>
                                     <button
+                                        type="button"
+                                        aria-label="Copy icon name"
                                         className="group flex items-center justify-center w-[26px] h-[26px] bg-white/10 rounded-lg p-[5px] transition-all duration-150 ease-in-out hover:bg-white/20 hover:scale-95 focus:outline-none"
                                         onClick={(e) => {
                                             e.stopPropagation();

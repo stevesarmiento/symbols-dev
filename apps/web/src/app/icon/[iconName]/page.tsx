@@ -1,297 +1,347 @@
-'use client' 
+import React from "react";
+import * as Icons from "symbols-react";
+import Link from "next/link";
+import { IconDisplay } from "@/components/IconDisplay";
+import { IconDetailActions } from "@/components/IconDetailActions";
 
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { useParams } from 'next/navigation';
-import * as Icons from 'symbols-react'; 
-import { IconProps } from '@/components/IconsList';  
-import { toast } from "sonner";
-import { motion } from 'framer-motion';
-import { createRoot } from 'react-dom/client';
-import { IconHeader } from '@/components/IconHeader';
-import { IconDisplay } from '@/components/IconDisplay';
-import { ComponentViewer } from '@/components/ComponentView';
-
-interface IconDetailClientProps {
-  iconName: string;
-}
-
-function IconDetailClient({ iconName }: IconDetailClientProps) {
-  const [size] = useState<number>(228); 
-  const [fillColor] = useState<string>("#FFFFFF"); 
-  const [copied, setCopied] = useState(false);
-  const [copiedComponent, setCopiedComponent] = useState(false);
-  const [svgContent, setSvgContent] = useState<string>('<!-- Loading SVG content... -->');
-
-  const IconComponent = useMemo(() => {
-    if (typeof iconName === 'string' && iconName.startsWith('Icon')) {
-      return Icons[iconName as keyof typeof Icons] as React.ComponentType<IconProps>;
-    }
-    return null;
-  }, [iconName]);
-
-  // Extract SVG content using DOM manipulation
-  const extractSVGContent = useCallback(async (): Promise<string> => {
-    if (!IconComponent) return '<!-- Icon not found -->';
-    
-    try {
-      const tempContainer = document.createElement('div');
-      tempContainer.style.position = 'absolute';
-      tempContainer.style.left = '-9999px';
-      tempContainer.style.top = '-9999px';
-      document.body.appendChild(tempContainer);
-
-      const root = createRoot(tempContainer);
-      
-      return new Promise((resolve) => {
-        root.render(
-          React.createElement(IconComponent, { 
-            width: 24, 
-            height: 24, 
-            fill: 'currentColor'
-          })
-        );
-
-        setTimeout(() => {
-          const svgElement = tempContainer.querySelector('svg');
-          if (svgElement) {
-            const content = svgElement.innerHTML;
-            root.unmount();
-            document.body.removeChild(tempContainer);
-            resolve(content || '<!-- No SVG content found -->');
-          } else {
-            root.unmount();
-            document.body.removeChild(tempContainer);
-            resolve('<!-- SVG element not found -->');
-          }
-        }, 100);
-      });
-    } catch (error) {
-      console.error('Error extracting SVG:', error);
-      return '<!-- Error extracting SVG content -->';
-    }
-  }, [IconComponent]);
-
-  useEffect(() => {
-    if (IconComponent) {
-      extractSVGContent().then(setSvgContent);
-    }
-  }, [IconComponent, extractSVGContent]);
-
-  const transformSVGAttributes = (svgContent: string): string => {
-    const attributeMap: Record<string, string> = {
-      'fill-opacity': 'fillOpacity',
-      'stroke-opacity': 'strokeOpacity',
-      'stroke-width': 'strokeWidth',
-      'stroke-linecap': 'strokeLinecap',
-      'stroke-linejoin': 'strokeLinejoin',
-      'stroke-dasharray': 'strokeDasharray',
-      'stroke-dashoffset': 'strokeDashoffset',
-      'stroke-miterlimit': 'strokeMiterlimit',
-      'fill-rule': 'fillRule',
-      'clip-rule': 'clipRule',
-      'clip-path': 'clipPath',
-      'color-interpolation': 'colorInterpolation',
-      'color-interpolation-filters': 'colorInterpolationFilters',
-      'color-profile': 'colorProfile',
-      'color-rendering': 'colorRendering',
-      'dominant-baseline': 'dominantBaseline',
-      'enable-background': 'enableBackground',
-      'font-family': 'fontFamily',
-      'font-size': 'fontSize',
-      'font-size-adjust': 'fontSizeAdjust',
-      'font-stretch': 'fontStretch',
-      'font-style': 'fontStyle',
-      'font-variant': 'fontVariant',
-      'font-weight': 'fontWeight',
-      'glyph-orientation-horizontal': 'glyphOrientationHorizontal',
-      'glyph-orientation-vertical': 'glyphOrientationVertical',
-      'horiz-adv-x': 'horizAdvX',
-      'horiz-origin-x': 'horizOriginX',
-      'image-rendering': 'imageRendering',
-      'letter-spacing': 'letterSpacing',
-      'lighting-color': 'lightingColor',
-      'marker-end': 'markerEnd',
-      'marker-mid': 'markerMid',
-      'marker-start': 'markerStart',
-      'overline-position': 'overlinePosition',
-      'overline-thickness': 'overlineThickness',
-      'paint-order': 'paintOrder',
-      'panose-1': 'panose1',
-      'pointer-events': 'pointerEvents',
-      'rendering-intent': 'renderingIntent',
-      'shape-rendering': 'shapeRendering',
-      'stop-color': 'stopColor',
-      'stop-opacity': 'stopOpacity',
-      'strikethrough-position': 'strikethroughPosition',
-      'strikethrough-thickness': 'strikethroughThickness',
-      'text-anchor': 'textAnchor',
-      'text-decoration': 'textDecoration',
-      'text-rendering': 'textRendering',
-      'underline-position': 'underlinePosition',
-      'underline-thickness': 'underlineThickness',
-      'unicode-bidi': 'unicodeBidi',
-      'unicode-range': 'unicodeRange',
-      'units-per-em': 'unitsPerEm',
-      'v-alphabetic': 'vAlphabetic',
-      'v-hanging': 'vHanging',
-      'v-ideographic': 'vIdeographic',
-      'v-mathematical': 'vMathematical',
-      'vector-effect': 'vectorEffect',
-      'vert-adv-y': 'vertAdvY',
-      'vert-origin-x': 'vertOriginX',
-      'vert-origin-y': 'vertOriginY',
-      'word-spacing': 'wordSpacing',
-      'writing-mode': 'writingMode',
-      'x-height': 'xHeight'
-    };
-
-    let transformedContent = svgContent;
-    Object.entries(attributeMap).forEach(([kebabCase, camelCase]) => {
-      const regex = new RegExp(`\\b${kebabCase}=`, 'g');
-      transformedContent = transformedContent.replace(regex, `${camelCase}=`);
-    });
-
-    return transformedContent;
-  };
-
-  const componentCode = useMemo(() => {
-    if (!IconComponent) return '';
-    
-    const transformedSvgContent = transformSVGAttributes(svgContent);
-    
-    return `import React from 'react';
-
-interface ${iconName}Props {
+interface IconComponentProps {
   className?: string;
   width?: number;
   height?: number;
   fill?: string;
+  stroke?: string;
+  strokeWidth?: number | string;
+  strokeLinecap?: string;
+  strokeLinejoin?: string;
 }
 
-export function ${iconName}({ 
-  className, 
-  width = 24, 
-  height = 24, 
-  fill = "currentColor" 
+function toNumberLike(value: unknown) {
+  if (typeof value === "number") return value;
+  if (typeof value !== "string") return null;
+  if (!/^\d+(\.\d+)?$/.test(value)) return null;
+  return Number(value);
+}
+
+function serializeJsxAttributeValue(value: unknown) {
+  if (value === true) return "";
+  if (typeof value === "number") return `{${value}}`;
+  if (typeof value === "string") {
+    if (value.includes("\n") || value.includes("\r") || value.includes('"')) {
+      return `{${JSON.stringify(value)}}`;
+    }
+    return `"${value}"`;
+  }
+  return null;
+}
+
+function serializeSvgElementToJsx(
+  element: React.ReactElement,
+  indentSize: number,
+): string {
+  if (typeof element.type !== "string") return "";
+
+  const indent = " ".repeat(indentSize);
+  const tagName = element.type;
+  const props = element.props as Record<string, unknown>;
+
+  const attributes: string[] = [];
+  for (const [name, value] of Object.entries(props)) {
+    if (
+      name === "children" ||
+      name === "ref" ||
+      name === "key" ||
+      name === "dangerouslySetInnerHTML"
+    )
+      continue;
+    if (value === undefined || value === null || value === false) continue;
+
+    const serialized = serializeJsxAttributeValue(value);
+    if (serialized === null) continue;
+    if (serialized === "") {
+      attributes.push(name);
+      continue;
+    }
+    attributes.push(`${name}=${serialized}`);
+  }
+
+  const attributesString = attributes.length ? ` ${attributes.join(" ")}` : "";
+
+  const children = props.children as React.ReactNode;
+  if (children === undefined || children === null || children === false)
+    return `${indent}<${tagName}${attributesString} />`;
+
+  const childString = serializeSvgNodeToJsx(children, indentSize + 2);
+  if (!childString) return `${indent}<${tagName}${attributesString} />`;
+
+  return `${indent}<${tagName}${attributesString}>\n${childString}\n${indent}</${tagName}>`;
+}
+
+function serializeSvgNodeToJsx(node: React.ReactNode, indentSize: number): string {
+  if (node === undefined || node === null || node === false || node === true)
+    return "";
+
+  if (typeof node === "string" || typeof node === "number") {
+    return `${" ".repeat(indentSize)}${node}`;
+  }
+
+  if (Array.isArray(node)) {
+    return node
+      .map((child) => serializeSvgNodeToJsx(child, indentSize))
+      .filter(Boolean)
+      .join("\n");
+  }
+
+  if (React.isValidElement(node)) {
+    return serializeSvgElementToJsx(node, indentSize);
+  }
+
+  return "";
+}
+
+function renderIconToSvgElement(
+  IconComponent: React.ComponentType<IconComponentProps>,
+) {
+  const maybeForwardRefRender = (IconComponent as unknown as { render?: Function })
+    .render;
+
+  const svgElement =
+    typeof maybeForwardRefRender === "function"
+      ? maybeForwardRefRender({ fill: "currentColor", stroke: "none" }, null)
+      : null;
+
+  if (!React.isValidElement(svgElement)) return null;
+  if (typeof svgElement.type !== "string" || svgElement.type !== "svg")
+    return null;
+
+  return svgElement;
+}
+
+function buildReactComponentSnippet(iconName: string, svgElement: React.ReactElement) {
+  const props = svgElement.props as Record<string, unknown>;
+  const viewBox =
+    typeof props.viewBox === "string" && props.viewBox ? props.viewBox : "0 0 24 24";
+
+  const defaultWidth = toNumberLike(props.width) ?? 24;
+  const defaultHeight = toNumberLike(props.height) ?? 24;
+  const stroke = typeof props.stroke === "string" ? props.stroke : "none";
+  const strokeWidth = props.strokeWidth ?? 2;
+  const strokeLinecap =
+    typeof props.strokeLinecap === "string" ? props.strokeLinecap : "round";
+  const strokeLinejoin =
+    typeof props.strokeLinejoin === "string" ? props.strokeLinejoin : "round";
+
+  const childrenJsx =
+    serializeSvgNodeToJsx(props.children as React.ReactNode, 6) || "";
+
+  return `import * as React from "react";
+
+export interface ${iconName}Props extends React.SVGProps<SVGSVGElement> {
+  width?: number | string;
+  height?: number | string;
+  fill?: string;
+  stroke?: string;
+  strokeWidth?: number | string;
+  strokeLinecap?: string;
+  strokeLinejoin?: string;
+}
+
+export function ${iconName}({
+  className,
+  width = ${defaultWidth},
+  height = ${defaultHeight},
+  fill = "currentColor",
+  stroke = "${stroke}",
+  strokeWidth = ${typeof strokeWidth === "number" ? strokeWidth : JSON.stringify(strokeWidth)},
+  strokeLinecap = "${strokeLinecap}",
+  strokeLinejoin = "${strokeLinejoin}",
+  ...props
 }: ${iconName}Props) {
   return (
     <svg
       className={className}
       width={width}
       height={height}
-      viewBox="0 0 24 24"
+      viewBox="${viewBox}"
       fill={fill}
+      stroke={stroke}
+      strokeWidth={strokeWidth}
+      strokeLinecap={strokeLinecap}
+      strokeLinejoin={strokeLinejoin}
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
-      ${transformedSvgContent}
+${childrenJsx || "      "}
     </svg>
   );
-}`;
-  }, [iconName, IconComponent, svgContent]);
+}
+`;
+}
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(iconName);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1000);
-    toast(
-      <div className="inline-flex items-center gap-2">
-        <Icons.IconCheckmarkCircleFill className="fill-green-500 w-[16px] h-[16px]" />
-        <p><span className="opacity-50">You copied</span> {iconName.replace('Icon', '')} <span className="opacity-50">to clipboard</span></p>
-      </div>
-    );
-  };
+function toIconExportNameFromSlug(value: string) {
+  const parts = value
+    .trim()
+    .split(/[-_ ]+/g)
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1));
 
-  const handleCopyComponent = () => {
-    navigator.clipboard.writeText(componentCode);
-    setCopiedComponent(true);
-    setTimeout(() => setCopiedComponent(false), 2000);
-    toast(
-      <div className="inline-flex items-center gap-2">
-        <Icons.IconCheckmarkCircleFill className="fill-green-500 w-[16px] h-[16px]" />
-        <p><span className="opacity-50">Copied</span> React component <span className="opacity-50">to clipboard</span></p>
-      </div>
-    );
-  };
+  if (parts.length === 0) return "";
+  return `Icon${parts.join("")}`;
+}
+
+function resolveIconComponent(
+  iconParam: unknown,
+  icons: Record<string, React.ComponentType<IconComponentProps> | undefined>,
+) {
+  if (typeof iconParam !== "string") return null;
+
+  const trimmed = iconParam.trim();
+  if (!trimmed) return null;
+
+  const candidates = new Set<string>();
+  candidates.add(trimmed);
+
+  // Handle lowercase "icon..." prefix.
+  if (trimmed.toLowerCase().startsWith("icon") && !trimmed.startsWith("Icon")) {
+    const rest = trimmed.slice("icon".length);
+    if (rest) {
+      candidates.add(`Icon${rest.charAt(0).toUpperCase()}${rest.slice(1)}`);
+      const restSlugCandidate = toIconExportNameFromSlug(rest);
+      if (restSlugCandidate) candidates.add(restSlugCandidate);
+    }
+  }
+
+  // Handle URLs that omit the "Icon" prefix or use slugs.
+  if (!trimmed.startsWith("Icon")) {
+    candidates.add(`Icon${trimmed.charAt(0).toUpperCase()}${trimmed.slice(1)}`);
+    const slugCandidate = toIconExportNameFromSlug(trimmed);
+    if (slugCandidate) candidates.add(slugCandidate);
+  }
+
+  for (const candidateName of candidates) {
+    const IconComponent = icons[candidateName];
+    if (IconComponent) return { iconName: candidateName, IconComponent };
+  }
+
+  // Case-insensitive exact match.
+  const lower = trimmed.toLowerCase();
+  const exactKey = Object.keys(icons).find((key) => key.toLowerCase() === lower);
+  if (exactKey) {
+    const IconComponent = icons[exactKey];
+    if (IconComponent) return { iconName: exactKey, IconComponent };
+  }
+
+  // Match against export name without "Icon" prefix.
+  const noPrefixKey = Object.keys(icons).find((key) => {
+    if (!key.startsWith("Icon")) return false;
+    return key.slice("Icon".length).toLowerCase() === lower;
+  });
+  if (noPrefixKey) {
+    const IconComponent = icons[noPrefixKey];
+    if (IconComponent) return { iconName: noPrefixKey, IconComponent };
+  }
+
+  return null;
+}
+
+interface IconDetailPageProps {
+  params:
+    | {
+        iconName?: string;
+      }
+    | Promise<{
+        iconName?: string;
+      }>;
+}
+
+export default async function IconDetailPage({ params }: IconDetailPageProps) {
+  const resolvedParams = await Promise.resolve(params);
+  const iconParam = resolvedParams?.iconName;
+  const iconsRecord = Icons as Record<
+    string,
+    React.ComponentType<IconComponentProps> | undefined
+  >;
+  const resolved = resolveIconComponent(iconParam, iconsRecord);
+  const IconComponent = resolved?.IconComponent;
 
   if (!IconComponent) {
+    const searchValue = typeof iconParam === "string" ? iconParam.trim() : "";
+    const suggestions = searchValue
+      ? Object.keys(iconsRecord)
+          .filter(
+            (key) =>
+              key.startsWith("Icon") &&
+              key.toLowerCase().includes(searchValue.toLowerCase()),
+          )
+          .slice(0, 12)
+      : [];
+
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen bg-zinc-900/50 text-foreground p-8">
+      <div className="flex flex-col items-center justify-center min-h-dvh bg-zinc-900/50 text-foreground p-8">
         <h1 className="text-2xl font-semibold mb-4">Icon Not Found</h1>
-        <p>The icon &quot;{iconName}&quot; could not be loaded from the library.</p>
+        <p className="text-white/60 text-sm text-center max-w-md">
+          We couldn&apos;t find a symbol for{" "}
+          <span className="font-mono text-white/90">
+            &quot;{typeof iconParam === "string" ? iconParam : ""}&quot;
+          </span>
+          . Use an export name like{" "}
+          <span className="font-mono text-white/90">IconPaperclip</span> or a slug
+          like{" "}
+          <span className="font-mono text-white/90">paperclip-fill</span>.
+        </p>
+
+        <div className="mt-6 flex items-center gap-3">
+          <Link
+            href="/"
+            className="rounded-lg bg-white/10 px-3 py-2 text-sm text-white hover:bg-white/15 transition-colors"
+          >
+            Back to search
+          </Link>
+          {searchValue ? (
+            <Link
+              href={`/dashboard?search=${encodeURIComponent(searchValue)}`}
+              className="rounded-lg bg-white/10 px-3 py-2 text-sm text-white hover:bg-white/15 transition-colors"
+            >
+              Search &quot;{searchValue}&quot;
+            </Link>
+          ) : null}
+        </div>
+
+        {suggestions.length ? (
+          <div className="mt-8 w-full max-w-lg">
+            <p className="text-xs text-white/40 font-mono mb-3">
+              Suggestions
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {suggestions.map((name) => (
+                <Link
+                  key={name}
+                  href={`/icon/${name}`}
+                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80 hover:bg-white/10 hover:text-white transition-colors"
+                >
+                  {name.replace("Icon", "")}
+                </Link>
+              ))}
+            </div>
+          </div>
+        ) : null}
       </div>
     );
   }
 
+  const iconName =
+    resolved?.iconName ?? (typeof iconParam === "string" ? iconParam : "");
+  const svgElement = renderIconToSvgElement(IconComponent);
+  const componentCode = svgElement
+    ? buildReactComponentSnippet(iconName, svgElement)
+    : `import { ${iconName} } from \"symbols-react\";\n\nexport function Example() {\n  return <${iconName} width={24} height={24} fill=\"currentColor\" />;\n}\n`;
+
   return (
-    <div className="flex min-h-[calc(100vh-10rem)] flex-col items-center justify-start bg-zinc-950 pt-12 motion-preset-blur-up-md motion-preset-fade-md motion-scale-in-90 motion-ease-spring-snappy motion-duration-150">
+    <div className="flex min-h-[calc(100dvh-10rem)] flex-col items-center justify-start bg-zinc-950 pt-12 motion-preset-blur-up-md motion-preset-fade-md motion-scale-in-90 motion-ease-spring-snappy motion-duration-150">
       <div className="w-full max-w-lg">
-        <IconHeader 
-          iconName={iconName}
-          copied={copied}
-          onCopy={handleCopy}
-        />
-
-        <IconDisplay 
-          IconComponent={IconComponent}
-          size={size}
-          fillColor={fillColor}
-        />
-
-        <ComponentViewer 
-          iconName={iconName}
-          componentCode={componentCode}
-          copiedComponent={copiedComponent}
-          onCopyComponent={handleCopyComponent}
-        />
+        <IconDetailActions iconName={iconName} componentCode={componentCode}>
+          <IconDisplay IconComponent={IconComponent} size={228} fillColor="#FFFFFF" />
+        </IconDetailActions>
       </div>
     </div>
   );
 }
-
-export default function IconDetailPage() {
-  const params = useParams();
-  const [clientIconName, setClientIconName] = useState<string | null>(null);
-
-  useEffect(() => {
-    if (params && typeof params.iconName === 'string') {
-      setClientIconName(params.iconName);
-    } else if (params && Array.isArray(params.iconName) && params.iconName.length > 0) {
-      setClientIconName(params.iconName[0]);
-    } else if (clientIconName === null && params) { 
-        setClientIconName(""); 
-    }
-  }, [params, clientIconName]); 
-
-  if (clientIconName === null) {
-    return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-zinc-950 text-foreground p-8">
-            <motion.svg
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.5 }}
-              transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="h-8 w-8 animate-spin text-white"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <circle
-                className="opacity-25"
-                cx="12"
-                cy="12"
-                r="10"
-                stroke="currentColor"
-                strokeWidth="4"
-              />
-              <path
-                className="opacity-75"
-                fill="currentColor"
-                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-              />
-            </motion.svg>
-        </div>
-    );
-  }
-  
-  return <IconDetailClient iconName={clientIconName} />;
-} 
