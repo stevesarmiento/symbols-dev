@@ -3,8 +3,8 @@ import { IconHeader } from "@/components/IconHeader";
 
 interface IconProps {
   className?: string;
-  width?: number;
-  height?: number;
+  width?: number | string;
+  height?: number | string;
   fill?: string;
 }
 

@@ -6,8 +6,8 @@ import { IconDetailActions } from "@/components/IconDetailActions";
 
 interface IconComponentProps {
   className?: string;
-  width?: number;
-  height?: number;
+  width?: number | string;
+  height?: number | string;
   fill?: string;
   stroke?: string;
   strokeWidth?: number | string;

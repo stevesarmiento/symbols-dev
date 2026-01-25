@@ -11,8 +11,8 @@ import { useRouter } from 'next/navigation';
 
 export interface IconProps {
     className?: string;
-    width?: number;
-    height?: number;
+    width?: number | string;
+    height?: number | string;
     fill?: string;
 }
 

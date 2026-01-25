@@ -1,7 +1,7 @@
 {
   "name": "symbols-react",
   "sideEffects": false,
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "S̶F̶ symbols for the web",
   "keywords": [
     "icons",
@@ -41,7 +41,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun -e \"process.exit(0)\"",
     "build": "bun run build:types",
-    "build:types": "tsc",
+    "build:types": "node scripts/generate-types-index.js",
     "lint": "bun -e \"process.exit(0)\"",
     "start": "bun -e \"process.exit(0)\"",
     "convert-icons": "node scripts/svg-to-jsx.js"
