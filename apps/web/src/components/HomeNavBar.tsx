@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { IconHeartFill, IconHeartTextSquare, IconHeartTextSquareFill, IconMagnifyingglass } from "symbols-react";
+import { IconHeartFill, IconHeartTextSquare, IconHeartTextSquareFill, IconMagnifyingglass, IconSquareStack3dDownForwardFill } from "symbols-react";
 
 import { FavoritesSheetTrigger } from "@/components/FavoritesSheet";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
@@ -40,7 +40,7 @@ export function HomeNavBar() {
               href="/dashboard"
               className="group flex items-center justify-center size-7 rounded-lg p-0 transition-all duration-150 ease-in-out hover:bg-white/10 hover:scale-95"
             >
-                <IconHeartTextSquare className="size-4 fill-white/50 group-hover:fill-blue-400" />
+                <IconSquareStack3dDownForwardFill className="size-5 fill-white/50 group-hover:fill-blue-400" />
               </Link>
             </TooltipTrigger>
             <TooltipContent side="bottom" className="bg-zinc-900 text-xs text-white">
