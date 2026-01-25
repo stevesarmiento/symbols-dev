@@ -29,5 +29,4 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-#scripts
-scripts/
+# scripts (keep repo scripts tracked; not published via "files" anyway)
