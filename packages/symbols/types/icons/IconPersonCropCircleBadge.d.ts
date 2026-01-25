@@ -1,0 +1,1 @@
+export const IconPersonCropCircleBadge: any;

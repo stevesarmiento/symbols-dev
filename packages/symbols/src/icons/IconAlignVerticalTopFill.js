@@ -1,0 +1,26 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconAlignVerticalTopFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "22.998",
+  height: props.height || "22.041",
+  viewBox: "0 0 22.998 22.041",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "22.041",
+  opacity: "0",
+  width: "22.998",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M4.78516 22.041L8.18359 22.041C9.60938 22.041 10.3809 21.2598 10.3809 19.8047L10.3809 5.51758C10.3809 4.07227 9.60938 3.28125 8.18359 3.28125L4.78516 3.28125C3.35938 3.28125 2.58789 4.07227 2.58789 5.51758L2.58789 19.8047C2.58789 21.2598 3.35938 22.041 4.78516 22.041ZM14.4727 15.127L17.8711 15.127C19.2871 15.127 20.0684 14.3457 20.0684 12.8906L20.0684 5.51758C20.0684 4.07227 19.2871 3.28125 17.8711 3.28125L14.4727 3.28125C13.0469 3.28125 12.2656 4.07227 12.2656 5.51758L12.2656 12.8906C12.2656 14.3457 13.0469 15.127 14.4727 15.127Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M0.683594 1.45508L21.9629 1.45508C22.3438 1.45508 22.6367 1.12305 22.6367 0.742188C22.6367 0.361328 22.3438 0.0195312 21.9629 0.0195312L0.683594 0.0195312C0.292969 0.0195312 0 0.361328 0 0.742188C0 1.12305 0.292969 1.45508 0.683594 1.45508Z",
+  fillOpacity: "0.85"
+}))));
+IconAlignVerticalTopFill.displayName = 'IconAlignVerticalTopFill';

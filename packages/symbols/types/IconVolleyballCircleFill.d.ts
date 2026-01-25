@@ -1,0 +1,1 @@
+export const IconVolleyballCircleFill: any;

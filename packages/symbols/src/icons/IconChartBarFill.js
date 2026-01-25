@@ -1,0 +1,29 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconChartBarFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "24.9023",
+  height: props.height || "18.4082",
+  viewBox: "0 0 24.9023 18.4082",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "18.4082",
+  opacity: "0",
+  width: "24.9023",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M19.5898 18.2617L22.5 18.2617C23.8477 18.2617 24.541 17.6172 24.541 16.3379L24.541 1.93359C24.541 0.654297 23.8477 0 22.5 0L19.5898 0C18.2617 0 17.5684 0.654297 17.5684 1.93359L17.5684 16.3379C17.5684 17.6172 18.2617 18.2617 19.5898 18.2617Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M10.8105 18.2617L13.7207 18.2617C15.0684 18.2617 15.752 17.6172 15.752 16.3379L15.752 4.78516C15.752 3.50586 15.0684 2.85156 13.7207 2.85156L10.8105 2.85156C9.47266 2.85156 8.7793 3.50586 8.7793 4.78516L8.7793 16.3379C8.7793 17.6172 9.47266 18.2617 10.8105 18.2617Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M2.03125 18.2617L4.93164 18.2617C6.2793 18.2617 6.97266 17.6172 6.97266 16.3379L6.97266 7.62695C6.97266 6.34766 6.2793 5.69336 4.93164 5.69336L2.03125 5.69336C0.693359 5.69336 0 6.34766 0 7.62695L0 16.3379C0 17.6172 0.693359 18.2617 2.03125 18.2617Z",
+  fillOpacity: "0.85"
+}))));
+IconChartBarFill.displayName = 'IconChartBarFill';

@@ -1,0 +1,1 @@
+export const IconBahtsignArrowCirclepath: any;

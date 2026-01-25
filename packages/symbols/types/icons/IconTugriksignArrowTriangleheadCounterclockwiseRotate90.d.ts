@@ -1,0 +1,1 @@
+export const IconTugriksignArrowTriangleheadCounterclockwiseRotate90: any;

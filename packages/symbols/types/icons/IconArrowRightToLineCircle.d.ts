@@ -1,0 +1,1 @@
+export const IconArrowRightToLineCircle: any;

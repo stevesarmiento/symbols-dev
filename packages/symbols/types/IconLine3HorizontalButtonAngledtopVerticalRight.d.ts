@@ -1,0 +1,1 @@
+export const IconLine3HorizontalButtonAngledtopVerticalRight: any;

@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconHomepodMiniArrowForwardFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "33.263671875",
+  height: props.height || "26.427734375",
+  viewBox: "0 0 33.263671875 26.427734375",
+  fill: props.fill || "'none' || '#000000'",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M18.8817 3.5798C15.1217 3.5798 12.3617 2.8998 12.3617 1.7898C12.3617 0.6698 15.1217 -0.0002 18.8817 -0.0002C22.7117 -0.0002 25.4717 0.6698 25.4717 1.7898C25.4717 2.8998 22.7117 3.5798 18.8817 3.5798ZM18.8817 26.4298C13.7117 26.4298 11.3917 25.7598 9.2117 23.7498C7.1817 21.8898 5.7317 19.4698 5.0217 16.7998L13.2517 16.7898L14.7917 16.6898L14.1217 17.2498L12.9317 18.3598C12.6917 18.6098 12.5217 18.9798 12.5217 19.3298C12.5217 20.0998 13.0717 20.6598 13.8317 20.6598C14.2217 20.6598 14.5217 20.5098 14.7817 20.2598L18.3517 16.6298C18.7417 16.2198 18.9217 15.7998 18.9217 15.3698C18.9217 14.9298 18.7417 14.5198 18.3517 14.1198L14.7817 10.4698C14.5217 10.2298 14.2217 10.0798 13.8317 10.0798C13.0717 10.0798 12.5217 10.6398 12.5217 11.3998C12.5217 11.7598 12.6717 12.1098 12.9317 12.3698L14.1217 13.4798L14.7917 14.0398L13.2517 13.9498H4.5417C4.5117 13.5998 4.5017 13.2598 4.5017 12.9298C4.5017 9.6798 5.5617 6.4798 7.7517 3.7898C8.4917 2.8198 9.3217 2.7998 10.2017 3.3798C12.3017 4.8498 14.9317 5.5898 18.8817 5.5898C22.8417 5.5898 25.4717 4.8498 27.5617 3.3798C28.4417 2.7998 29.2817 2.8198 30.0217 3.7898C32.2017 6.4798 33.2617 9.6798 33.2617 12.9298C33.2617 17.0798 31.5317 21.0098 28.5517 23.7498C26.3717 25.7598 24.0517 26.4298 18.8817 26.4298ZM1.3917 16.7998C0.6317 16.7998 0.0017 16.1598 0.0017 15.3698C0.0017 14.5698 0.6317 13.9498 1.3917 13.9498H4.5417C4.6117 14.9198 4.7617 15.8698 5.0217 16.7998Z"
+})));
+IconHomepodMiniArrowForwardFill.displayName = 'IconHomepodMiniArrowForwardFill';

@@ -1,0 +1,35 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconHomepodAndHomepodminiFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "28.0371",
+  height: props.height || "25.8301",
+  viewBox: "0 0 28.0371 25.8301",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "25.8301",
+  opacity: "0",
+  width: "28.0371",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M15.6641 3.80859C16.269 4.56684 16.6806 5.61496 16.7756 7.08938C13.5779 7.24903 11.28 8.16719 9.92188 9.83398C8.4375 11.5137 7.62695 13.7988 7.62695 16.1816C7.62695 18.0563 8.13012 19.8867 9.05672 21.4626C9.02146 21.4648 8.98345 21.4648 8.94531 21.4648C3.97461 21.4648 1.08398 19.9121 1.08398 15.1855L1.08398 7.76367C1.08398 5.92773 1.52344 4.67773 2.2168 3.80859C2.45117 3.50586 2.82227 3.48633 3.11523 3.73047C4.05273 4.55078 6.49414 5.24414 8.94531 5.24414C11.3867 5.24414 13.8379 4.55078 14.7656 3.73047C15.0586 3.48633 15.4297 3.50586 15.6641 3.80859Z",
+  fillOpacity: "0.425"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M13.457 2.65625C13.457 3.36914 11.4453 3.91602 8.94531 3.91602C6.43555 3.91602 4.42383 3.36914 4.42383 2.65625C4.42383 1.94336 6.43555 1.40625 8.94531 1.40625C11.4453 1.40625 13.457 1.94336 13.457 2.65625Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M17.832 24.375C21.0645 24.375 22.4316 23.9648 23.7109 22.7637C25.5176 21.1133 26.5918 18.7207 26.5918 16.1816C26.5918 14.0918 25.8691 12.1387 24.4824 10.5469C24.1602 10.1465 23.8184 10.1172 23.457 10.3711C22.1387 11.3672 20.7031 11.8848 17.832 11.8848C14.9609 11.8848 13.5156 11.3672 12.207 10.3711C11.8555 10.1172 11.5039 10.1465 11.1719 10.5469C9.79492 12.1387 9.07227 14.0918 9.07227 16.1816C9.07227 18.7207 10.1367 21.1133 11.9434 22.7637C13.2324 23.9648 14.6094 24.375 17.832 24.375Z",
+  fillOpacity: "0.425"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M17.832 10.6641C20.2734 10.6641 22.0117 10.166 22.0117 9.53125C22.0117 8.87695 20.2734 8.38867 17.832 8.38867C15.3809 8.38867 13.6523 8.87695 13.6523 9.53125C13.6523 10.166 15.3809 10.6641 17.832 10.6641Z",
+  fillOpacity: "0.85"
+}))));
+IconHomepodAndHomepodminiFill.displayName = 'IconHomepodAndHomepodminiFill';
+
+// Backwards/forwards-compat: match expected PascalCase export.
+export const IconHomepodAndHomepodMiniFill = IconHomepodAndHomepodminiFill;

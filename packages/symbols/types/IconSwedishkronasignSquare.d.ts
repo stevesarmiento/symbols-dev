@@ -1,0 +1,1 @@
+export const IconSwedishkronasignSquare: any;

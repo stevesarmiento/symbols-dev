@@ -1,0 +1,1 @@
+export const IconCreditcardCircleFill: any;

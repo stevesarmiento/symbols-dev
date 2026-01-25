@@ -1,0 +1,1 @@
+export const IconHeadlightLowBeamFill: any;

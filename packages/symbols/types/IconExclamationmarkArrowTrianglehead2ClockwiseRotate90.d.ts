@@ -1,0 +1,1 @@
+export const IconExclamationmarkArrowTrianglehead2ClockwiseRotate90: any;

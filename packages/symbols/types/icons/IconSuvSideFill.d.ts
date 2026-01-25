@@ -1,0 +1,1 @@
+export const IconSuvSideFill: any;

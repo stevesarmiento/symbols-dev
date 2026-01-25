@@ -1,0 +1,1 @@
+export const IconSmoke: any;

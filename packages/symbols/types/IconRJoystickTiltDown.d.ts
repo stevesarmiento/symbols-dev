@@ -1,0 +1,1 @@
+export const IconRJoystickTiltDown: any;

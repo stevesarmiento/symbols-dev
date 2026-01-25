@@ -1,0 +1,26 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconAlignHorizontalRight = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "22.3535",
+  height: props.height || "22.666",
+  viewBox: "0 0 22.3535 22.666",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "22.666",
+  opacity: "0",
+  width: "22.3535",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M16.5234 10.3809C17.9688 10.3809 18.7598 9.60938 18.7598 8.18359L18.7598 4.78516C18.7598 3.35938 17.9688 2.58789 16.5234 2.58789L9.15039 2.58789C7.69531 2.58789 6.91406 3.35938 6.91406 4.78516L6.91406 8.18359C6.91406 9.60938 7.69531 10.3809 9.15039 10.3809ZM16.4941 8.90625L9.17969 8.90625C8.67188 8.90625 8.38867 8.62305 8.38867 8.0957L8.38867 4.86328C8.38867 4.3457 8.67188 4.0625 9.17969 4.0625L16.4941 4.0625C17.002 4.0625 17.2852 4.3457 17.2852 4.86328L17.2852 8.0957C17.2852 8.62305 17.002 8.90625 16.4941 8.90625ZM16.5234 20.0586C17.9688 20.0586 18.7598 19.2871 18.7598 17.8613L18.7598 14.4629C18.7598 13.0469 17.9688 12.2656 16.5234 12.2656L2.23633 12.2656C0.78125 12.2656 0 13.0469 0 14.4629L0 17.8613C0 19.2871 0.78125 20.0586 2.23633 20.0586ZM16.4941 18.584L2.26562 18.584C1.75781 18.584 1.47461 18.3008 1.47461 17.7832L1.47461 14.5508C1.47461 14.0234 1.75781 13.7402 2.26562 13.7402L16.4941 13.7402C17.002 13.7402 17.2852 14.0234 17.2852 14.5508L17.2852 17.7832C17.2852 18.3008 17.002 18.584 16.4941 18.584Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M21.2793 22.6367C21.6602 22.6367 21.9922 22.3438 21.9922 21.9629L21.9922 0.673828C21.9922 0.292969 21.6602 0 21.2793 0C20.8984 0 20.5566 0.292969 20.5566 0.673828L20.5566 21.9629C20.5566 22.3438 20.8984 22.6367 21.2793 22.6367Z",
+  fillOpacity: "0.85"
+}))));
+IconAlignHorizontalRight.displayName = 'IconAlignHorizontalRight';

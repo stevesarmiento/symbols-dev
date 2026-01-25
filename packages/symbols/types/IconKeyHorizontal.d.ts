@@ -1,0 +1,1 @@
+export const IconKeyHorizontal: any;

@@ -1,0 +1,1 @@
+export const IconRectangleInsetTopleadingFilled: any;

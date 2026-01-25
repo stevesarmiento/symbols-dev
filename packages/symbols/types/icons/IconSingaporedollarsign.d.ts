@@ -1,0 +1,1 @@
+export const IconSingaporedollarsign: any;

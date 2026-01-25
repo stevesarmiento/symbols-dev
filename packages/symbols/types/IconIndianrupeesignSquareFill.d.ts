@@ -1,0 +1,1 @@
+export const IconIndianrupeesignSquareFill: any;

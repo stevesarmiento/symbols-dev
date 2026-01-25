@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconFlorinsignArrowTriangleheadCounterclockwiseRotate90 = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "31.160016292051154",
+  height: props.height || "28.875",
+  viewBox: "0 0 31.160016292051154 28.875",
+  fill: props.fill || "'none' || '#000000'",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M1.0778 11.6086C-0.0122 11.6086 -0.2822 12.5186 0.2978 13.3186L3.6978 17.8386C4.1178 18.4286 4.8378 18.4186 5.2778 17.8386L8.6378 13.2986C9.2178 12.5186 8.9578 11.6086 7.8778 11.6086H6.2478C7.4978 6.9886 11.7078 3.5986 16.7178 3.5986C22.7078 3.5986 27.5678 8.4386 27.5678 14.4386C27.5678 20.4286 22.7078 25.2786 16.7178 25.2786C13.4378 25.2786 10.5878 23.8486 8.5778 21.5086C7.8078 20.7286 6.7378 20.4786 5.9078 21.1886C5.1578 21.8186 5.0878 22.9286 5.9078 23.8886C8.2878 26.9086 12.5778 28.8786 16.7178 28.8786C24.6978 28.8786 31.1578 22.4086 31.1578 14.4386C31.1578 6.4686 24.6978 -0.0014 16.7178 -0.0014C9.7178 -0.0014 3.8678 4.9886 2.5578 11.6086ZM13.4778 20.4286C15.8178 20.4286 17.0378 19.3886 17.4178 17.0886L17.7978 14.8786H20.4178C20.8278 14.8786 21.1078 14.6186 21.1078 14.2486C21.1078 13.8586 20.8278 13.5986 20.4178 13.5986H18.0078L18.2678 12.0486C18.4578 10.8986 19.0478 10.3386 20.1778 10.3386C20.7578 10.3386 21.1478 10.3786 21.4578 10.2786C21.7778 10.1986 21.9478 9.9686 21.9478 9.6086C21.9478 9.2286 21.6978 8.9586 21.3578 8.7786C20.9478 8.5686 20.3478 8.4786 19.8678 8.4786C17.5678 8.4786 16.2878 9.4986 15.8878 11.7886L15.5878 13.5986H13.1778C12.7678 13.5986 12.4878 13.8586 12.4878 14.2486C12.4878 14.6186 12.7678 14.8786 13.1778 14.8786H15.3778L15.0578 16.7986C14.8678 17.9486 14.3278 18.5686 13.1578 18.5686C12.6478 18.5686 12.4178 18.5286 12.0478 18.5486C11.6378 18.6086 11.3878 18.8786 11.3878 19.2886C11.3878 19.6786 11.5978 19.9186 11.9378 20.0986C12.3578 20.3486 12.9378 20.4286 13.4778 20.4286Z"
+})));
+IconFlorinsignArrowTriangleheadCounterclockwiseRotate90.displayName = 'IconFlorinsignArrowTriangleheadCounterclockwiseRotate90';

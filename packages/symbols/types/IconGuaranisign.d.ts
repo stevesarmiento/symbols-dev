@@ -1,0 +1,1 @@
+export const IconGuaranisign: any;

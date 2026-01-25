@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconDocument = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "24.240234375",
+  height: props.height || "30.091796875",
+  viewBox: "0 0 24.240234375 30.091796875",
+  fill: props.fill || "'none' || '#000000'",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M4.8037 30.0902H19.4437C22.5437 30.0902 24.2437 28.3802 24.2437 25.2702V12.8802C24.2437 10.7502 23.9237 9.6802 22.5737 8.3102L16.0137 1.6802C14.6837 0.3402 13.5737 0.0002 11.5537 0.0002H4.8037C1.6937 0.0002 0.0037 1.7102 0.0037 4.8302V25.2702C0.0037 28.4002 1.6937 30.0902 4.8037 30.0902ZM5.2237 26.5602C4.0637 26.5602 3.5237 25.9802 3.5237 24.8802V5.2202C3.5237 4.1302 4.0637 3.5302 5.2237 3.5302H10.5937V10.2302C10.5937 12.6102 11.7337 13.7302 14.0937 13.7302H20.7137V24.8802C20.7137 25.9802 20.1837 26.5602 19.0137 26.5602ZM14.3537 10.8302C13.7637 10.8302 13.4937 10.5502 13.4937 9.9702V3.8102L20.4437 10.8302Z"
+})));
+IconDocument.displayName = 'IconDocument';

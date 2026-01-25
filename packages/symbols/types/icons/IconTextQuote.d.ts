@@ -1,0 +1,1 @@
+export const IconTextQuote: any;

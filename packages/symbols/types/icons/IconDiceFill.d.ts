@@ -1,0 +1,1 @@
+export const IconDiceFill: any;

@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconPeruviansolessign = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "34.548828125",
+  height: props.height || "32.40234375",
+  viewBox: "0 0 34.548828125 32.40234375",
+  fill: props.fill || "'none' || '#000000'",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M21.0527 32.4042C22.3227 32.4042 23.0327 31.6342 23.2527 30.2742L28.1927 2.7342C28.2327 2.4742 28.2727 2.1442 28.2727 1.8042C28.2627 0.7842 27.4127 0.0042 26.2727 0.0042C24.9927 0.0042 24.2827 0.7542 24.0627 2.0542L19.1527 29.4542C19.0827 29.7942 19.0427 30.2042 19.0427 30.5442C19.0427 31.5442 19.8227 32.4042 21.0527 32.4042ZM8.5327 26.6042C13.6027 26.6042 17.3527 24.0342 17.3527 18.9342C17.3527 14.7242 14.8727 12.9242 10.8827 11.7142L8.7727 11.0842C6.7427 10.4742 4.9727 9.4842 4.9727 7.3142C4.9727 5.2742 6.5327 4.1842 8.4527 4.1842C10.2627 4.1842 11.8127 5.1042 12.3427 7.0542C12.7827 8.1642 13.5327 8.5542 14.6427 8.5542C15.9127 8.5442 16.7027 7.7642 16.7027 6.5442C16.7027 6.1842 16.6227 5.7942 16.5127 5.4242C15.4627 1.9842 12.1827 0.2442 8.4327 0.2442C3.8027 0.2442 0.1327 3.0042 0.1327 7.6842C0.1327 11.6942 2.5527 13.7142 6.4227 14.9142L8.4927 15.5542C10.6227 16.2142 12.5127 17.1442 12.5127 19.4042C12.5127 21.4942 10.7427 22.6842 8.6127 22.6842C6.6127 22.6842 4.9227 21.6742 4.3727 19.7242C3.9227 18.6642 3.2127 18.1842 2.1027 18.1842C0.9327 18.1842 0.0027 19.0042 0.0027 20.2742C0.0027 20.8242 0.0927 21.2442 0.2427 21.7142C1.3027 24.9642 4.7127 26.6042 8.5327 26.6042ZM31.7827 26.6042C33.3727 26.6042 34.5527 25.4442 34.5527 23.8842C34.5527 22.3242 33.3727 21.1642 31.7827 21.1642C30.2027 21.1642 29.0427 22.3242 29.0427 23.8842C29.0427 25.4442 30.2027 26.6042 31.7827 26.6042Z"
+})));
+IconPeruviansolessign.displayName = 'IconPeruviansolessign';

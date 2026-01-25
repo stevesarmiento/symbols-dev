@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconBootstrapLogo = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "28",
+  height: props.height || "28",
+  viewBox: "0 0 28 28",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M6.40028 4C4.91676 4 3.81897 5.25385 3.86812 6.61362C3.91535 7.91993 3.85401 9.61197 3.41292 10.9917C2.97052 12.3755 2.2222 13.2521 1 13.3647V14.6353C2.2222 14.7479 2.97052 15.6245 3.41292 17.0084C3.85401 18.3881 3.91535 20.08 3.86812 21.3864C3.81897 22.746 4.91676 24 6.40048 24H21.6016C23.0853 24 24.1828 22.7461 24.1336 21.3864C24.0865 20.0801 24.1477 18.3881 24.5888 17.0084C25.0315 15.6246 25.7778 14.7478 27 14.6353V13.3647C25.7778 13.2521 25.0315 12.3755 24.5889 10.9917C24.1477 9.61216 24.0865 7.92003 24.1336 6.61362C24.1828 5.25405 23.0853 4 21.6016 4H6.40008H6.40028ZM18.6272 16.3113C18.6272 18.1836 17.1809 19.3191 14.7808 19.3191H10.695C10.5781 19.3191 10.466 19.2743 10.3834 19.1945C10.3008 19.1147 10.2544 19.0064 10.2544 18.8936V9.10641C10.2544 9.05052 10.2657 8.99517 10.2879 8.94353C10.31 8.89189 10.3425 8.84497 10.3834 8.80545C10.4243 8.76592 10.4729 8.73457 10.5264 8.71318C10.5799 8.69179 10.6372 8.68078 10.6951 8.68078H14.7575C16.7587 8.68078 18.0721 9.72769 18.0721 11.3349C18.0721 12.463 17.1886 13.473 16.0629 13.6498V13.7087C17.5954 13.871 18.6272 14.8958 18.6272 16.3113ZM14.3352 10.0298H12.0056V13.2073H13.9678C15.4845 13.2073 16.321 12.6175 16.321 11.5632C16.321 10.5753 15.6016 10.0298 14.3352 10.0298ZM12.0056 14.4681V17.9698H14.421C16.0001 17.9698 16.8367 17.3579 16.8367 16.2079C16.8367 15.0577 15.9768 14.4679 14.3194 14.4679H12.0056V14.4681Z"
+})));
+IconBootstrapLogo.displayName = 'IconBootstrapLogo';

@@ -1,0 +1,26 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconExclamationmarkArrowTriangle2Circlepath = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "24.2507",
+  height: props.height || "19.9316",
+  viewBox: "0 0 24.2507 19.9316",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "19.9316",
+  opacity: "0",
+  width: "24.2507",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M0.19663 9.99023C-0.184229 10.5273-0.00844799 11.0059 0.694677 11.0059L2.04233 11.0059C2.56968 15.9766 6.85679 19.9219 11.9447 19.9219C14.9232 19.9219 17.6185 18.5645 19.4544 16.4551C19.8158 16.0352 19.7669 15.5078 19.3861 15.2344C19.0052 14.9609 18.5365 15.0586 18.224 15.4199C16.7103 17.168 14.4642 18.2617 11.9447 18.2617C7.68686 18.2617 4.22007 15.1074 3.72202 11.0059L5.1771 11.0059C5.87046 11.0059 6.04624 10.5273 5.67515 10L3.48765 6.88477C3.17515 6.43555 2.7064 6.42578 2.38413 6.88477ZM4.44468 3.4668C4.07358 3.88672 4.12241 4.4043 4.51304 4.67773C4.8939 4.95117 5.35288 4.86328 5.67515 4.50195C7.19858 2.76367 9.44468 1.66016 11.9447 1.66016C16.1927 1.66016 19.6595 4.81445 20.1673 8.92578L18.7123 8.92578C18.0189 8.92578 17.8431 9.39453 18.2142 9.93164L20.4017 13.0469C20.7142 13.4961 21.183 13.5059 21.5052 13.0469L23.683 9.94141C24.0736 9.39453 23.888 8.92578 23.1849 8.92578L21.847 8.92578C21.3099 3.95508 17.0326 0 11.9447 0C8.96616 0 6.28061 1.34766 4.44468 3.4668Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M11.9349 11.7188C12.4037 11.7188 12.6771 11.4551 12.6869 10.9473L12.8236 5.79102C12.8333 5.29297 12.4427 4.92188 11.9251 4.92188C11.3978 4.92188 11.0267 5.2832 11.0365 5.78125L11.1732 10.9473C11.183 11.4453 11.4466 11.7188 11.9349 11.7188ZM11.9349 14.8926C12.5013 14.8926 12.9896 14.4434 12.9896 13.877C12.9896 13.3105 12.5111 12.8613 11.9349 12.8613C11.3587 12.8613 10.8802 13.3203 10.8802 13.877C10.8802 14.4336 11.3685 14.8926 11.9349 14.8926Z",
+  fillOpacity: "0.85"
+}))));
+IconExclamationmarkArrowTriangle2Circlepath.displayName = 'IconExclamationmarkArrowTriangle2Circlepath';

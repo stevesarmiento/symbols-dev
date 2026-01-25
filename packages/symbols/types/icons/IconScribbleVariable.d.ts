@@ -1,0 +1,1 @@
+export const IconScribbleVariable: any;

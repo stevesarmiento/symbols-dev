@@ -1,0 +1,1 @@
+export const IconRsbButtonAngledbottomHorizontalRightFill: any;

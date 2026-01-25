@@ -1,0 +1,1 @@
+export const IconMirrorSideRightAndHeatWaves: any;

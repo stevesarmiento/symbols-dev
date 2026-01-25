@@ -1,0 +1,23 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconPersonCropCircleDashedCircleFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "20.2832",
+  height: props.height || "19.9316",
+  viewBox: "0 0 20.2832 19.9316",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "19.9316",
+  opacity: "0",
+  width: "20.2832",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M19.9219 9.96094C19.9219 15.4004 15.4102 19.9219 9.96094 19.9219C4.52148 19.9219 0 15.4004 0 9.96094C0 4.51172 4.51172 0 9.95117 0C15.4004 0 19.9219 4.51172 19.9219 9.96094ZM6.10352 13.252C5.82031 12.9395 5.5957 12.5781 5.41016 12.168L4.23828 12.6562C5.27344 14.7949 7.48047 16.2988 9.96094 16.2988C12.4512 16.2988 14.6484 14.7949 15.7031 12.6562L14.5215 12.168C14.3262 12.5781 14.1016 12.9395 13.8184 13.2617C13.1445 12.5586 11.748 11.9141 9.96094 11.9141C8.17383 11.9141 6.78711 12.5586 6.10352 13.252ZM3.62305 9.96094C3.62305 10.7031 3.76953 11.4453 4.01367 12.1094L5.16602 11.6309C4.99023 11.1035 4.90234 10.5469 4.90234 9.96094C4.90234 9.36523 4.99023 8.81836 5.16602 8.29102L4.01367 7.8125C3.76953 8.4668 3.62305 9.20898 3.62305 9.96094ZM14.7559 8.29102C14.9414 8.81836 15.0391 9.36523 15.0391 9.96094C15.0391 10.5469 14.9414 11.1035 14.7559 11.6309L15.9082 12.1094C16.1523 11.4453 16.3086 10.7031 16.3086 9.96094C16.3086 9.20898 16.1523 8.47656 15.9082 7.8125ZM7.75391 8.70117C7.75391 10.0684 8.7207 11.1133 9.96094 11.123C11.1914 11.1328 12.1777 10.0684 12.1777 8.70117C12.1777 7.40234 11.1914 6.32812 9.96094 6.32812C8.73047 6.32812 7.73438 7.40234 7.75391 8.70117ZM4.22852 7.26562L5.40039 7.74414C5.87891 6.71875 6.71875 5.88867 7.75391 5.39062L7.25586 4.22852C5.94727 4.86328 4.86328 5.95703 4.22852 7.26562ZM12.1777 5.39062C13.1934 5.87891 14.0332 6.71875 14.5215 7.74414L15.6934 7.26562C15.0488 5.95703 13.9648 4.86328 12.6465 4.21875ZM7.80273 4.01367L8.28125 5.16602C8.80859 4.98047 9.36523 4.88281 9.95117 4.88281C10.5371 4.88281 11.1035 4.98047 11.6309 5.16602L12.0898 4.01367C11.4355 3.76953 10.7031 3.61328 9.95117 3.61328C9.21875 3.61328 8.45703 3.76953 7.80273 4.01367Z",
+  fillOpacity: "0.85"
+}))));
+IconPersonCropCircleDashedCircleFill.displayName = 'IconPersonCropCircleDashedCircleFill';

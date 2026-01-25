@@ -1,0 +1,1 @@
+export const IconRectanglePortraitArrowtriangle2Inward: any;

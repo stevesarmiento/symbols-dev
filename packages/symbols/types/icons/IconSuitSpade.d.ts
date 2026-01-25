@@ -1,0 +1,1 @@
+export const IconSuitSpade: any;

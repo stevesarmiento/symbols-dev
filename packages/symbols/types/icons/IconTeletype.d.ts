@@ -1,0 +1,1 @@
+export const IconTeletype: any;

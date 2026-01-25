@@ -1,0 +1,1 @@
+export const IconArrowshapeDown: any;

@@ -1,0 +1,1 @@
+export const IconLightMin: any;

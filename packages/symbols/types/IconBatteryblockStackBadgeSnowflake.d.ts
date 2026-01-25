@@ -1,0 +1,1 @@
+export const IconBatteryblockStackBadgeSnowflake: any;

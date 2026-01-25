@@ -1,0 +1,1 @@
+export const IconArrowUpRightSquare: any;

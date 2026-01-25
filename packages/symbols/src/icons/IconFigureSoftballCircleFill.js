@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconFigureSoftballCircleFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "28.875",
+  height: props.height || "28.875",
+  viewBox: "0 0 28.875 28.875",
+  fill: props.fill || "'none' || '#000000'",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M14.4327 28.8786C22.4127 28.8786 28.8727 22.4086 28.8727 14.4386C28.8727 6.4686 22.4127 -0.0014 14.4327 -0.0014C6.4627 -0.0014 0.0027 6.4686 0.0027 14.4386C0.0027 22.4086 6.4627 28.8786 14.4327 28.8786ZM10.8027 7.6386C10.2427 7.6386 9.8127 7.2086 9.8127 6.6586C9.8127 6.1086 10.2427 5.6786 10.8027 5.6786C11.3327 5.6786 11.7827 6.1086 11.7827 6.6586C11.7827 7.2086 11.3327 7.6386 10.8027 7.6386ZM9.0827 21.8486C8.6427 21.7386 8.3927 21.2986 8.4927 20.8586C8.6027 20.4386 9.0327 20.1486 9.4727 20.2586L12.4527 21.0186L10.2027 14.2586C10.0927 13.9086 10.0527 13.7986 9.6927 13.4486L8.0027 11.7586C7.7627 11.5086 7.7227 11.3186 7.7227 11.0186V7.4486C7.7227 6.9986 8.0827 6.6486 8.5427 6.6486C8.9827 6.6486 9.3527 6.9986 9.3527 7.4486V10.7986L10.8527 12.2886C11.1427 12.5786 11.5027 12.6586 12.1927 12.8086L20.0927 14.3786C20.5327 14.4786 20.8127 14.8986 20.7227 15.3386C20.6327 15.8286 20.1827 16.0486 19.7727 15.9786L14.0527 14.8386C13.9327 14.7886 13.8327 14.8886 13.8727 15.0286L14.6727 17.3586L17.7427 17.6786C18.0927 17.7186 18.1827 17.7686 18.4027 17.9786L21.2427 20.8486C21.5627 21.1686 21.5727 21.6986 21.2427 21.9986C20.9327 22.3286 20.4127 22.3286 20.0927 21.9986L17.4227 19.2886H14.0827L14.4827 21.9986C14.5727 22.6086 14.1127 23.1086 13.4427 22.9386ZM13.0327 12.2086C12.1227 12.2086 11.3727 11.4686 11.3727 10.5386C11.3727 9.6386 12.1227 8.8986 13.0327 8.8986C13.9427 8.8986 14.6927 9.6386 14.6927 10.5386C14.6927 11.4686 13.9427 12.2086 13.0327 12.2086Z"
+})));
+IconFigureSoftballCircleFill.displayName = 'IconFigureSoftballCircleFill';

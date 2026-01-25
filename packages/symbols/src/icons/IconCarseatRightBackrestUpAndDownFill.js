@@ -1,0 +1,29 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconCarseatRightBackrestUpAndDownFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "28.1178",
+  height: props.height || "20.6934",
+  viewBox: "0 0 28.1178 20.6934",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "20.6934",
+  opacity: "0",
+  width: "28.1178",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M27.5892 16.5234C28.3899 13.6035 26.261 12.334 21.0364 12.334C18.5071 12.334 15.8802 12.5879 13.8684 13.0078L14.22 13.4961C14.7571 9.13086 13.4192 5.55664 10.4798 4.01367L10.763 5.21484C11.9056 1.99219 9.87431 0 8.00907 0C6.60282 0 5.39189 1.09375 5.98759 3.52539L9.65947 18.4277C10.0208 19.8926 10.9876 20.6738 12.4329 20.6738L23.8294 20.6738C25.8411 20.6738 26.7298 19.707 27.5892 16.5234Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M5.09892 9.55078L3.9954 5.35156C3.85868 4.84375 3.38017 4.7168 3.00907 5.10742L0.20634 8.05664C-0.154988 8.41797-0.0280346 8.92578 0.479778 9.07227L4.35673 10.2344C4.88407 10.3906 5.23564 10.0586 5.09892 9.55078Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M15.7727 6.06445C15.9095 6.58203 16.3782 6.67969 16.7493 6.28906L19.5618 3.35938C19.9231 2.98828 19.7864 2.49023 19.2981 2.34375L15.3919 1.17188C14.8841 1.01562 14.5325 1.35742 14.6692 1.85547Z",
+  fillOpacity: "0.85"
+}))));
+IconCarseatRightBackrestUpAndDownFill.displayName = 'IconCarseatRightBackrestUpAndDownFill';

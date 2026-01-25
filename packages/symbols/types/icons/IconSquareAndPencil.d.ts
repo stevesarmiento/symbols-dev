@@ -1,0 +1,1 @@
+export const IconSquareAndPencil: any;

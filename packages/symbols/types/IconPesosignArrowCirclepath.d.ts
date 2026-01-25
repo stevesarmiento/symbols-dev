@@ -1,0 +1,1 @@
+export const IconPesosignArrowCirclepath: any;

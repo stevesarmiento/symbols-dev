@@ -1,0 +1,26 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconNorwegiankronesignArrowCirclepath = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "22.1804",
+  height: props.height || "19.9316",
+  viewBox: "0 0 22.1804 19.9316",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "19.9316",
+  opacity: "0",
+  width: "22.1804",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M11.8568 19.9219C17.2962 19.9219 21.8177 15.4004 21.8177 9.96094C21.8177 4.51172 17.2962 0 11.8568 0C6.40757 0 1.89585 4.50195 1.89585 9.95117L3.55601 9.95117C3.55601 5.3418 7.24741 1.66992 11.8568 1.66992C16.4662 1.66992 20.1576 5.35156 20.1576 9.96094C20.1576 14.5703 16.4662 18.2812 11.8568 18.2617C9.07358 18.252 6.63218 16.9043 5.13804 14.8242C4.8353 14.4238 4.37632 14.2969 3.96616 14.541C3.57554 14.7852 3.46811 15.3223 3.80015 15.752C5.65561 18.2422 8.56577 19.9219 11.8568 19.9219ZM0.694677 8.07617C-0.00844799 8.07617-0.184229 8.55469 0.19663 9.10156L2.38413 12.207C2.7064 12.6562 3.17515 12.6465 3.48765 12.207L5.67515 9.0918C6.04624 8.55469 5.87046 8.07617 5.1771 8.07617Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M8.68296 14.043C9.03452 14.043 9.31772 13.7598 9.31772 13.4082L9.31772 11.9531L9.8353 11.4648L11.3392 13.6719C11.6029 14.0625 12.013 14.082 12.2767 13.8965C12.5111 13.7207 12.638 13.3691 12.3646 12.9688L10.763 10.6738L12.3646 9.00391C12.638 8.7207 12.5697 8.39844 12.3744 8.22266C12.1595 7.99805 11.7591 7.92969 11.4759 8.26172L9.34702 10.6348L9.31772 10.6348L9.31772 6.47461C9.31772 6.12305 9.03452 5.83008 8.68296 5.83008C8.3314 5.83008 8.03843 6.12305 8.03843 6.47461L8.03843 13.4082C8.03843 13.7598 8.3314 14.043 8.68296 14.043ZM14.1908 14.0527C14.5228 14.0527 14.7962 13.7793 14.7962 13.4473L14.7962 10.5957C14.7962 9.88281 15.0404 9.28711 15.763 9.28711C15.9974 9.28711 16.2416 9.23828 16.3978 9.11133C16.515 9.02344 16.5833 8.87695 16.5833 8.69141C16.5833 8.49609 16.5248 8.34961 16.4173 8.24219C16.3001 8.125 16.1341 8.06641 15.9291 8.06641C15.3236 8.06641 14.9134 8.60352 14.7962 9.22852L14.7572 9.22852L14.7572 8.63281C14.7572 8.31055 14.4935 8.05664 14.1712 8.05664C13.849 8.05664 13.5853 8.31055 13.5853 8.63281L13.5853 13.4473C13.5853 13.7793 13.8587 14.0527 14.1908 14.0527Z",
+  fillOpacity: "0.85"
+}))));
+IconNorwegiankronesignArrowCirclepath.displayName = 'IconNorwegiankronesignArrowCirclepath';

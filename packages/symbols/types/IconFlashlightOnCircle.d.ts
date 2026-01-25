@@ -1,0 +1,1 @@
+export const IconFlashlightOnCircle: any;

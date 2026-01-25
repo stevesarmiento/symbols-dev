@@ -1,0 +1,1 @@
+export const IconInsetFilledTopleftToprightBottomleftBottomrightRectangle: any;

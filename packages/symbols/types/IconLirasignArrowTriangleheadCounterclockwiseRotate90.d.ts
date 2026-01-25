@@ -1,0 +1,1 @@
+export const IconLirasignArrowTriangleheadCounterclockwiseRotate90: any;

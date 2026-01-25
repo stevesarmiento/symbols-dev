@@ -1,0 +1,1 @@
+export const IconNairasignBankBuilding: any;

@@ -1,0 +1,1 @@
+export const IconReturn: any;

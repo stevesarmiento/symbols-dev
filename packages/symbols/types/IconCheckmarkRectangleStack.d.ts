@@ -1,0 +1,1 @@
+export const IconCheckmarkRectangleStack: any;

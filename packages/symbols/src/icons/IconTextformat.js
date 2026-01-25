@@ -1,0 +1,26 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconTextformat = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "22.7441",
+  height: props.height || "14.5605",
+  viewBox: "0 0 22.7441 14.5605",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "14.5605",
+  opacity: "0",
+  width: "22.7441",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M17.2363 14.5508C18.7402 14.5508 20.1465 13.7305 20.752 12.4609L20.791 12.4609L20.791 13.75C20.791 14.2383 21.123 14.5605 21.582 14.5605C22.0508 14.5605 22.3828 14.2383 22.3828 13.7109L22.3828 7.19727C22.3828 5.06836 20.8203 3.69141 18.3398 3.69141C16.5039 3.69141 14.9707 4.50195 14.4141 5.76172C14.3066 6.00586 14.2285 6.24023 14.2285 6.44531C14.2285 6.875 14.5508 7.1582 14.9707 7.1582C15.2734 7.1582 15.5078 7.04102 15.6543 6.76758C16.2012 5.63477 17.0312 5.10742 18.3008 5.10742C19.8242 5.10742 20.7324 5.95703 20.7324 7.32422L20.7324 8.16406L17.5781 8.33984C15.1074 8.47656 13.7305 9.61914 13.7305 11.4355C13.7305 13.3008 15.166 14.5508 17.2363 14.5508ZM17.6367 13.1934C16.3184 13.1934 15.4199 12.4707 15.4199 11.3965C15.4199 10.3613 16.25 9.66797 17.7832 9.57031L20.7324 9.38477L20.7324 10.4199C20.7324 11.9727 19.3555 13.1934 17.6367 13.1934Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M0.820312 14.4824C1.33789 14.4824 1.5918 14.2871 1.77734 13.7402L3.03711 10.293L8.79883 10.293L10.0586 13.7402C10.2441 14.2871 10.498 14.4824 11.0059 14.4824C11.5234 14.4824 11.8555 14.1699 11.8555 13.6816C11.8555 13.5156 11.8262 13.3594 11.748 13.1543L7.16797 0.957031C6.94336 0.361328 6.54297 0.0585938 5.91797 0.0585938C5.3125 0.0585938 4.90234 0.351562 4.6875 0.947266L0.107422 13.1641C0.0292969 13.3691 0 13.5254 0 13.6914C0 14.1797 0.3125 14.4824 0.820312 14.4824ZM3.51562 8.80859L5.88867 2.23633L5.9375 2.23633L8.31055 8.80859Z",
+  fillOpacity: "0.85"
+}))));
+IconTextformat.displayName = 'IconTextformat';

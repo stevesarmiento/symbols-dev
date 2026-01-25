@@ -1,0 +1,1 @@
+export const IconGaugeOpenWithLinesNeedle84percentExclamation: any;

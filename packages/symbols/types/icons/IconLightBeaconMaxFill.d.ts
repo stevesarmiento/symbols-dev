@@ -1,0 +1,1 @@
+export const IconLightBeaconMaxFill: any;

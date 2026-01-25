@@ -1,0 +1,26 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconFlag2CrossedFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "37.5248",
+  height: props.height || "22.5264",
+  viewBox: "0 0 37.5248 22.5264",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "22.5264",
+  opacity: "0",
+  width: "37.5248",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M17.9205 14.7406L14.3337 20.9458C14.1384 21.3071 13.6989 21.4243 13.3376 21.2193C12.986 21.0142 12.8591 20.5552 13.0642 20.2036L17.0724 13.2731ZM25.3005 1.15089C25.8767 1.21925 26.6482 1.52199 27.3513 1.93214C29.7927 3.34816 30.7107 5.52589 33.0837 6.89308C34.1189 7.48878 35.0271 7.71339 35.4567 7.95753C35.9548 8.2505 36.1892 8.73878 35.8767 9.27589L31.9509 16.0825C31.5114 16.8443 30.8962 17.0591 30.1931 16.9907C29.6169 16.9224 28.8552 16.6196 28.1521 16.1997C25.7107 14.7837 24.7829 12.6157 22.4196 11.2388C21.6189 10.7896 20.906 10.5454 20.447 10.3696L20.0878 10.991L19.2403 9.52483L23.5525 2.06886C23.9919 1.30714 24.6071 1.08253 25.3005 1.15089Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M24.0896 20.2036L13.611 2.06886C13.1716 1.30714 12.5564 1.08253 11.8532 1.15089C11.2771 1.21925 10.5056 1.52199 9.81222 1.93214C7.37081 3.34816 6.44308 5.52589 4.07003 6.89308C3.03487 7.48878 2.12667 7.71339 1.69698 7.95753C1.19894 8.2505 0.974327 8.73878 1.27706 9.27589L5.20284 16.0825C5.6423 16.8443 6.25753 17.0591 6.96066 16.9907C7.53683 16.9224 8.30831 16.6196 9.00167 16.1997C11.4528 14.7837 12.3708 12.6157 14.7439 11.2388C15.5349 10.7896 16.2575 10.5454 16.7165 10.3696L22.82 20.9458C23.0251 21.3071 23.4646 21.4243 23.8259 21.2193C24.1677 21.0142 24.2946 20.5552 24.0896 20.2036Z",
+  fillOpacity: "0.85"
+}))));
+IconFlag2CrossedFill.displayName = 'IconFlag2CrossedFill';

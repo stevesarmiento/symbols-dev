@@ -1,0 +1,1 @@
+export const IconPoweroutletTypeASquareFill: any;

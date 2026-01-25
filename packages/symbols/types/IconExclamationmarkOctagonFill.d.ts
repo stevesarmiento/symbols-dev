@@ -1,0 +1,1 @@
+export const IconExclamationmarkOctagonFill: any;

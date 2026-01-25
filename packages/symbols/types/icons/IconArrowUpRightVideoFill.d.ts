@@ -1,0 +1,1 @@
+export const IconArrowUpRightVideoFill: any;

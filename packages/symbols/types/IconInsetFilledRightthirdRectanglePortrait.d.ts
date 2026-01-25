@@ -1,0 +1,1 @@
+export const IconInsetFilledRightthirdRectanglePortrait: any;

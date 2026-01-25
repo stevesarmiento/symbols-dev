@@ -1,0 +1,1 @@
+export const IconNairasignArrowTriangleheadCounterclockwiseRotate90: any;

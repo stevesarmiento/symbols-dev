@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconTengesignBankBuilding = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "32.798828125",
+  height: props.height || "31.69140625",
+  viewBox: "0 0 32.798828125 31.69140625",
+  fill: props.fill || "'none' || '#000000'",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M2.4037 27.6768H30.6137V26.4568C30.6137 25.7568 30.1837 25.3568 29.5037 25.3568H28.8637V10.4768H29.9837C30.9837 10.4768 31.5637 9.7368 31.5637 8.9968C31.5637 8.4468 31.2637 7.9568 30.6237 7.5768L18.4337 0.5468C17.8237 0.2068 17.1437 -0.0032 16.5037 -0.0032C15.8637 -0.0032 15.1737 0.2068 14.5837 0.5468L2.3937 7.5768C1.7337 7.9568 1.4537 8.4468 1.4537 8.9968C1.4537 9.7368 2.0237 10.4768 3.0237 10.4768H4.1537V25.3568H3.5137C2.8337 25.3568 2.4037 25.7568 2.4037 26.4568ZM6.8037 25.3568V8.5068L16.1337 3.2768C16.2437 3.2168 16.3937 3.1768 16.5037 3.1768C16.6237 3.1768 16.7637 3.2168 16.8837 3.2768L26.2137 8.5068V25.3568ZM11.6737 10.0168C11.6737 10.2568 11.8537 10.4168 12.0837 10.4168H20.9137C21.1537 10.4168 21.3237 10.2568 21.3237 10.0168C21.3237 9.8068 21.1537 9.6268 20.9137 9.6268H12.0837C11.8537 9.6268 11.6737 9.8068 11.6737 10.0168ZM16.5337 21.8168C17.2437 21.8168 17.7237 21.3268 17.7237 20.5868V13.4368H20.5237C21.0037 13.4368 21.3237 13.1268 21.3237 12.6568C21.3237 12.1768 21.0037 11.8668 20.5237 11.8668H12.5137C12.0337 11.8668 11.7037 12.1768 11.7037 12.6568C11.7037 13.1268 12.0337 13.4368 12.5137 13.4368H15.3137V20.5868C15.3137 21.3268 15.8037 21.8168 16.5337 21.8168ZM1.4937 31.6868H31.3037C32.1037 31.6868 32.8037 31.0368 32.8037 30.1968C32.8037 29.3968 32.1037 28.7268 31.3037 28.7268H1.4937C0.6837 28.7268 0.0037 29.3968 0.0037 30.1968C0.0037 31.0168 0.6837 31.6868 1.4937 31.6868Z"
+})));
+IconTengesignBankBuilding.displayName = 'IconTengesignBankBuilding';

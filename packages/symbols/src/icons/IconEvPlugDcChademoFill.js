@@ -1,0 +1,23 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconEvPlugDcChademoFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "20.2832",
+  height: props.height || "19.9316",
+  viewBox: "0 0 20.2832 19.9316",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "19.9316",
+  opacity: "0",
+  width: "20.2832",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M19.9219 9.96094C19.9219 15.4004 15.4102 19.9219 9.96094 19.9219C4.52148 19.9219 0 15.4004 0 9.96094C0 4.51172 4.51172 0 9.95117 0C15.4004 0 19.9219 4.51172 19.9219 9.96094ZM10.8105 13.6328L9.95117 14.502L9.0918 13.6328C8.90625 13.457 8.62305 13.4473 8.4375 13.6328C8.25195 13.8281 8.26172 14.1113 8.4375 14.2969L9.29688 15.1562L8.4375 16.0059C8.26172 16.1914 8.25195 16.4844 8.4375 16.6699C8.62305 16.8555 8.90625 16.8457 9.0918 16.6699L9.95117 15.8008L10.8105 16.6699C10.9961 16.8457 11.2793 16.8555 11.4648 16.6699C11.6504 16.4844 11.6406 16.1914 11.4648 16.0059L10.6055 15.1562L11.4648 14.2969C11.6406 14.1113 11.6504 13.8281 11.4648 13.6328C11.2793 13.4473 10.9961 13.457 10.8105 13.6328ZM3.08594 9.96094C3.08594 11.6113 4.42383 12.9395 6.07422 12.9395C7.71484 12.9395 9.05273 11.6113 9.05273 9.96094C9.05273 8.31055 7.71484 6.98242 6.07422 6.98242C4.42383 6.98242 3.08594 8.31055 3.08594 9.96094ZM10.8691 9.96094C10.8691 11.6113 12.207 12.9395 13.8574 12.9395C15.498 12.9395 16.8359 11.6113 16.8359 9.96094C16.8359 8.31055 15.498 6.98242 13.8574 6.98242C12.207 6.98242 10.8691 8.31055 10.8691 9.96094ZM10.8105 3.24219L9.95117 4.11133L9.0918 3.24219C8.89648 3.05664 8.62305 3.05664 8.4375 3.24219C8.26172 3.42773 8.26172 3.7207 8.4375 3.90625L9.29688 4.75586L8.4375 5.61523C8.26172 5.80078 8.26172 6.09375 8.4375 6.2793C8.62305 6.45508 8.90625 6.45508 9.0918 6.2793L9.95117 5.41016L10.8105 6.2793C10.9961 6.45508 11.2793 6.45508 11.4648 6.2793C11.6504 6.09375 11.6504 5.81055 11.4648 5.61523L10.6055 4.75586L11.4648 3.90625C11.6504 3.71094 11.6504 3.42773 11.4648 3.24219C11.2793 3.05664 11.0059 3.05664 10.8105 3.24219Z",
+  fillOpacity: "0.85"
+}))));
+IconEvPlugDcChademoFill.displayName = 'IconEvPlugDcChademoFill';

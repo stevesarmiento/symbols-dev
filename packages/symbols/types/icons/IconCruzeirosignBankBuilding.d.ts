@@ -1,0 +1,1 @@
+export const IconCruzeirosignBankBuilding: any;

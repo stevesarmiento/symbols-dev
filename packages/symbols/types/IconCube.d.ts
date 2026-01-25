@@ -1,0 +1,1 @@
+export const IconCube: any;

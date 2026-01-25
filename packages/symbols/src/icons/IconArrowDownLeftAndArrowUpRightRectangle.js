@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconArrowDownLeftAndArrowUpRightRectangle = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "32.634765625",
+  height: props.height || "26.140625",
+  viewBox: "0 0 32.634765625 26.140625",
+  fill: props.fill || "'none' || '#000000'",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M4.8237 26.1377H27.8037C30.9437 26.1377 32.6337 24.4477 32.6337 21.3377V4.7977C32.6337 1.6977 30.9437 -0.0023 27.8037 -0.0023H4.8237C1.7137 -0.0023 0.0037 1.6977 0.0037 4.7977V21.3377C0.0037 24.4477 1.7137 26.1377 4.8237 26.1377ZM5.2137 22.6177C4.1137 22.6177 3.5237 22.0777 3.5237 20.9177V5.2177C3.5237 4.0577 4.1137 3.5277 5.2137 3.5277H27.4237C28.5237 3.5277 29.1037 4.0577 29.1037 5.2177V20.9177C29.1037 22.0777 28.5237 22.6177 27.4237 22.6177ZM23.5937 12.7977C24.2237 12.7977 24.6937 12.3077 24.6937 11.6577V6.7777C24.6937 5.8477 24.1337 5.3477 23.2437 5.3477H18.3237C17.6737 5.3477 17.2137 5.8077 17.2137 6.4377C17.2137 7.0677 17.6737 7.5377 18.3337 7.5377H19.7437L21.2037 7.3877L19.6337 8.6777L17.2837 11.0377C17.0237 11.2977 16.8837 11.6177 16.8837 11.9177C16.8837 12.6077 17.3937 13.1077 18.0637 13.1077C18.4137 13.1077 18.7437 12.9777 19.0137 12.6977L21.3237 10.3877L22.6437 8.8277L22.5137 10.3677V11.6877C22.5137 12.3277 22.9737 12.7977 23.5937 12.7977ZM9.0337 13.3477C8.4037 13.3477 7.9437 13.8377 7.9437 14.4777V19.3577C7.9437 20.2877 8.5037 20.7977 9.3937 20.7977H14.3137C14.9537 20.7977 15.4337 20.3277 15.4337 19.6977C15.4337 19.0677 14.9537 18.6077 14.3037 18.6077H12.8937L11.4337 18.7577L13.0037 17.4577L15.3537 15.1077C15.6137 14.8477 15.7537 14.5177 15.7537 14.2177C15.7537 13.5377 15.2437 13.0277 14.5737 13.0277C14.2237 13.0277 13.8937 13.1677 13.6137 13.4377L11.3037 15.7477L9.9937 17.3077L10.1337 15.7777V14.4477C10.1337 13.8077 9.6637 13.3477 9.0337 13.3477Z"
+})));
+IconArrowDownLeftAndArrowUpRightRectangle.displayName = 'IconArrowDownLeftAndArrowUpRightRectangle';

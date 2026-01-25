@@ -1,0 +1,1 @@
+export const IconAustraliandollarsignArrowTriangleheadCounterclockwiseRotate90: any;

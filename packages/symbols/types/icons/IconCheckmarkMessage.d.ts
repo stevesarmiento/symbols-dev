@@ -1,0 +1,1 @@
+export const IconCheckmarkMessage: any;

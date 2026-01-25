@@ -1,0 +1,23 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconDocQuestionmarkFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "16.7871",
+  height: props.height || "20.9473",
+  viewBox: "0 0 16.7871 20.9473",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "20.9473",
+  opacity: "0",
+  width: "16.7871",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M4.49219 13.5938C4.14062 13.5938 3.87695 13.3203 3.87695 12.9785C3.87695 12.6465 4.14062 12.3926 4.49219 12.3926L11.9531 12.3926C12.3047 12.3926 12.5586 12.6465 12.5586 12.9785C12.5586 13.3203 12.3047 13.5938 11.9531 13.5938ZM4.49219 16.5234C4.14062 16.5234 3.87695 16.2695 3.87695 15.9375C3.87695 15.5957 4.14062 15.3223 4.49219 15.3223L8.01758 15.3223C8.36914 15.3223 8.62305 15.5957 8.62305 15.9375C8.62305 16.2695 8.36914 16.5234 8.01758 16.5234ZM7.98828 8.74023C7.56836 8.74023 7.32422 8.51562 7.32422 8.08594C7.32422 8.04688 7.32422 8.00781 7.32422 7.97852C7.32422 7.1875 7.75391 6.75781 8.32031 6.35742C9.00391 5.88867 9.31641 5.63477 9.31641 5.13672C9.31641 4.56055 8.88672 4.17969 8.17383 4.17969C7.64648 4.17969 7.25586 4.44336 7.00195 4.90234L6.86523 5.07812C6.71875 5.2832 6.55273 5.41016 6.25977 5.41016C5.98633 5.41016 5.68359 5.20508 5.68359 4.83398C5.68359 4.7168 5.69336 4.60938 5.72266 4.50195C5.9375 3.61328 7.07031 3.03711 8.23242 3.03711C9.57031 3.03711 10.752 3.75977 10.752 5.07812C10.752 6.02539 10.1953 6.51367 9.43359 7.01172C8.89648 7.37305 8.66211 7.62695 8.66211 8.03711C8.66211 8.07617 8.66211 8.10547 8.66211 8.14453C8.66211 8.47656 8.39844 8.74023 7.98828 8.74023ZM7.97852 11.0645C7.49023 11.0645 7.08008 10.6738 7.08008 10.2148C7.08008 9.73633 7.48047 9.3457 7.97852 9.3457C8.45703 9.3457 8.85742 9.72656 8.85742 10.2148C8.85742 10.6836 8.4375 11.0645 7.97852 11.0645ZM0 17.8809C0 19.9219 1.00586 20.9375 3.02734 20.9375L13.3984 20.9375C15.4199 20.9375 16.4258 19.9219 16.4258 17.8809L16.4258 3.06641C16.4258 1.03516 15.4199 0 13.3984 0L3.02734 0C1.00586 0 0 1.03516 0 3.06641Z",
+  fillOpacity: "0.85"
+}))));
+IconDocQuestionmarkFill.displayName = 'IconDocQuestionmarkFill';

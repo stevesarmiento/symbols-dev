@@ -1,0 +1,26 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconFolderBadgePlus = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "32.6367",
+  height: props.height || "21.2793",
+  viewBox: "0 0 32.6367 21.2793",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "21.2793",
+  opacity: "0",
+  width: "32.6367",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M12.6367 2.36328L13.2324 2.85156C13.7207 3.27148 14.1211 3.42773 14.7852 3.42773L20.7528 3.42773C20.4934 3.91673 20.3016 4.44519 20.1853 5L14.375 5C13.4082 5 12.8906 4.81445 12.2559 4.28711L11.6602 3.78906C11.1621 3.36914 10.7715 3.20312 10.127 3.20312L8.06641 3.20312C7.12891 3.20312 6.62109 3.70117 6.62109 4.66797L6.62109 7.09961L20.1074 7.09961C20.168 7.61492 20.2971 8.10933 20.4861 8.57422L6.62109 8.57422L6.62109 16.4062C6.62109 17.4219 7.1582 17.9395 8.13477 17.9395L24.1309 17.9395C25.0977 17.9395 25.6543 17.4219 25.6543 16.416L25.6543 12.5474C25.8816 12.5749 26.1132 12.5879 26.3477 12.5879C26.6461 12.5879 26.9403 12.5662 27.2266 12.5169L27.2266 16.4844C27.2266 18.4961 26.2012 19.5117 24.4531 19.5117L8.11523 19.5117C6.07422 19.5117 5.04883 18.5059 5.04883 16.4844L5.04883 4.58008C5.04883 2.61719 6.03516 1.64062 7.74414 1.64062L10.5273 1.64062C11.4941 1.64062 11.9922 1.81641 12.6367 2.36328Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M31.3086 6.28906C31.3086 9.00391 29.0332 11.25 26.3477 11.25C23.623 11.25 21.3867 9.02344 21.3867 6.28906C21.3867 3.57422 23.623 1.32812 26.3477 1.32812C29.0625 1.32812 31.3086 3.57422 31.3086 6.28906ZM25.7422 3.78906L25.7422 5.69336L23.8379 5.69336C23.4766 5.69336 23.2422 5.92773 23.2422 6.28906C23.2422 6.66016 23.4766 6.89453 23.8379 6.89453L25.7422 6.89453L25.7422 8.79883C25.7422 9.16016 25.9766 9.4043 26.3477 9.4043C26.709 9.4043 26.9434 9.16016 26.9434 8.79883L26.9434 6.89453L28.8477 6.89453C29.209 6.89453 29.4531 6.66016 29.4531 6.28906C29.4531 5.92773 29.209 5.69336 28.8477 5.69336L26.9434 5.69336L26.9434 3.78906C26.9434 3.42773 26.709 3.19336 26.3477 3.19336C25.9766 3.19336 25.7422 3.42773 25.7422 3.78906Z",
+  fillOpacity: "0.85"
+}))));
+IconFolderBadgePlus.displayName = 'IconFolderBadgePlus';

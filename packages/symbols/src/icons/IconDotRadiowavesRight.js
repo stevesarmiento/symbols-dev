@@ -1,0 +1,32 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconDotRadiowavesRight = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "16.2695",
+  height: props.height || "19.1456",
+  viewBox: "0 0 16.2695 19.1456",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "19.1456",
+  opacity: "0",
+  width: "16.2695",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M11.0449 18.8843C11.3477 19.2164 11.875 19.2554 12.2461 18.8648C14.5703 16.4332 15.9082 13.1714 15.9082 9.60698C15.9082 6.04253 14.5898 2.75151 12.2461 0.339405C11.875-0.0512201 11.3477-0.0121576 11.0449 0.319874C10.7422 0.661671 10.8105 1.14019 11.1621 1.51128C13.2031 3.61089 14.3164 6.47222 14.3164 9.60698C14.3164 12.7417 13.1836 15.5738 11.1621 17.6929C10.8105 18.064 10.7422 18.5523 11.0449 18.8843Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M8.22266 16.2867C8.53516 16.648 9.08203 16.648 9.46289 16.2378C11.084 14.48 11.9922 12.1363 11.9922 9.60698C11.9922 7.07769 11.0938 4.72417 9.46289 2.97612C9.08203 2.5562 8.53516 2.5562 8.22266 2.9273C7.91016 3.27886 8.00781 3.73784 8.35938 4.13823C9.67773 5.58355 10.4004 7.49761 10.4004 9.60698C10.4004 11.7066 9.66797 13.6207 8.35938 15.0757C8.00781 15.4761 7.91016 15.9253 8.22266 16.2867Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M5.48828 13.5035C5.81055 13.8648 6.39648 13.8746 6.73828 13.4351C7.58789 12.3804 8.08594 11.0425 8.08594 9.60698C8.08594 8.17144 7.58789 6.82378 6.73828 5.77886C6.39648 5.32964 5.81055 5.3394 5.48828 5.7105C5.17578 6.06206 5.3125 6.49175 5.61523 6.92144C6.19141 7.65386 6.49414 8.59136 6.49414 9.60698C6.49414 10.6226 6.20117 11.5601 5.61523 12.2925C5.30273 12.7125 5.17578 13.1519 5.48828 13.5035Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M0 9.58745C0 10.5347 0.820312 11.3355 1.78711 11.3355C2.75391 11.3355 3.55469 10.5347 3.55469 9.56792C3.55469 8.59136 2.77344 7.79058 1.78711 7.79058C0.810547 7.79058 0 8.61089 0 9.58745Z",
+  fillOpacity: "0.85"
+}))));
+IconDotRadiowavesRight.displayName = 'IconDotRadiowavesRight';

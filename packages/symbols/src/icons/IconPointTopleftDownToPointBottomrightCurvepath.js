@@ -1,0 +1,26 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconPointTopleftDownToPointBottomrightCurvepath = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "17.5391",
+  height: props.height || "21.1621",
+  viewBox: "0 0 17.5391 21.1621",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "21.1621",
+  opacity: "0",
+  width: "17.5391",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M3.14453 6.32812C3.41481 6.32812 3.67706 6.29389 3.92578 6.22589L3.92578 6.68945C3.92578 7.86133 4.76562 8.71094 6.36719 9.16016L11.2793 10.5469C13.6035 11.1914 14.8145 12.5586 14.8145 14.502L14.8145 14.9747C14.5657 14.907 14.3035 14.873 14.0332 14.873C13.7596 14.873 13.4941 14.9079 13.2422 14.977L13.2422 14.502C13.2422 13.3301 12.4219 12.5 10.8105 12.041L5.89844 10.6543C3.57422 10.0098 2.35352 8.64258 2.35352 6.68945L2.35352 6.22337C2.60518 6.29299 2.87073 6.32812 3.14453 6.32812Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M14.0332 14.873C12.2949 14.873 10.8789 16.2793 10.8789 18.0273C10.8789 19.7559 12.2949 21.1621 14.0332 21.1621C15.7715 21.1621 17.1777 19.7559 17.1777 18.0273C17.1777 16.2793 15.7715 14.873 14.0332 14.873ZM14.0332 16.4062C14.9316 16.4062 15.6445 17.1191 15.6445 18.0273C15.6445 18.9258 14.9316 19.6289 14.0332 19.6289C13.1152 19.6289 12.4121 18.9258 12.4121 18.0273C12.4121 17.1191 13.1152 16.4062 14.0332 16.4062ZM3.14453 6.32812C4.88281 6.32812 6.28906 4.91211 6.28906 3.17383C6.28906 1.44531 4.88281 0.0292969 3.14453 0.0292969C1.40625 0.0292969 0 1.44531 0 3.17383C0 4.91211 1.40625 6.32812 3.14453 6.32812ZM3.14453 4.79492C2.24609 4.79492 1.5332 4.08203 1.5332 3.17383C1.5332 2.26562 2.24609 1.5625 3.14453 1.5625C4.05273 1.5625 4.75586 2.26562 4.75586 3.17383C4.75586 4.08203 4.0625 4.79492 3.14453 4.79492Z",
+  fillOpacity: "0.85"
+}))));
+IconPointTopleftDownToPointBottomrightCurvepath.displayName = 'IconPointTopleftDownToPointBottomrightCurvepath';

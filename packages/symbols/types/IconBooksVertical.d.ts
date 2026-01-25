@@ -1,0 +1,1 @@
+export const IconBooksVertical: any;

@@ -1,0 +1,1 @@
+export const IconPhotoFillOnRectangleFill: any;

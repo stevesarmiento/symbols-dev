@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconBatteryblockStackTrianglebadgeExclamationmarkFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "37.16015625",
+  height: props.height || "32.197265625",
+  viewBox: "0 0 37.16015625 32.197265625",
+  fill: props.fill || "'none' || '#000000'",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M4.8237 23.6429H19.9837L25.8237 13.1629C26.5637 11.8229 27.9137 11.0729 29.3437 11.0729V8.1229C29.3437 5.0129 27.6137 3.3229 24.5037 3.3229H23.5937V1.9929C23.5937 0.7429 22.8737 0.0029 21.6437 0.0029H18.5437C17.2837 0.0029 16.5737 0.7429 16.5737 1.9929V3.3229H12.8137V1.9929C12.8137 0.7429 12.1037 0.0029 10.8437 0.0029H7.7337C6.5037 0.0029 5.7837 0.7429 5.7837 1.9929V3.3229H4.8237C1.7137 3.3229 0.0037 5.0129 0.0037 8.1229V18.8529C0.0037 21.9529 1.7137 23.6429 4.8237 23.6429ZM23.5337 27.5929H35.1537C36.3537 27.5929 37.1637 26.6629 37.1637 25.5629C37.1637 25.2229 37.0737 24.8929 36.8837 24.5829L31.0937 14.1729C30.6837 13.4629 30.0237 13.1229 29.3437 13.1229C28.6537 13.1229 27.9737 13.4829 27.5937 14.1729L21.7937 24.5829C21.6037 24.8929 21.5237 25.2229 21.5237 25.5629C21.5237 26.6629 22.3237 27.5929 23.5337 27.5929ZM29.3437 22.1529C28.7237 22.1529 28.3037 21.7429 28.2737 21.1629L28.1637 17.5929C28.1337 16.9129 28.6337 16.4329 29.3437 16.4329C30.0337 16.4329 30.5437 16.9129 30.5137 17.5929L30.4037 21.1629C30.3837 21.7429 29.9437 22.1529 29.3437 22.1529ZM29.3437 25.5829C28.5737 25.5829 27.9837 25.0229 27.9837 24.2829C27.9837 23.5329 28.5737 22.9929 29.3437 22.9929C30.0937 22.9929 30.6937 23.5429 30.6937 24.2829C30.6937 25.0229 30.1237 25.5829 29.3437 25.5829ZM5.7537 28.1229H20.3937C19.9037 27.5329 19.6037 26.7929 19.5237 25.9129H3.2237C3.4037 27.2929 4.1537 28.1229 5.7537 28.1229ZM8.3037 32.1929H21.0837C22.4737 32.1929 23.2937 31.4629 23.4037 30.1429H5.9737C6.0837 31.4629 6.9037 32.1929 8.3037 32.1929Z"
+})));
+IconBatteryblockStackTrianglebadgeExclamationmarkFill.displayName = 'IconBatteryblockStackTrianglebadgeExclamationmarkFill';

@@ -1,0 +1,1 @@
+export const IconFigureSeatedSeatbeltLeftDriveSeats1Fill: any;

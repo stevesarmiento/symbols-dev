@@ -1,0 +1,1 @@
+export const IconMenubarDockRectangle: any;

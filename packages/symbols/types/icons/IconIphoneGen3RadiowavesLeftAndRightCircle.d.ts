@@ -1,0 +1,1 @@
+export const IconIphoneGen3RadiowavesLeftAndRightCircle: any;

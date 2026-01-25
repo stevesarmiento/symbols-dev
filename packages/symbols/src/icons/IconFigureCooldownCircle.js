@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconFigureCooldownCircle = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "28.875",
+  height: props.height || "28.875",
+  viewBox: "0 0 28.875 28.875",
+  fill: props.fill || "'none' || '#000000'",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M14.4327 28.8786C22.4127 28.8786 28.8727 22.4086 28.8727 14.4386C28.8727 6.4686 22.4127 -0.0014 14.4327 -0.0014C6.4627 -0.0014 0.0027 6.4686 0.0027 14.4386C0.0027 22.4086 6.4627 28.8786 14.4327 28.8786ZM14.4327 25.2786C8.4527 25.2786 3.5927 20.4286 3.5927 14.4386C3.5927 8.4386 8.4527 3.5986 14.4327 3.5986C20.4427 3.5986 25.2827 8.4386 25.2827 14.4386C25.2827 20.4286 20.4427 25.2786 14.4327 25.2786ZM14.3027 19.1686L16.4227 16.2686L17.7327 18.6786C18.1827 20.8186 18.2227 22.0986 18.2227 22.3386C18.2227 22.8086 18.5927 23.1486 19.0327 23.1486C19.4827 23.1486 19.8127 22.7886 19.8127 22.3386C19.8127 21.8086 19.7727 20.0386 19.2627 18.2386L19.2327 18.1186C18.4327 15.2586 16.7927 9.8186 12.0027 6.6286C11.7627 6.4786 11.5227 6.4086 11.2627 6.4086H8.8727C8.4527 6.4086 8.0927 6.7686 8.0927 7.1886C8.0927 7.6386 8.4527 7.9986 8.8727 7.9986H11.1927C11.9327 8.5186 12.5827 9.0786 13.1627 9.6686C13.2227 9.7186 13.2527 9.7886 13.1927 9.8886L10.7627 14.0286C10.4327 14.5886 10.8327 15.2186 11.4427 15.2186H14.6427L12.9427 18.3186L12.8827 18.4386L10.9527 21.9686C10.7427 22.3686 10.8827 22.8586 11.2627 23.0486C11.6227 23.2386 12.1027 23.1786 12.3427 22.7386ZM10.1827 11.9386C11.0627 11.9386 11.7827 11.2386 11.7827 10.3486C11.7827 9.4786 11.0627 8.7486 10.1827 8.7486C9.2927 8.7486 8.5827 9.4786 8.5827 10.3486C8.5827 11.2386 9.2927 11.9386 10.1827 11.9386ZM12.7727 13.6686L13.2627 12.7986C13.3427 12.6586 13.4627 12.6886 13.5327 12.7786L14.1227 13.6686Z"
+})));
+IconFigureCooldownCircle.displayName = 'IconFigureCooldownCircle';

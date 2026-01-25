@@ -1,0 +1,1 @@
+export const IconPaperplaneFill: any;

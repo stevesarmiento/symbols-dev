@@ -1,0 +1,1 @@
+export const IconSignpostRightCircleFill: any;

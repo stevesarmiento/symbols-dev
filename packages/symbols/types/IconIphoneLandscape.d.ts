@@ -1,0 +1,1 @@
+export const IconIphoneLandscape: any;

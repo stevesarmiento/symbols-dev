@@ -1,0 +1,1 @@
+export const IconHouseLodgeCircleFill: any;

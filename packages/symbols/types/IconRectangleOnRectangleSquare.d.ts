@@ -1,0 +1,1 @@
+export const IconRectangleOnRectangleSquare: any;

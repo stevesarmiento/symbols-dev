@@ -1,0 +1,1 @@
+export const IconArrowUpForwardAndArrowDownBackwardCircleFill: any;

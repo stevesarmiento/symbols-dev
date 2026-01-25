@@ -1,0 +1,1 @@
+export const IconTurkishlirasignGaugeChartLeftthirdTopthirdRightthird: any;

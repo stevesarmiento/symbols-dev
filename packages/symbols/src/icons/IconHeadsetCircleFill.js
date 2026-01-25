@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconHeadsetCircleFill = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "28.875",
+  height: props.height || "28.875",
+  viewBox: "0 0 28.875 28.875",
+  fill: props.fill || "'none' || '#000000'",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M14.4327 28.8749C22.4127 28.8749 28.8727 22.4049 28.8727 14.4349C28.8727 6.4649 22.4127 0.0049 14.4327 0.0049C6.4627 0.0049 0.0027 6.4649 0.0027 14.4349C0.0027 22.4049 6.4627 28.8749 14.4327 28.8749ZM14.4327 8.1749C11.2927 8.1749 9.2527 10.1849 9.2527 13.3049L9.2427 13.4149C9.3227 13.3949 9.4027 13.3949 9.4727 13.3949C10.2027 13.3949 10.7327 13.9149 10.7227 14.6149V18.5649C10.7327 19.2749 10.1827 19.7949 9.4727 19.7949C9.0127 19.7949 8.6127 19.5549 8.3927 19.1949C7.7527 19.1649 6.9227 18.7549 6.9027 17.7349V15.2349C6.9027 14.7749 7.0527 14.3649 7.3727 14.1049V13.3149C7.3827 9.1149 10.2127 6.2849 14.4327 6.2849C18.6727 6.2849 21.5027 9.1149 21.5027 13.3149V14.1049C21.8027 14.3649 21.9827 14.7649 21.9827 15.2349L21.9727 17.8949C21.9827 18.4849 21.6427 18.9449 21.0827 19.1249V19.3449C21.0827 20.6049 20.4227 21.0949 19.5527 21.2449L16.1227 21.8349C15.9527 22.0949 15.6927 22.3149 15.3627 22.3549L14.0927 22.5949C13.5127 22.7049 12.9327 22.2749 12.8427 21.7149C12.7327 21.1049 13.1227 20.5349 13.7227 20.4349L15.0027 20.2049C15.3027 20.1549 15.6027 20.2449 15.8427 20.4249L18.9627 19.8749C19.1927 19.8349 19.2527 19.8249 19.3027 19.7549C19.2327 19.7449 19.1727 19.7449 19.0627 19.7049C18.5227 19.6049 18.1727 19.1449 18.1527 18.5649V14.6149C18.1727 13.9349 18.6927 13.3949 19.3827 13.3949C19.4827 13.3949 19.5627 13.3949 19.6327 13.4249V13.2849C19.6327 10.1849 17.5927 8.1749 14.4327 8.1749Z"
+})));
+IconHeadsetCircleFill.displayName = 'IconHeadsetCircleFill';

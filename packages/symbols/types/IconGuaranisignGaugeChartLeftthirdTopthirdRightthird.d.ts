@@ -1,0 +1,1 @@
+export const IconGuaranisignGaugeChartLeftthirdTopthirdRightthird: any;

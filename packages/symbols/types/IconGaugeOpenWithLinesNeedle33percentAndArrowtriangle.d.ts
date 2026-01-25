@@ -1,0 +1,1 @@
+export const IconGaugeOpenWithLinesNeedle33percentAndArrowtriangle: any;

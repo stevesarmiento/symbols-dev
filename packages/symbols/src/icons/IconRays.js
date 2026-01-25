@@ -1,0 +1,44 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconRays = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "21.5625",
+  height: props.height || "21.2793",
+  viewBox: "0 0 21.5625 21.2793",
+  fill: props.fill || "'none' || '#000000",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("rect", {
+  height: "21.2793",
+  opacity: "0",
+  width: "21.5625",
+  x: "0",
+  y: "0"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M5.15625 6.36719C5.47852 6.68945 6.02539 6.68945 6.35742 6.36719C6.67969 6.03516 6.67969 5.48828 6.35742 5.16602L4.23828 3.03711C3.91602 2.71484 3.36914 2.70508 3.03711 3.02734C2.71484 3.34961 2.71484 3.89648 3.03711 4.22852Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M0.849609 9.74609C0.390625 9.74609 0 10.1367 0 10.5957C0 11.0547 0.390625 11.4453 0.849609 11.4453L3.87695 11.4453C4.33594 11.4453 4.72656 11.0547 4.72656 10.5957C4.72656 10.1367 4.33594 9.74609 3.87695 9.74609Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M3.125 16.8555C2.80273 17.1777 2.80273 17.7344 3.11523 18.0566C3.4375 18.3789 3.99414 18.3887 4.32617 18.0664L6.45508 15.9375C6.77734 15.6152 6.77734 15.0684 6.45508 14.7461C6.14258 14.4141 5.57617 14.4141 5.25391 14.7461Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M11.4551 17.334C11.4551 16.8652 11.0645 16.4746 10.5957 16.4746C10.1367 16.4746 9.74609 16.8652 9.74609 17.334L9.74609 20.3418C9.74609 20.8008 10.1367 21.1914 10.5957 21.1914C11.0645 21.1914 11.4551 20.8008 11.4551 20.3418Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M15.9473 14.7266C15.6152 14.4043 15.0586 14.4043 14.7363 14.7266C14.4043 15.0586 14.4043 15.6055 14.7363 15.9277L16.875 18.0664C17.1973 18.3887 17.7441 18.3789 18.0664 18.0664C18.3984 17.7441 18.3984 17.1875 18.0664 16.8555Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M20.3418 11.4453C20.8105 11.4453 21.2012 11.0547 21.2012 10.5957C21.2012 10.1367 20.8105 9.74609 20.3418 9.74609L17.334 9.74609C16.875 9.74609 16.4844 10.1367 16.4844 10.5957C16.4844 11.0547 16.875 11.4453 17.334 11.4453Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M14.7363 5.26367C14.4043 5.58594 14.4043 6.13281 14.7363 6.46484C15.0586 6.78711 15.6152 6.78711 15.9473 6.46484L18.0664 4.33594C18.3984 4.00391 18.3984 3.45703 18.0664 3.125C17.7441 2.80273 17.1973 2.80273 16.875 3.125Z",
+  fillOpacity: "0.85"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M11.4551 0.849609C11.4551 0.390625 11.0645 0 10.5957 0C10.1367 0 9.74609 0.390625 9.74609 0.849609L9.74609 3.85742C9.74609 4.32617 10.1367 4.7168 10.5957 4.7168C11.0645 4.7168 11.4551 4.32617 11.4551 3.85742Z",
+  fillOpacity: "0.85"
+}))));
+IconRays.displayName = 'IconRays';

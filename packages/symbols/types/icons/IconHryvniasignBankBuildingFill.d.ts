@@ -1,0 +1,1 @@
+export const IconHryvniasignBankBuildingFill: any;

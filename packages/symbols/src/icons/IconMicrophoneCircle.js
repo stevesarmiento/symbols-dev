@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconMicrophoneCircle = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "28.875",
+  height: props.height || "28.875",
+  viewBox: "0 0 28.875 28.875",
+  fill: props.fill || "'none' || '#000000'",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M14.4327 28.8786C22.4127 28.8786 28.8727 22.4086 28.8727 14.4386C28.8727 6.4686 22.4127 -0.0014 14.4327 -0.0014C6.4627 -0.0014 0.0027 6.4686 0.0027 14.4386C0.0027 22.4086 6.4627 28.8786 14.4327 28.8786ZM14.4327 25.2786C8.4527 25.2786 3.5927 20.4286 3.5927 14.4386C3.5927 8.4386 8.4527 3.5986 14.4327 3.5986C20.4427 3.5986 25.2827 8.4386 25.2827 14.4386C25.2827 20.4286 20.4427 25.2786 14.4327 25.2786ZM14.4327 16.7486C15.7627 16.7486 16.8527 15.7186 16.8527 14.2586V8.8886C16.8527 7.4286 15.7627 6.3986 14.4327 6.3986C13.1127 6.3986 12.0027 7.4286 12.0027 8.8686V14.2586C12.0027 15.7186 13.1127 16.7486 14.4327 16.7486ZM11.1327 22.4786H17.7427C18.2427 22.4786 18.6627 22.0486 18.6627 21.5786C18.6627 21.0786 18.2527 20.6586 17.7427 20.6586H15.3127V19.6086C18.0227 19.2686 19.9927 17.2686 19.9927 14.4686V12.8686C19.9927 12.3886 19.5827 11.9886 19.0827 11.9886C18.5827 11.9886 18.1527 12.3886 18.1527 12.8686V14.4486C18.1527 16.4786 16.5427 17.9886 14.4327 17.9886C12.3327 17.9886 10.7027 16.4786 10.7027 14.4486V12.8686C10.7027 12.3886 10.2827 11.9886 9.7927 11.9886C9.2927 11.9886 8.8827 12.3886 8.8827 12.8686V14.4686C8.8827 17.2686 10.8527 19.2686 13.5627 19.6086V20.6586H11.1327C10.6227 20.6586 10.2027 21.0786 10.2027 21.5786C10.2027 22.0486 10.6227 22.4786 11.1327 22.4786Z"
+})));
+IconMicrophoneCircle.displayName = 'IconMicrophoneCircle';

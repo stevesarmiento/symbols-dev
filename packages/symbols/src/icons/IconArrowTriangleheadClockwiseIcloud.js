@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconArrowTriangleheadClockwiseIcloud = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "35.8203125",
+  height: props.height || "25.142578125",
+  viewBox: "0 0 35.8203125 25.142578125",
+  fill: props.fill || "'none' || '#000000'",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M27.7927 25.1395C32.2627 25.1395 35.8227 21.8495 35.8227 17.7095C35.8227 14.7395 34.1627 12.0195 31.3927 10.8695C31.3727 4.5495 26.8127 -0.0005 20.8627 -0.0005C17.3227 -0.0005 14.4627 1.7195 12.6227 4.3295C8.9827 3.4995 5.3727 6.1295 5.1427 10.0195C1.9527 10.6795 0.0027 13.5795 0.0027 17.1195C0.0027 21.5095 3.8427 25.1395 8.7927 25.1395ZM27.7927 21.6195H8.8027C5.8427 21.6195 3.6127 19.5495 3.6127 17.1195C3.6127 14.4095 5.3427 12.5895 7.9727 12.5895C8.1927 12.5895 8.2827 12.4795 8.2727 12.2595C8.0427 8.3995 10.7827 6.8195 13.9327 7.7495C14.1127 7.8095 14.2327 7.7695 14.3327 7.5995C15.7227 5.2095 17.6327 3.5295 20.8227 3.5295C24.8527 3.5295 27.8127 6.7095 28.0127 10.5595C28.0527 11.4395 27.9827 12.3295 27.9027 13.0295C27.8727 13.2295 27.9627 13.3395 28.1627 13.3695C30.6427 13.7395 32.2227 15.3995 32.2227 17.7095C32.2227 19.8795 30.2827 21.6195 27.7927 21.6195ZM18.6027 19.3695C21.5427 19.3695 23.9227 16.9895 23.9227 14.0395C23.9227 13.4695 23.4427 13.0195 22.8827 13.0195C22.3027 13.0195 21.8327 13.4695 21.8327 14.0395C21.8327 15.8495 20.4027 17.2795 18.6027 17.2795C16.8127 17.2795 15.3827 15.8295 15.3827 14.0395C15.3827 12.5195 16.3427 11.4195 17.5027 11.0195V12.2795C17.5027 12.9795 18.2427 13.2495 18.7827 12.7995L21.2827 10.6795C21.7827 10.2695 21.7627 9.6295 21.2827 9.2295L18.7827 7.1495C18.2427 6.6995 17.5027 6.9895 17.5027 7.6695V8.8595C15.1927 9.3195 13.2927 11.4295 13.2927 14.0295C13.2927 16.9895 15.6727 19.3695 18.6027 19.3695Z"
+})));
+IconArrowTriangleheadClockwiseIcloud.displayName = 'IconArrowTriangleheadClockwiseIcloud';

@@ -1,0 +1,1 @@
+export const IconColoncurrencysignArrowTriangleheadCounterclockwiseRotate90: any;

@@ -1,0 +1,1 @@
+export const Icon90ArrowTriangleheadCounterclockwise: any;

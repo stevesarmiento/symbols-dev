@@ -1,0 +1,1 @@
+export const IconRefrigerator: any;

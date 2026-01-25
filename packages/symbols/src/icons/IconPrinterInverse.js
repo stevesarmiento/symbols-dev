@@ -1,0 +1,16 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import React from 'react';
+export const IconPrinterInverse = /*#__PURE__*/React.forwardRef((props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
+  ref: ref,
+  width: props.width || "31.8828125",
+  height: props.height || "31.03515625",
+  viewBox: "0 0 31.8828125 31.03515625",
+  fill: props.fill || "'none' || '#000000'",
+  stroke: props.stroke || "none",
+  strokeWidth: props.strokeWidth || "2",
+  strokeLinecap: props.strokeLinecap || "round",
+  strokeLinejoin: props.strokeLinejoin || "round"
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M4.6737 26.608H6.0337V27.628C6.0337 29.968 7.1337 31.038 9.4337 31.038H22.4537C24.7437 31.038 25.8537 29.968 25.8537 27.628V26.608H27.2037C30.2137 26.608 31.8837 24.968 31.8837 21.958V9.758C31.8837 6.758 30.2137 5.118 27.2037 5.118H26.1137V4.358C26.1137 1.398 24.6337 -0.002 21.7337 -0.002H10.1437C7.3137 -0.002 5.7737 1.398 5.7737 4.358V5.118H4.6737C1.7537 5.118 0.0037 6.758 0.0037 9.758V21.958C0.0037 24.968 1.6637 26.608 4.6737 26.608ZM8.9237 4.098C8.9237 3.278 9.3637 2.858 10.1837 2.858H21.6937C22.5137 2.858 22.9537 3.278 22.9537 4.098V5.118H8.9237ZM22.4537 14.118H9.4337C7.1937 14.118 6.0337 15.188 6.0337 17.528V23.538H4.7137C3.7337 23.538 3.2137 23.028 3.2137 22.038V9.678C3.2137 8.698 3.7337 8.158 4.7137 8.158H27.1637C28.1537 8.158 28.6737 8.698 28.6737 9.678V22.038C28.6737 23.028 28.1537 23.538 27.1637 23.538H25.8537V17.528C25.8537 15.188 24.7437 14.118 22.4537 14.118ZM22.2537 11.228C22.2537 12.178 23.0337 12.938 23.9837 12.938C24.8937 12.938 25.6737 12.178 25.6737 11.228C25.6737 10.308 24.8937 9.528 23.9837 9.528C23.0337 9.528 22.2537 10.308 22.2537 11.228ZM11.3737 21.018C10.7237 21.018 10.2237 20.508 10.2237 19.868C10.2237 19.238 10.7037 18.728 11.3737 18.728H20.5337C21.1937 18.728 21.6837 19.238 21.6837 19.868C21.6837 20.508 21.1937 21.018 20.5337 21.018ZM11.3737 26.468C10.7037 26.468 10.2237 25.978 10.2237 25.348C10.2237 24.708 10.7237 24.188 11.3737 24.188H20.5337C21.1937 24.188 21.6837 24.708 21.6837 25.348C21.6837 25.978 21.1937 26.468 20.5337 26.468Z"
+})));
+IconPrinterInverse.displayName = 'IconPrinterInverse';

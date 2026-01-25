@@ -1,0 +1,1 @@
+export const IconBolt: any;

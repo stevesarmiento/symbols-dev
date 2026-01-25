@@ -1,0 +1,1 @@
+export const IconGaugeWithDotsNeedleBottom50percentBadgeMinus: any;

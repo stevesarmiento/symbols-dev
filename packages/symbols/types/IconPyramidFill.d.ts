@@ -1,0 +1,1 @@
+export const IconPyramidFill: any;
