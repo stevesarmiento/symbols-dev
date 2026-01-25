@@ -37,7 +37,7 @@ jobs:
         uses: changesets/action@v1
         with:
           version: bun run version-packages
-          publish: bash -lc 'bun run build --filter=./packages/* && bun packages/symbols/scripts/verify-import.ts && bun run release'
+          publish: bun run release:ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -14,7 +14,8 @@
     "lint": "turbo run lint",
     "changeset": "bunx changeset",
     "version-packages": "bunx changeset version",
-    "release": "bunx changeset publish"
+    "release": "bunx changeset publish",
+    "release:ci": "bun run build --filter=./packages/* && bun packages/symbols/scripts/verify-import.ts && bun run release"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.2",
