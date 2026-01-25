@@ -5,7 +5,7 @@ import { ThemeProvider } from '@/components/ui/theme-provicer'
 import { QueryProvider } from '@/providers/query-provider'
 import { FrameworkProvider } from '@/context/framework-provider'
 import { TooltipProvider } from '@/components/ui/tooltip'
-import { SidebarProvider } from '@/components/ui/sidebar'
+import { FavoritesSheetProvider } from '@/components/FavoritesSheet'
 interface AppProvidersProps {
   children: React.ReactNode
 }
@@ -14,11 +14,11 @@ export function AppProviders({ children }: AppProvidersProps) {
   return (
     <QueryProvider>
       <FrameworkProvider>
-        <SidebarProvider>
+        <FavoritesSheetProvider>
           <TooltipProvider>
             <ThemeProvider>{children}</ThemeProvider>
           </TooltipProvider>
-        </SidebarProvider>
+        </FavoritesSheetProvider>
       </FrameworkProvider>
     </QueryProvider>
   )

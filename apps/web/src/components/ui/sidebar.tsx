@@ -271,7 +271,7 @@ const SidebarTrigger = React.forwardRef<
       variant="ghost"
       size="icon"
       aria-label="Toggle sidebar"
-      className={cn("h-7 w-7 bg-zinc-900/0 hover:bg-white/10 active:scale-[0.98] transition-all duration-150", className)}
+      className={cn("group h-7 w-7 bg-zinc-900/0 hover:bg-white/10 active:scale-[0.98] transition-all duration-150", className)}
       onClick={(event) => {
         onClick?.(event)
         toggleSidebar()
@@ -279,7 +279,7 @@ const SidebarTrigger = React.forwardRef<
       {...props}
     >
       {/* <PanelLeft /> */}
-      <IconBookmarkFill className="size-4.5 fill-indigo-400" />
+      <IconBookmarkFill className="size-4 fill-white/40 group-hover:fill-indigo-400" />
       <span className="sr-only">Toggle Sidebar</span>
     </Button>
   )

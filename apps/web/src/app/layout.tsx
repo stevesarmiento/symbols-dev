@@ -7,7 +7,6 @@ import { Toaster } from "sonner";
 import { AppProviders } from './providers'
 import NavBar from '@/components/NavBar';
 import { DashboardBreadcrumbBar } from "@/components/DashboardBreadcrumbBar";
-import { FavoritesSidebar } from "@/components/FavoritesSidebar";
 import { Footer } from '@/components/Footer'
 import Script from 'next/script';
 
@@ -127,7 +126,6 @@ export default function RootLayout({
             <Footer />
           </div>
           <Toaster position="top-center"/>
-          <FavoritesSidebar />
         </AppProviders>
       </body>
     </html>

@@ -86,7 +86,7 @@ export function FavoritesButton({ iconName }: FavoritesButtonProps) {
                 animate={{ scale: 1, rotate: 0 }}
                 exit={{ scale: 1.1, rotate: -20 }}
               > 
-                <IconBookmarkFill className="size-4 fill-yellow-500" />
+                <IconBookmarkFill className="size-4 fill-indigo-400" />
               </motion.div>
             ) : (
               <motion.div

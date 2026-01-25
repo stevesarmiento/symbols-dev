@@ -107,7 +107,7 @@ export function IconDisplay({ iconName, IconComponent, size, fillColor }: IconDi
                 width={size}
                 height={size}
                 fill={fillColor}
-                className="transition-all duration-300 group-hover:scale-110 p-6"
+                className="transition-all duration-300 group-hover:scale-110 active:scale-100 transition-all duration-75 ease-in-out p-8"
               />
             </div>
           </div>

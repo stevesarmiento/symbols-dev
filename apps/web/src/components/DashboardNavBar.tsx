@@ -7,8 +7,7 @@ import { IconCommand, IconHeartFill, IconMagnifyingglass } from "symbols-react";
 
 import NpmButton from "@/components/NpmButton";
 import { Input } from "@/components/ui/input";
-import { SidebarTrigger } from "@/components/ui/sidebar";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import { FavoritesSheetTrigger } from "@/components/FavoritesSheet";
 import { cn } from "@/lib/utils";
 
 function isDashboardShellPathname(pathname: string) {
@@ -129,14 +128,7 @@ export function DashboardNavBar() {
         </form>
 
         <div className="flex items-center gap-2">
-          <Tooltip delayDuration={0}>
-            <TooltipTrigger asChild>
-              <SidebarTrigger />
-            </TooltipTrigger>
-            <TooltipContent side="left" className="bg-zinc-900 text-xs text-white">
-              <p>Favorites</p>
-            </TooltipContent>
-          </Tooltip>
+          <FavoritesSheetTrigger label="Bookmarks" tooltipSide="left" />
           <div className="h-[20px] w-[2px] rounded-full bg-zinc-800" />
           <NpmButton selectedFramework="react" />
         </div>

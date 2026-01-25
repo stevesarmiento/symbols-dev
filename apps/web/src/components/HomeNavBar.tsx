@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { IconHeartFill, IconHeartTextSquare, IconHeartTextSquareFill, IconMagnifyingglass } from "symbols-react";
 
-import { SidebarTrigger } from "@/components/ui/sidebar";
+import { FavoritesSheetTrigger } from "@/components/FavoritesSheet";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import NpmButton from "@/components/NpmButton";
 
@@ -48,14 +48,7 @@ export function HomeNavBar() {
             </TooltipContent>
           </Tooltip>
           <div className="h-[20px] w-[2px] rounded-full bg-zinc-800" />
-          <Tooltip delayDuration={0}>
-            <TooltipTrigger asChild>
-              <SidebarTrigger />
-            </TooltipTrigger>
-            <TooltipContent side="bottom" className="bg-zinc-900 text-xs text-white">
-              <p>Bookmarks</p>
-            </TooltipContent>
-          </Tooltip>
+          <FavoritesSheetTrigger label="Bookmarks" tooltipSide="bottom" />
           <div className="h-[20px] w-[2px] rounded-full bg-zinc-800" />
           <NpmButton selectedFramework="react" />
         </div>

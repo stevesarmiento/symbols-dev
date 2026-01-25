@@ -35,7 +35,7 @@ export function IconHeader({ iconName }: IconHeaderProps) {
       <div className="flex w-full justify-between items-start mb-0">
         <div className="flex flex-col">
           <h1 className="text-lg font-diatype-bold break-all text-white">
-            {iconName.replace('Icon', '')}
+          {iconName.replace('Icon', '').length > 22 ? `${iconName.replace('Icon', '').slice(0, 22)}...` : iconName.replace('Icon', '')}
           </h1>
           <p className="text-white/30 mb-8 text-xs font-berkeley-mono">{iconName}</p>
         </div>
@@ -50,9 +50,9 @@ export function IconHeader({ iconName }: IconHeaderProps) {
                 onClick={handleCopyIconName}
               >
                 {hasCopiedIconName ? (
-                  <IconCheckmark className="fill-green-500 scale-in size-4" />
+                  <IconCheckmark className="fill-green-500 scale-in size-3.5" />
                 ) : (
-                  <IconPaperclip className="fill-white/50 group-hover:-rotate-[10deg] scale-in size-5" width={16} height={16} />
+                  <IconPaperclip className="fill-white/50 group-hover:-rotate-[10deg] scale-in size-4.5"/>
                 )}
               </button>
             </TooltipTrigger> 

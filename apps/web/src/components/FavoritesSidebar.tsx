@@ -1,17 +1,10 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import {
-  Sidebar,
-  SidebarContent,
-  SidebarHeader,
-  SidebarInput,
-  SidebarMenu,
-  SidebarMenuItem,
-  SidebarMenuButton,
-} from "@/components/ui/sidebar";
+import { SheetClose, SheetContent, SheetTitle } from "@/components/ui/sheet";
+import { Input } from "@/components/ui/input";
 import { useFavorites, useFavoritesHydration } from "@/stores/favorites";
-import { IconStarFill, IconTrash, IconPaperclip, IconCheckmark } from "symbols-react";
+import { IconTrash, IconPaperclip, IconCheckmark } from "symbols-react";
 import * as Icons from "symbols-react";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
@@ -74,104 +67,105 @@ export function FavoritesSidebar() {
   };
 
   return (
-    <Sidebar side="right" className="bg-zinc-950 border border-zinc-800">
-      <SidebarHeader className="flex flex-col gap-3 border-b border-zinc-800">
-        {/* <div className="flex flex-row items-center gap-2">
-          <IconStarFill className="h-5 w-5 fill-yellow-400" />
-          <h2 className="text-lg font-semibold text-white">Favorites</h2>
-        </div> */}
-        
-        {hasHydrated && favorites.size > 0 && (
+    <SheetContent
+      side="right"
+      className="w-[24rem] border-zinc-800 bg-zinc-950 p-0 text-white sm:max-w-[24rem]"
+    >
+      <SheetTitle className="sr-only">Favorites</SheetTitle>
+      <div className="flex h-full min-h-0 flex-col">
+        <div className="flex flex-col gap-3 border-b border-zinc-800 p-3 pr-12">
           <div className="relative">
-            <SidebarInput
+            <Input
               placeholder="Search favorites..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className=""
+              disabled={!hasHydrated || favorites.size === 0}
+              className="h-8 border rounded-lg border-zinc-800 bg-zinc-950 shadow-none transition-all duration-300 focus-within:border-zinc-700 focus-within:bg-zinc-900 focus-within:ring-4 focus-within:ring-zinc-400/10 disabled:cursor-not-allowed disabled:opacity-50 disabled:focus-within:ring-0"
             />
           </div>
-        )}
-      </SidebarHeader>
-      
-      <SidebarContent className="p-2">
-        {!hasHydrated ? (
-          <div className="p-4 text-center text-muted-foreground ">
-            Loading favorites...
-          </div>
-        ) : favorites.size === 0 ? (
-          <div className="p-4 text-center text-muted-foreground">
-            <IconStarFill className="h-8 w-8 mx-auto mb-2 fill-muted-foreground/50" />
-            <p className="text-sm">No favorites yet</p>
-            <p className="text-xs mt-1">Click the star on any icon to add it here</p>
-          </div>
-        ) : filteredFavorites.length === 0 ? (
-          <div className="p-4 text-center text-muted-foreground">
-            <p className="text-sm">No favorites match your search</p>
-          </div>
-        ) : (
-          <SidebarMenu>
-            {filteredFavorites.map((iconName: string) => {
-              if (typeof iconName !== 'string') return null;
-              
-              const IconComponent = getIconComponent(iconName);
-              
-              return (
-                <SidebarMenuItem key={iconName}>
-                  <SidebarMenuButton
-                    onClick={() => handleIconClick(iconName)}
-                    className="group rounded-xl h-auto p-3 hover:bg-zinc-800/30 transition-all duration-200 pr-16"
-                  >
-                    <div className="flex items-center gap-3 w-full">
-                      {IconComponent && (
-                        <div className="flex-shrink-0">
-                          <IconComponent 
-                            className="h-5 w-5 fill-current group-hover:fill-zinc-200 transition-colors duration-200" 
-                            width={20} 
-                            height={20} 
-                          />
+        </div>
+
+        <div className="min-h-0 flex-1 overflow-auto p-2">
+          {!hasHydrated ? (
+            <div className="p-4 text-center text-muted-foreground ">
+              Loading favorites...
+            </div>
+          ) : favorites.size === 0 ? (
+            <div className="flex flex-col items-center justify-center pt-16 text-center text-muted-foreground">
+              <Icons.IconBookmarkFill className="h-8 w-8 mx-auto mb-2 fill-white/20" />
+              <p className="text-md font-diatype-medium">No bookmarks yet</p>
+              <p className="text-xs mt-1 font-berkeley-mono text-pretty opacity-50">Click the bookmark on any <br />icon to add it here</p>
+            </div>
+          ) : filteredFavorites.length === 0 ? (
+            <div className="p-4 text-center text-muted-foreground">
+              <p className="text-sm">No favorites match your search</p>
+            </div>
+          ) : (
+            <ul className="space-y-1">
+              {filteredFavorites.map((iconName: string) => {
+                const IconComponent = getIconComponent(iconName);
+
+                return (
+                  <li key={iconName} className="group/menu-item relative">
+                    <SheetClose asChild>
+                      <button
+                        type="button"
+                        onClick={() => handleIconClick(iconName)}
+                        className="group w-full rounded-xl p-3 pr-16 text-left hover:bg-zinc-800/30 transition-all duration-200"
+                      >
+                        <div className="flex items-center gap-3 w-full">
+                          {IconComponent && (
+                            <div className="flex-shrink-0">
+                              <IconComponent
+                                className="h-5 w-5 fill-current transition-colors duration-200 group-hover:fill-zinc-200"
+                                width={20}
+                                height={20}
+                              />
+                            </div>
+                          )}
+
+                          <div className="flex-1 min-w-0">
+                            <p className="truncate text-xs text-zinc-400 transition-colors duration-200 group-hover:text-white">
+                              {iconName.replace("Icon", "")}
+                            </p>
+                          </div>
                         </div>
-                      )}
-                      
-                      <div className="flex-1 min-w-0">
-                        <p className="text-xs text-zinc-400 group-hover:text-white transition-colors duration-200 truncate">
-                          {iconName.replace('Icon', '')}
-                        </p>
-                      </div>
+                      </button>
+                    </SheetClose>
+
+                    <div className="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-1 opacity-0 transition-opacity duration-150 group-hover/menu-item:opacity-100 group-focus-within/menu-item:opacity-100">
+                      <button
+                        type="button"
+                        aria-label="Copy icon name"
+                        className="inline-flex h-6 w-6 items-center justify-center rounded-md transition-colors hover:bg-white/10"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleCopyIconName(iconName);
+                        }}
+                      >
+                        {copiedIcon === iconName ? (
+                          <IconCheckmark className="h-3 w-3 fill-green-500" />
+                        ) : (
+                          <IconPaperclip className="h-3 w-3 fill-zinc-400 transition-colors duration-200" />
+                        )}
+                      </button>
+
+                      <button
+                        type="button"
+                        aria-label="Remove from favorites"
+                        className="inline-flex h-6 w-6 items-center justify-center rounded-md transition-colors hover:bg-red-500/10"
+                        onClick={(e) => handleRemoveFromFavorites(iconName, e)}
+                      >
+                        <IconTrash className="h-3.5 w-3.5 fill-zinc-400 transition-colors duration-200" />
+                      </button>
                     </div>
-                  </SidebarMenuButton>
-
-                  <div
-                    data-sidebar="menu-action"
-                    className="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-1 opacity-0 transition-opacity duration-150 group-hover/menu-item:opacity-100 group-focus-within/menu-item:opacity-100"
-                  >
-                    <button
-                      type="button"
-                      aria-label="Copy icon name"
-                      className="h-6 w-6 inline-flex items-center justify-center rounded-md hover:bg-sidebar-accent-foreground/10 transition-colors"
-                      onClick={() => handleCopyIconName(iconName)}
-                    >
-                      {copiedIcon === iconName ? (
-                        <IconCheckmark className="h-3 w-3 fill-green-500" />
-                      ) : (
-                        <IconPaperclip className="h-3 w-3 fill-zinc-400 transition-colors duration-200" />
-                      )}
-                    </button>
-
-                    <button
-                      type="button"
-                      aria-label="Remove from favorites"
-                      className="h-6 w-6 inline-flex items-center justify-center rounded-md hover:bg-red-500/10 transition-colors"
-                      onClick={(e) => handleRemoveFromFavorites(iconName, e)}
-                    >
-                      <IconTrash className="h-3.5 w-3.5 fill-zinc-400 transition-colors duration-200" />
-                    </button>
-                  </div>
-                </SidebarMenuItem>
-              );
-            })}
-          </SidebarMenu>
-        )}
-      </SidebarContent>
-    </Sidebar>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+        </div>
+      </div>
+    </SheetContent>
   );
 }
