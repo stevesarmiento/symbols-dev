@@ -3,6 +3,9 @@
 import React from 'react'
 import Link from 'next/link'
 import { usePathname } from "next/navigation"
+import { version as symbolsVersion } from "symbols-react/package.json"
+
+import { Badge } from "@/components/ui/badge"
 
 export function Footer() {
   const pathname = usePathname();
@@ -27,10 +30,13 @@ export function Footer() {
               @stevensarmi_
             </Link>
         </div>
-        <div>
+        <div className="flex items-center gap-2">
           <Link href="https://github.com/stevesarmiento/symbols-dev/blob/main/LICENSE.md" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
             MIT Licensed
           </Link>
+          <Badge className="rounded-md border-white/10 bg-white/5 hover:bg-white/10 cursor-crosshair px-2 py-0.5 text-[10px] font-medium text-white/60">
+            v{symbolsVersion}
+          </Badge>
         </div>
       </div>
     </footer>
