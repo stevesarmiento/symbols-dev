@@ -4,7 +4,6 @@ import type { ReactNode } from "react";
 import { useCallback, useState } from "react";
 import { toast } from "sonner";
 import { IconCheckmarkCircleFill } from "symbols-react";
-import { IconHeader } from "@/components/IconHeader";
 import { ComponentViewer } from "@/components/ComponentView";
 
 interface IconDetailActionsProps {
@@ -55,17 +54,12 @@ export function IconDetailActions({
   }, [componentCode]);
 
   return (
-    <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+    <div className="grid grid-cols lg:grid-cols-2">
       <div className="min-w-0">
-        <IconHeader
-          iconName={iconName}
-          copied={hasCopiedIconName}
-          onCopy={handleCopyIconName}
-        />
         {children}
       </div>
 
-      <div className="min-w-0 lg:border-l lg:border-white/5 lg:pl-6">
+      <div className="min-w-0 lg:border-l lg:border-white/5">
         <ComponentViewer
           iconName={iconName}
           componentCode={componentCode}

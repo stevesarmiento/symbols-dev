@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { IconHeartFill } from "symbols-react";
+import { IconHeartFill, IconHeartTextSquare, IconHeartTextSquareFill, IconMagnifyingglass } from "symbols-react";
 
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
@@ -36,10 +36,24 @@ export function HomeNavBar() {
         <div className="flex items-center gap-2">
           <Tooltip delayDuration={0}>
             <TooltipTrigger asChild>
+            <Link
+              href="/dashboard"
+              className="group flex items-center justify-center size-7 rounded-lg p-0 transition-all duration-150 ease-in-out hover:bg-white/10 hover:scale-95"
+            >
+                <IconHeartTextSquare className="size-4 fill-white/50 group-hover:fill-blue-400" />
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent side="bottom" className="bg-zinc-900 text-xs text-white">
+              <p>Dashboard</p>
+            </TooltipContent>
+          </Tooltip>
+          <div className="h-[20px] w-[2px] rounded-full bg-zinc-800" />
+          <Tooltip delayDuration={0}>
+            <TooltipTrigger asChild>
               <SidebarTrigger />
             </TooltipTrigger>
-            <TooltipContent side="left" className="bg-zinc-900 text-xs text-white">
-              <p>Favorites</p>
+            <TooltipContent side="bottom" className="bg-zinc-900 text-xs text-white">
+              <p>Bookmarks</p>
             </TooltipContent>
           </Tooltip>
           <div className="h-[20px] w-[2px] rounded-full bg-zinc-800" />

@@ -3,7 +3,7 @@
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { VariantProps, cva } from "class-variance-authority"
-import { IconStarFill } from 'symbols-react';
+import { IconBookmarkFill, IconStarFill } from 'symbols-react';
 import { useIsMobile } from "@/hooks/use-mobile"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -279,7 +279,7 @@ const SidebarTrigger = React.forwardRef<
       {...props}
     >
       {/* <PanelLeft /> */}
-      <IconStarFill className="h-5 w-5 fill-yellow-400" />
+      <IconBookmarkFill className="size-4.5 fill-indigo-400" />
       <span className="sr-only">Toggle Sidebar</span>
     </Button>
   )

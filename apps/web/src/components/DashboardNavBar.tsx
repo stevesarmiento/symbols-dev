@@ -85,14 +85,14 @@ export function DashboardNavBar() {
       <div className="flex w-full items-center gap-0 px-4 py-0 sm:px-6 lg:px-4">
         <Link
           href={isDashboardShell ? "/" : "/"}
-          className="flex items-center"
+          className="flex items-center hover:scale-110 active:scale-95 transition-all duration-150 ease-in-out"
         >
           <div className="flex size-7 items-center justify-center rounded-lg bg-blue-500 p-1">
             <IconHeartFill className="size-4.5 fill-white" />
           </div>
         </Link>
 
-        <div className="h-[50px] w-px bg-white/5 mx-3" />
+        <div className="h-[50px] w-px bg-white/[0.08] mx-4" />
 
         <form onSubmit={handleSubmit} className="min-w-0 flex-1">
           <div className="relative w-full">

@@ -6,6 +6,7 @@ import { Suspense } from "react";
 import { Toaster } from "sonner";
 import { AppProviders } from './providers'
 import NavBar from '@/components/NavBar';
+import { DashboardBreadcrumbBar } from "@/components/DashboardBreadcrumbBar";
 import { FavoritesSidebar } from "@/components/FavoritesSidebar";
 import { Footer } from '@/components/Footer'
 import Script from 'next/script';
@@ -113,9 +114,12 @@ export default function RootLayout({
       </head>
       <body className="bg-zinc-950 w-full h-full relative">
         <AppProviders>
-          <div className="w-full mx-auto min-h-dvh flex flex-col bg-transparent relative">
+          <div className="w-full mx-auto min-h-dvh flex flex-col bg-transparent relative overflow-hidden">
             <Suspense fallback={null}>
               <NavBar />
+            </Suspense>
+            <Suspense fallback={null}>
+              <DashboardBreadcrumbBar />
             </Suspense>
             <main className="flex-1">
               {children}

@@ -336,10 +336,15 @@ export default async function IconDetailPage({ params }: IconDetailPageProps) {
     : `import { ${iconName} } from \"symbols-react\";\n\nexport function Example() {\n  return <${iconName} width={24} height={24} fill=\"currentColor\" />;\n}\n`;
 
   return (
-    <div className="mx-auto w-full pl-4">
-      <div className="min-h-[calc(100dvh-10rem)] pt-3 motion-preset-blur-up-md motion-preset-fade-md motion-scale-in-90 motion-ease-spring-snappy motion-duration-150">
+    <div className="">
+      <div className="h-full flex items-center justify-center">
         <IconDetailActions iconName={iconName} componentCode={componentCode}>
-          <IconDisplay IconComponent={IconComponent} size={228} fillColor="#FFFFFF" />
+          <IconDisplay
+            iconName={iconName}
+            IconComponent={IconComponent}
+            size={250}
+            fillColor="#FFFFFF"
+          />
         </IconDetailActions>
       </div>
     </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useFavorites, useFavoritesHydration } from "@/stores/favorites";
-import { IconStar, IconStarFill, IconStarSlashFill } from "symbols-react";
+import { IconBookmark, IconBookmarkFill, IconBookmarkSlash, IconBookmarkSlashFill} from "symbols-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useState, useEffect } from "react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
@@ -47,7 +47,7 @@ export function FavoritesButton({ iconName }: FavoritesButtonProps) {
             e.preventDefault();
             e.stopPropagation();
           }}
-          className="z-10 w-10 h-10 rounded-lg bg-primary-900/0 hover:bg-white/10 transition-all duration-150 p-1.5"
+          className="z-10 size-7 rounded-lg bg-primary-900/0 hover:bg-white/10 transition-all duration-150 p-1.5"
         >
           <AnimatePresence mode="wait">
             {!hasHydrated ? (
@@ -57,7 +57,7 @@ export function FavoritesButton({ iconName }: FavoritesButtonProps) {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0.8 }}
               >
-                <IconStar className="h-6 w-6 stroke-zinc-400" />
+                <IconBookmark className="size-4 stroke-zinc-400" />
               </motion.div>
             ) : showSlash ? (
               <motion.div
@@ -77,7 +77,7 @@ export function FavoritesButton({ iconName }: FavoritesButtonProps) {
                     mass: 0.3,
                 }}
               >
-                <IconStarSlashFill className="h-6 w-6 fill-zinc-400" />
+                <IconBookmarkSlashFill className="size-4 fill-zinc-400" />
               </motion.div>
             ) : isFavorited ? (
               <motion.div
@@ -85,8 +85,8 @@ export function FavoritesButton({ iconName }: FavoritesButtonProps) {
                 initial={{ scale: 1, rotate: 10 }}
                 animate={{ scale: 1, rotate: 0 }}
                 exit={{ scale: 1.1, rotate: -20 }}
-              >
-                <IconStarFill className="h-6 w-6 fill-yellow-500" />
+              > 
+                <IconBookmarkFill className="size-4 fill-yellow-500" />
               </motion.div>
             ) : (
               <motion.div
@@ -95,7 +95,7 @@ export function FavoritesButton({ iconName }: FavoritesButtonProps) {
                 animate={{ scale: 1, rotate: 0 }}
                 exit={{ scale: 1.1, rotate: 20 }}
               >
-                <IconStarFill className="h-6 w-6 fill-zinc-400" />
+                <IconBookmarkFill className="size-4 fill-zinc-400" />
               </motion.div>
             )}
           </AnimatePresence>
@@ -103,7 +103,7 @@ export function FavoritesButton({ iconName }: FavoritesButtonProps) {
       </TooltipTrigger>
       <TooltipContent className="bg-zinc-900">
         <p className="text-white text-xs">
-          {isFavorited ? "Remove from favorites" : "Add to favorites"}
+          {isFavorited ? "Remove from bookmarks" : "Add to bookmarks"}
         </p>
       </TooltipContent>
     </Tooltip>

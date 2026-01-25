@@ -6,17 +6,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useInView } from "react-intersection-observer";
 import * as Icons from "symbols-react";
 
-import Link from "next/link";
 import IconsList, { type IconProps } from "@/components/IconsList";
-import { Badge } from "@/components/ui/badge";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
 import { getIconCategoryIds } from "@/lib/icon-categorization";
@@ -137,23 +127,7 @@ function DashboardContent() {
         <aside className="hidden lg:block">
           <div className="sticky top-16">
             <div className="">
-              <div className="">
-                <Breadcrumb>
-                  <BreadcrumbList className="text-xs font-berkeley-mono">
-                    <BreadcrumbItem>
-                      <BreadcrumbLink asChild>
-                        <Link href="/" className="text-white/30 hover:text-white/60">Home</Link>
-                      </BreadcrumbLink>
-                    </BreadcrumbItem>
-                    <BreadcrumbSeparator className="text-white/20" />
-                    <BreadcrumbItem>
-                      <BreadcrumbPage className="text-white/50">Categories</BreadcrumbPage>
-                    </BreadcrumbItem>
-                  </BreadcrumbList>
-                </Breadcrumb>
-              </div>
-              <div className="h-[1px] bg-white/5 my-3 scale-x-120" />
-              <ScrollArea className="max-h-[calc(100dvh-16rem)]">
+              <ScrollArea className="max-h-[calc(100dvh-16rem)] pt-4">
                 <button
                   type="button"
                   onClick={() => handleCategoryChange("all")}

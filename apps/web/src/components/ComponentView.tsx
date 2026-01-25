@@ -19,11 +19,18 @@ export function ComponentViewer({
   onCopyComponent 
 }: ComponentViewerProps) {
   return (
-    <div className="space-y-4">
-      <div className="flex items-center justify-between">
-        <h2 className="text-lg font-semibold text-white">React Component</h2>
-      </div>
-      
+    <div 
+      className="p-6 h-[calc(100dvh-6rem)]"
+      style={{
+        backgroundImage: `repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            rgba(233, 231, 222, 0.05) 10px,
+            rgba(233, 231, 222, 0.05) 11px
+        )`,
+    }}
+      >      
       <div className="relative">
         <FolderTab 
           iconName={iconName}
@@ -31,7 +38,7 @@ export function ComponentViewer({
           onCopyComponent={onCopyComponent}
         />
         
-        <div className="overflow-x-auto bg-zinc-800 rounded-xl rounded-tl-none border border-zinc-800">
+        <div className="max-h-[calc(100dvh-11rem)] overflow-x-auto bg-zinc-800 corner-squircle rounded-[30px] rounded-tl-none border border-zinc-800">
           <SyntaxHighlighter
             language="tsx"
             style={oneDark}

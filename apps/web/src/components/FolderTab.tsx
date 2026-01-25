@@ -19,7 +19,7 @@ export function FolderTab({ iconName, copiedComponent, onCopyComponent }: Folder
           {/* Main tab content */}
           <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-t-xl border-t border-zinc-700 relative z-20">
             <IconTypescriptLogo className="w-4 h-4 fill-blue-400" />
-            <span className="text-sm text-zinc-400 font-mono">
+            <span className="text-sm text-white/40 font-berkeley-mono">
               {iconName.length > 16 ? `${iconName.slice(0, 16)}...` : iconName}.tsx
             </span>
           </div>
@@ -59,7 +59,7 @@ export function FolderTab({ iconName, copiedComponent, onCopyComponent }: Folder
                 )}
               </button>
             </TooltipTrigger>
-            <TooltipContent className="bg-zinc-900">
+            <TooltipContent side="left" className="bg-zinc-900">
               <p className="text-white text-xs">Copy component</p>
             </TooltipContent>
           </Tooltip>
