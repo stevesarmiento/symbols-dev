@@ -96,7 +96,7 @@
     },
     "packages/symbols": {
       "name": "symbols-react",
-      "version": "1.2.6",
+      "version": "1.2.7",
       "devDependencies": {
         "typescript": "^5.4.5",
       },
