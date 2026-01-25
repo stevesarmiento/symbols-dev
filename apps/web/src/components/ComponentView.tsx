@@ -46,7 +46,7 @@ export function ComponentViewer({
               margin: 0,
               padding: '1rem',
               background: 'transparent',
-              fontSize: '0.875rem',
+              fontSize: '0.77rem',
             }}
             codeTagProps={{
               style: {
